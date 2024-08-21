@@ -3,25 +3,79 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-color: #143500;
+  --primary-color-two: #659e0f;
+  --primary-color-three: #e4edd9;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  overflow-x: hidden;
+  background: var(--primary-color-three);
+  background: var(--primary-color-three);
+}
+
+h1,
+h2,
+h3,
+h,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+
+/* scrollber */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+
+@layer utilities {
+
+  .pbg {
+    background-color: var(--primary-color);
+  }
+
+  .pbg2 {
+    background-color: var(--primary-color-two);
+  }
+
+  .pbg3 {
+    background-color: var(--primary-color-three);
+  }
+
+  .pcl {
+    color: var(--primary-color);
+  }
+
+  .pcl2 {
+    color: var(--primary-color-two);
+  }
+
+  .pcl3 {
+    color: var(--primary-color-three);
+  }
+
+  .red-light-bg {
+    background: #FFF6F0;
+  }
+
+  .bannartransparentBg {
+    background: linear-gradient(rgba(0, 0, 0, 0.465), rgba(0, 0, 0, 0.465));
+  }
+
+
+  .cardHover {
+    border: 2px solid var(--primary-color-two);
+  }
+
+  .stickyheader {
+    position: sticky !important;
+    position: -webkit-sticky !important;
+    top: 120px !important;
+  }
+
 }
