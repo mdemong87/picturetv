@@ -6,7 +6,7 @@ import NavberWrper from "./NavberWrper";
 
 const Header = () => {
     return (
-        <header className="w-screen pbg text-white fixed z-50">
+        <header className="w-screen bg-[#000] text-white fixed z-50">
             <Container>
                 <div className={styles.headerWrper}>
                     <div className={styles.left}>

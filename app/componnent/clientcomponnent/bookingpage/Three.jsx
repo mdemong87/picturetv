@@ -1,6 +1,4 @@
 
-
-
 const Three = () => {
     return (
         <div className='w-full border rounded-md border-gray-300 p-4'>
@@ -128,7 +126,9 @@ const Three = () => {
 
                 </form>
             </div>
+
         </div>
+
     )
 }
 

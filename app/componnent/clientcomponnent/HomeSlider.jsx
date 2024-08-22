@@ -43,7 +43,7 @@ const HomeSlider = () => {
                                         <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>Llewellyn Sánchez-Werner Classical Concert At LongHouse Reserve</h1>
                                         <p className='text-base  text-gray-200'>Llewellyn Sánchez-Werner performs in East Hampton, NY</p>
                                         <div className='mt-6 md:mt-12'>
-                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PictureTV</Link>
+                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PTV</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -57,7 +57,7 @@ const HomeSlider = () => {
                                         <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>Llewellyn Sánchez-Werner Classical Concert At LongHouse Reserve</h1>
                                         <p className='text-base  text-gray-200'>Llewellyn Sánchez-Werner performs in East Hampton, NY</p>
                                         <div className='mt-6 md:mt-12'>
-                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PictureTV</Link>
+                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PTV</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -71,7 +71,7 @@ const HomeSlider = () => {
                                         <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>Llewellyn Sánchez-Werner Classical Concert At LongHouse Reserve</h1>
                                         <p className='text-base  text-gray-200'>Llewellyn Sánchez-Werner performs in East Hampton, NY</p>
                                         <div className='mt-6 md:mt-12'>
-                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PictureTV</Link>
+                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PTV</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +85,7 @@ const HomeSlider = () => {
                                         <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>Llewellyn Sánchez-Werner Classical Concert At LongHouse Reserve</h1>
                                         <p className='text-base  text-gray-200'>Llewellyn Sánchez-Werner performs in East Hampton, NY</p>
                                         <div className='mt-6 md:mt-12'>
-                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PictureTV</Link>
+                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PTV</Link>
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +99,7 @@ const HomeSlider = () => {
                                         <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>Llewellyn Sánchez-Werner Classical Concert At LongHouse Reserve</h1>
                                         <p className='text-base  text-gray-200'>Llewellyn Sánchez-Werner performs in East Hampton, NY</p>
                                         <div className='mt-6 md:mt-12'>
-                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PictureTV</Link>
+                                            <Link href={'/booking'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Book PTV</Link>
                                         </div>
                                     </div>
                                 </div>

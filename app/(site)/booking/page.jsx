@@ -21,11 +21,11 @@ const Bookign = () => {
 
 
     return (
-        <div className="h-fit pt-24">
+        <main className="h-fit pt-24">
             <div className="flex flex-col md:flex-row items-center h-full">
-                <div className="w-full">
+                <div className="w-full py-10">
                     <Container>
-                        <Prograssber rander={''} setrander={''} />
+                        <Prograssber rander={rander} setrander={setrander} />
                         {rander === 1 && <One />}
                         {rander === 2 && <Two />}
                         {rander === 3 && <Three />}
@@ -40,7 +40,7 @@ const Bookign = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     )
 }
 
