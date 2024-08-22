@@ -12,8 +12,10 @@
     grid-template-rows: auto 150px;
     justify-content: space-between;
     row-gap: 20px;
-
+    column-gap: 20px;
 }
+
+
 
 .rightArrowIcons {
     margin-right: 10px;
@@ -24,10 +26,7 @@
 }
 
 .foooterLogo {
-    aspect-ratio: 16/16;
-    margin-top: -5px;
-    width: 250px;
-    height: 250px;
+    margin-top: -45px;
 }
 
 .ul {

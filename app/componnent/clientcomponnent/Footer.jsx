@@ -6,7 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 import { FaFacebookF } from "react-icons/fa";
 import { GrMail } from "react-icons/gr";
 import { IoLogoWhatsapp } from "react-icons/io";
-import logo from '../../../public/assets/logo-2.png';
+import logo from '../../../public/assets/logo.png';
 import styles from "../../../styles/clientconponnent/Footer/Footer.module.css";
 import Container from "../../componnent/clientcomponnent/Container";
 
@@ -16,7 +16,7 @@ export default function Footer() {
             <Container>
                 <div className={styles.footerWrp}>
                     <div className={styles.singleWrp}>
-                        <Image className={styles.foooterLogo} src={logo} width={300} height={300} alt="footer-logo" />
+                        <Image className={`w-full h-full ${styles.foooterLogo}`} src={logo} width={1000} height={1000} alt="footer-logo" />
                     </div>
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Get in Touch</h4>

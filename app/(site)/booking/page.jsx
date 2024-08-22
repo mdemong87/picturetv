@@ -17,8 +17,6 @@ const Bookign = () => {
     const [rander, setrander] = useState(1);
     const [loding, setloding] = useState(false);
 
-    console.log(rander);
-
 
     return (
         <main className="h-fit pt-24">

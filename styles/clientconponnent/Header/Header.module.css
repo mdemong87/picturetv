@@ -1,6 +1,6 @@
 .headerWrper {
     display: grid;
-    padding: 15px 0;
+    padding: 0px 0px;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
         "left left left right right right right right right right right right";
