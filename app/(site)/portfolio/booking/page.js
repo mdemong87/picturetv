@@ -9,7 +9,7 @@ import Three from "@/app/componnent/clientcomponnent/bookingpage/Three";
 import Two from "@/app/componnent/clientcomponnent/bookingpage/Two";
 import Image from "next/image";
 import { useState } from "react";
-import bgImage from "../../../public/assets/bg-4.jpg";
+import bgImage from "../../../../public/assets/bg-4.jpg";
 
 const Bookign = () => {
 

@@ -80,6 +80,15 @@ h6 {
     transform: scale(1.1) !important;
   }
 
+
+  .portfolioCardHover {
+    transition: all 1s;
+  }
+
+  .portfolioCardHover:hover {
+    transform: scale(1.1) !important;
+  }
+
   .stickyheader {
     position: sticky !important;
     position: -webkit-sticky !important;

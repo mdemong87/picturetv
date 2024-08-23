@@ -53,8 +53,10 @@ const Ragester = () => {
 
                         <select className='booking-input-field p-3 rounded-md'>
                             <option value="Role">Role </option>
+                            <option value="Client">New Member</option>
                             <option value="Client">Client</option>
                             <option value="Photographer">Photographer</option>
+                            <option value="Photographer">Vediographer</option>
                         </select>
 
 

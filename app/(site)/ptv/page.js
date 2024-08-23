@@ -2,7 +2,7 @@ import AsideCard from "@/app/componnent/clientcomponnent/AsideCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Vedio from "@/app/componnent/clientcomponnent/Vedio";
 
-const Blogs = () => {
+const PTV = () => {
     return (
         <main className="h-fit pt-36 pb-14">
             <Container>
@@ -30,4 +30,4 @@ const Blogs = () => {
     )
 }
 
-export default Blogs;
+export default PTV;
