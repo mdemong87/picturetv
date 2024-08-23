@@ -15,6 +15,13 @@
     column-gap: 20px;
 }
 
+.footerWrp>div:nth-child(2) {
+    margin-left: 60px;
+}
+
+.footerWrp>div:nth-child(3) {
+    margin-left: 30px;
+}
 
 
 .rightArrowIcons {
@@ -77,9 +84,10 @@
 
 .Connect {
     width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 25px;
 }
 
 .IWrp {
@@ -92,6 +100,7 @@
     height: 40px;
     border-radius: 10px;
     cursor: pointer;
+    background: #659e0f;
 
 }
 
@@ -103,13 +112,13 @@
 
 .IWrp:hover {
     background: #fff;
-    color: #014694;
+    color: #659e0f;
 }
 
 
 
 .copyRight {
-    border-top: 2px solid rgb(182, 182, 182);
+    border-top: 2px solid #204d04;
     grid-column: 1/-1;
     padding: 15px;
     width: 80%;
@@ -125,12 +134,25 @@
         grid-template-rows: auto auto;
 
     }
+
+    .footerWrp>div:nth-child(2) {
+        margin-left: 0px;
+    }
+
+    .footerWrp>div:nth-child(3) {
+        margin-left: 0px;
+    }
+
 }
 
 @media (max-width:768px) {
     .footerWrp {
         grid-template-columns: 1fr;
         grid-template-rows: auto auto auto auto;
+    }
+
+    .footerWrp>div:nth-child(2) {
+        margin-top: 20px;
     }
 
     .Connect {

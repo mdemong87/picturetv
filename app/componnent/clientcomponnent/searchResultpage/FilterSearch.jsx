@@ -96,11 +96,11 @@ const FilterSearch = () => {
             <div>
                 <div className="flex justify-between items-center mt-5">
                     <b className="w-fit text-white text-xl font-semibold">Min Price:</b>
-                    <input className="w-[70px] rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
+                    <input className="w-[70px] border-2 border-gray-900 rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
                 </div>
                 <div className="flex justify-between items-center mt-5">
                     <b className="w-fit text-white text-xl font-semibold">Max Price:</b>
-                    <input className="w-[70px] rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
+                    <input className="w-[70px] border-2 border-gray-900 rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
                 </div>
             </div>
             {/* max price and min price option div end from here */}

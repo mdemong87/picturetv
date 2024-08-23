@@ -32,7 +32,7 @@ const Event = () => {
                             </div>
 
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingLastName">Company Name:</label>
+                                <label htmlFor="bookingcompanyName">Company Name:</label>
                                 <input
                                     type="text"
                                     name="bookingcompanyName"
@@ -57,7 +57,7 @@ const Event = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bookingEventTitle">Office Number:</label>
+                                <label htmlFor="bokkignOfficeNumber">Office Number:</label>
                                 <input
                                     type="number"
                                     name="bokkignOfficeNumber"
@@ -71,7 +71,7 @@ const Event = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bookingEventTitle">Mobile Number:</label>
+                                <label htmlFor="bokkingMobileNumber">Mobile Number:</label>
                                 <input
                                     type="number"
                                     name="bokkingMobileNumber"
@@ -85,7 +85,7 @@ const Event = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bookingEventTitle">Assignment Title:</label>
+                                <label htmlFor="bokkingAssignmentTitle">Assignment Title:</label>
                                 <input
                                     type="text"
                                     name="bokkingAssignmentTitle"
@@ -100,7 +100,7 @@ const Event = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bookingEventTitle">Assignment Date:</label>
+                                <label htmlFor="bokkingAssignmentDate">Assignment Date:</label>
                                 <input
                                     type="date"
                                     name="bokkingAssignmentDate"
@@ -115,84 +115,105 @@ const Event = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bookingEventTitle">Event Title:</label>
+                                <label htmlFor="bookingCallTime">Call Time:</label>
                                 <input
-                                    type="text"
-                                    name="bookingEventTitle"
-                                    id="bookingEventTitle"
+                                    type="time"
+                                    name="bookingCallTime"
+                                    id="bookingCallTime"
 
                                     className='booking-input-field p-3 rounded-md'
-                                    placeholder='Event Title'
+                                    placeholder='Call Time'
                                 />
 
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingStreetAddress">Street Address:</label>
+                                <label htmlFor="bookingEndTime">End Time:</label>
                                 <input
-                                    type="text"
-                                    name="bookingStreetAddress"
-                                    id="bookingStreetAddress"
+                                    type="time"
+                                    name="bookingEndTime"
+                                    id="bookingEndTime"
 
                                     className='booking-input-field p-3 rounded-md'
-                                    placeholder='Address'
+                                    placeholder='End Time'
                                 />
 
                             </div>
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingCity">City:</label>
-                                <select className='booking-input-field p-3 rounded-md'>
-                                    <option value="New York">New York</option>
-                                    <option value="Los Angeles">Los Angeles</option>
-                                    <option value="Hamptons">Hamptons</option>
-                                    <option value="Washington DC">Washington DC</option>
-                                    <option value="Miami">Miami</option>
-                                    <option value="San Francisco">San Francisco</option>
-                                    <option value="Chicago">Chicago</option>
-                                </select>
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingAdmission">Admission:</label>
-                                <select className='booking-input-field p-3 rounded-md'>
-                                    <option value="Ticketed Event">Ticketed Event</option>
-                                    <option value="Invite Only">Invite Only</option>
-                                    <option value="Open">Open</option>
-                                </select>
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingIndustry">Industry:</label>
-                                <select className='booking-input-field p-3 rounded-md'>
-                                    <option value="Fashion">Fashion</option>
-                                    <option value="Charity">Charity</option>
-                                    <option value="Nightlife">Nightlife</option>
-                                    <option value="Fine Arts">Fine Arts</option>
-                                    <option value="Dining">Dining</option>
-                                    <option value="Music">Music</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingWebsite">Website:</label>
+                                <label htmlFor="bookingVanueName">Vanue Name:</label>
                                 <input
                                     type="text"
-                                    name="bookingWebsite"
-                                    id="bookingWebsite"
+                                    name="bookingVanueName"
+                                    id="bookingVanueName"
 
                                     className='booking-input-field p-3 rounded-md'
-                                    placeholder='Website'
+                                    placeholder='Vanue Name'
                                 />
                             </div>
+
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingDescription">Description:</label>
+                                <label htmlFor="bookingVanueAddress">Vanue Address:</label>
+                                <input
+                                    type="text"
+                                    name="bookingVanueAddress"
+                                    id="bookingVanueAddress"
+
+                                    className='booking-input-field p-3 rounded-md'
+                                    placeholder='Vanue Address'
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label htmlFor="bookingNumberofguest">Expected Number of Guests:</label>
+                                <input
+                                    type="number"
+                                    name="bookingNumberofguest"
+                                    id="bookingNumberofguest"
+
+                                    className='booking-input-field p-3 rounded-md'
+                                    placeholder='Expected Number of Guests'
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label htmlFor="bookingDressAttire">Dress Attire:</label>
+                                <input
+                                    type="text"
+                                    name="bookingDressAttire"
+                                    id="bookingDressAttire"
+
+                                    className='booking-input-field p-3 rounded-md'
+                                    placeholder='Dress Attire'
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label htmlFor="bookingOnSiteContactName">On Site Contact Name:</label>
+                                <input
+                                    type="text"
+                                    name="bookingOnSiteContactName"
+                                    id="bookingOnSiteContactName"
+                                    className='booking-input-field p-3 rounded-md'
+                                    placeholder='On Site Contact Name'
+                                />
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label htmlFor="bookingPostImage">Post images to Picturetv.com & service to media (*):</label>
+                                <select name="bookingPostImage" className='booking-input-field p-3 rounded-md'>
+                                    <option value="YES">YES</option>
+                                    <option value="NO">NO</option>
+                                </select>
+                            </div>
+
+                            <div className="flex flex-col gap-2">
+                                <label htmlFor="bookingRequest">Special Requests/Notes:</label>
                                 <textarea
-                                    name="bookingDescription"
-                                    id="bookingDescription"
+                                    name="bookingRequest"
+                                    id="bookingRequest"
                                     cols="30"
                                     rows="5"
                                     className='booking-input-field p-3 rounded-md'
-                                    placeholder='Message...'
+                                    placeholder='Special Requests/Notes:'
                                 >
                                 </textarea>
                             </div>
