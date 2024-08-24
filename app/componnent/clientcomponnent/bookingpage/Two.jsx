@@ -1,81 +1,7 @@
-import { BsThreeDots } from "react-icons/bs";
-import { FaBuilding, FaCalendar, FaLink, FaUser, FaUsers, FaVideo } from 'react-icons/fa';
-import { FaGlasses } from "react-icons/fa6";
-import { GiClothes } from "react-icons/gi";
-import { IoAirplane, IoFastFood } from "react-icons/io5";
-import { LiaIndustrySolid } from "react-icons/lia";
-import { MdAutoMode, MdLandscape, MdOutlineSportsVolleyball } from "react-icons/md";
+import BookingCard from "../bookingpage/BookingCard";
 
 
-
-
-
-const Two = () => {
-
-
-    const bookingCategory = [
-        {
-            icon: <FaUser className='text-2xl text-[#343a40]' />,
-            title: 'Portrait',
-        },
-        {
-            icon: <FaCalendar className='text-2xl text-[#343a40]' />,
-            title: 'Event',
-        },
-        {
-            icon: <FaBuilding className='text-2xl text-[#343a40]' />,
-            title: 'Real Estate',
-        },
-        {
-            icon: <FaUsers className='text-2xl text-[#343a40]' />,
-            title: 'Team & Office',
-        },
-        {
-            icon: <GiClothes className='text-2xl text-[#343a40]' />,
-            title: 'Product',
-        },
-        {
-            icon: <FaGlasses className='text-2xl text-[#343a40]' />,
-            title: 'Fashion',
-        },
-        {
-            icon: <IoFastFood className='text-2xl text-[#343a40]' />,
-            title: 'Food',
-        },
-        {
-            icon: <MdAutoMode className='text-2xl text-[#343a40]' />,
-            title: 'Automotive',
-        },
-        {
-            icon: <IoAirplane className='text-2xl text-[#343a40]' />,
-            title: 'Aircraft',
-        },
-        {
-            icon: <FaVideo className='text-2xl text-[#343a40]' />,
-            title: 'Media',
-        },
-        {
-            icon: <MdOutlineSportsVolleyball className='text-2xl text-[#343a40]' />,
-            title: 'Sport',
-        },
-        {
-            icon: <FaLink className='text-2xl text-[#343a40]' />,
-            title: 'Commercial',
-        },
-        {
-            icon: <LiaIndustrySolid className='text-2xl text-[#343a40]' />,
-            title: 'Industrial',
-        },
-        {
-            icon: <MdLandscape className='text-2xl text-[#343a40]' />,
-            title: 'Landscape',
-        },
-        {
-            icon: <BsThreeDots className='text-2xl text-[#343a40]' />,
-            title: 'Other',
-        }
-    ]
-
+const Two = ({ ispersonal, setrander }) => {
 
 
     return (
@@ -83,9 +9,56 @@ const Two = () => {
             <div className='w-full mx-auto px-5 py-10 rounded-md border border-slate-200 mt-10'>
                 <h3 className='text-2xl text-black text-center font-semibold mb-10'>What do you need to shoot?</h3>
 
-                <select className='w-full border border-gray-300 pbg3 p-4'>
-                    {bookingCategory?.map((category, index) => <option key={index} value={category.title}>{category.title}</option>)}
-                </select>
+                {
+                    !ispersonal ? (
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+                            <BookingCard setrander={setrander} title="Portrait" />
+                            <BookingCard setrander={setrander} title="Event" />
+                            <BookingCard setrander={setrander} title="Real Estate" />
+                            <BookingCard setrander={setrander} title="Team & Office" />
+                            <BookingCard setrander={setrander} title="Product" />
+                            <BookingCard setrander={setrander} title="Fashion" />
+                            <BookingCard setrander={setrander} title="Food" />
+                            <BookingCard setrander={setrander} title="Automotive" />
+                            <BookingCard setrander={setrander} title="Aircraft" />
+                            <BookingCard setrander={setrander} title="Media" />
+                            <BookingCard setrander={setrander} title="Sport" />
+                            <BookingCard setrander={setrander} title="Commerecial" />
+                            <BookingCard setrander={setrander} title="Industrial" />
+                            <BookingCard setrander={setrander} title="Landscape" />
+                            <BookingCard setrander={setrander} title="Others" />
+
+                        </div>
+                    ) : (
+
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
+                            <BookingCard setrander={setrander} title="Portrait" />
+                            <BookingCard setrander={setrander} title="Family" />
+                            <BookingCard setrander={setrander} title="Graduation" />
+                            <BookingCard setrander={setrander} title="Party" />
+                            <BookingCard setrander={setrander} title="Wedding" />
+                            <BookingCard setrander={setrander} title="Engagement" />
+                            <BookingCard setrander={setrander} title="Dating" />
+                            <BookingCard setrander={setrander} title="Maternity" />
+                            <BookingCard setrander={setrander} title="Automotive" />
+                            <BookingCard setrander={setrander} title="Aircraft" />
+                            <BookingCard setrander={setrander} title="Travel" />
+                            <BookingCard setrander={setrander} title="Real Estate" />
+                            <BookingCard setrander={setrander} title="Event" />
+                            <BookingCard setrander={setrander} title="Baby" />
+                            <BookingCard setrander={setrander} title="Kids" />
+                            <BookingCard setrander={setrander} title="Sport" />
+                            <BookingCard setrander={setrander} title="Pet" />
+                            <BookingCard setrander={setrander} title="Anniversary" />
+                            <BookingCard setrander={setrander} title="Landscape" />
+                            <BookingCard setrander={setrander} title="Religious" />
+                            <BookingCard setrander={setrander} title="Others" />
+
+                        </div>
+                    )
+
+                }
+
             </div>
         </div>
     )

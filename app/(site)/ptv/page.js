@@ -7,7 +7,7 @@ const PTV = () => {
         <main className="h-fit pt-36 pb-14">
             <Container>
                 <div className="grid grid-cols-12 gap-4">
-                    <div className="col-span-8 w-full">
+                    <div className="col-span-12 lg:col-span-8 w-full">
                         <div className="h-[520px] w-full">
                             <Vedio />
                         </div>
@@ -15,7 +15,7 @@ const PTV = () => {
 
                         </div>
                     </div>
-                    <aside className="col-span-4 flex flex-col gap-4 w-full h-full">
+                    <aside className="col-span-12 lg:col-span-4 flex flex-col gap-4 w-full h-full">
                         <AsideCard />
                         <AsideCard />
                         <AsideCard />

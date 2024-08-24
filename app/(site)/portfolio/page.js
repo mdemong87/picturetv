@@ -20,7 +20,7 @@ const Portfolio = () => {
                     </h3>
 
                     <div className="flex justify-center items-center mt-6">
-                        <Link className='pbg2 rounded-md text-base shadow-xl font-medium p-3 text-white' href={"/booking"}>Book PTV</Link>
+                        <Link className='pbg2 rounded-md text-base shadow-xl font-medium p-3 text-white' href={"/ptv"}>Watch</Link>
                     </div>
                 </Container>
 
