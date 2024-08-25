@@ -217,10 +217,19 @@ const Three = () => {
                     </div>
 
                 </form>
+
+                <div className="mt-6">
+                    <div className="flex gap-3 items-center">
+                        <input className="w-[20px] h-[20px]" type="checkbox" />
+                        <span className="text-xl pcl2">Terms and Conditions</span>
+                    </div>
+                    <div className="flex gap-3 items-center mt-2">
+                        <input className="w-[20px] h-[20px]" type="checkbox" />
+                        <span className="text-xl pcl2">Newsletter</span>
+                    </div>
+                </div>
+
             </div>
-
-
-            <button className="text-xl text-center mt-8 font-bold pbg px-4 py-2 text-white rounded-md">Submit</button>
         </div>
 
     )

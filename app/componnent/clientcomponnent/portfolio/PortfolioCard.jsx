@@ -4,7 +4,7 @@ import portfoliocardimage from "../../../../public/assets/bg-3.jpg";
 
 const PortfolioCard = ({ title }) => {
     return (
-        <Link href={'/portfolio/booking'} className="w-full h-[400px] my-8">
+        <Link href={'/portfolio/actorheadshort'} className="w-full h-[400px] my-8">
             <div className="w-full pbg2 py-2 text-2xl text-center font-bold rounded-t-md text-gray-200">
                 <h3>{title}</h3>
             </div>

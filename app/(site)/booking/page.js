@@ -1,6 +1,7 @@
 'use client'
 
 import Container from "@/app/componnent/clientcomponnent/Container";
+import Five from "@/app/componnent/clientcomponnent/bookingpage/Five";
 import Four from "@/app/componnent/clientcomponnent/bookingpage/Four";
 import NextAndPrev from "@/app/componnent/clientcomponnent/bookingpage/NextAndPrev";
 import One from "@/app/componnent/clientcomponnent/bookingpage/One";
@@ -27,6 +28,7 @@ const Bookign = () => {
                         {rander === 2 && <Two ispersonal={ispersonal} setrander={setrander} />}
                         {rander === 3 && <Three />}
                         {rander === 4 && <Four />}
+                        {rander === 5 && <Five />}
                         <NextAndPrev rander={rander} setrander={setrander} loding={loding} setloding={setloding} />
                     </Container>
                 </div>

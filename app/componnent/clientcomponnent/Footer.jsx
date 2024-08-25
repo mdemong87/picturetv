@@ -36,7 +36,7 @@ export default function Footer() {
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Follow Us</h4>
                         <div className={styles.Connect}>
-                            <Link href="https://web.facebook.com/groups/1606975172665084/?_rdc=1&_rdr" className={styles.IWrp}>
+                            <Link href={'/'} className={styles.IWrp}>
                                 <FaFacebookF className={styles.contaceIcons} />
                             </Link>
                             <div className={styles.IWrp}>

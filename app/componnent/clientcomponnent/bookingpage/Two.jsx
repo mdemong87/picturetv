@@ -12,7 +12,7 @@ const Two = ({ ispersonal, setrander }) => {
                 {
                     !ispersonal ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-                            <BookingCard setrander={setrander} title="Portrait" />
+                            <BookingCard setrander={setrander} title="Handshot" />
                             <BookingCard setrander={setrander} title="Event" />
                             <BookingCard setrander={setrander} title="Real Estate" />
                             <BookingCard setrander={setrander} title="Team & Office" />
@@ -46,7 +46,7 @@ const Two = ({ ispersonal, setrander }) => {
                             <BookingCard setrander={setrander} title="Real Estate" />
                             <BookingCard setrander={setrander} title="Event" />
                             <BookingCard setrander={setrander} title="Baby" />
-                            <BookingCard setrander={setrander} title="Kids" />
+                            <BookingCard setrander={setrander} title="Children" />
                             <BookingCard setrander={setrander} title="Sport" />
                             <BookingCard setrander={setrander} title="Pet" />
                             <BookingCard setrander={setrander} title="Anniversary" />

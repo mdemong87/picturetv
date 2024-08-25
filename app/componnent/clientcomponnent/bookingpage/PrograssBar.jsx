@@ -25,7 +25,9 @@ export default function Prograssber({ rander, setrander }) {
             <div onClick={() => handleClik(4)} className={rander > 4 || rander === 4 ? styles.active : styles.alldiv}>
                 {rander > 4 ? <TiTick className={styles.icons} /> : 4}
             </div>
+            <div onClick={() => handleClik(5)} className={rander > 5 || rander === 5 ? styles.active : styles.alldiv}>
+                {rander > 5 ? <TiTick className={styles.icons} /> : 5}
+            </div>
         </div>
-
     )
 }

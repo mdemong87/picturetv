@@ -9,7 +9,7 @@ const One = ({ ispersonal, setispersonal }) => {
     return (
         <div className="border rounded-md border-gray-300 p-4">
             <div className='w-full mx-auto px-5 py-10 rounded-md border border-slate-200 mt-10'>
-                <h3 className='text-2xl text-black text-center font-semibold'>Is your shoot for business or personal?</h3>
+                <h3 className='text-2xl text-black text-center font-semibold pb-8'>Is your shoot for business or personal?</h3>
                 {/* business booking info */}
 
                 <Container>
