@@ -38,20 +38,14 @@ const Two = ({ ispersonal, setrander }) => {
                             <BookingCard setrander={setrander} title="Party" />
                             <BookingCard setrander={setrander} title="Wedding" />
                             <BookingCard setrander={setrander} title="Engagement" />
-                            <BookingCard setrander={setrander} title="Dating" />
                             <BookingCard setrander={setrander} title="Maternity" />
-                            <BookingCard setrander={setrander} title="Automotive" />
-                            <BookingCard setrander={setrander} title="Aircraft" />
-                            <BookingCard setrander={setrander} title="Travel" />
                             <BookingCard setrander={setrander} title="Real Estate" />
                             <BookingCard setrander={setrander} title="Event" />
-                            <BookingCard setrander={setrander} title="Baby" />
                             <BookingCard setrander={setrander} title="Children" />
                             <BookingCard setrander={setrander} title="Sport" />
                             <BookingCard setrander={setrander} title="Pet" />
                             <BookingCard setrander={setrander} title="Anniversary" />
                             <BookingCard setrander={setrander} title="Landscape" />
-                            <BookingCard setrander={setrander} title="Religious" />
                             <BookingCard setrander={setrander} title="Others" />
 
                         </div>

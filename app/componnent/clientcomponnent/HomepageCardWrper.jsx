@@ -9,18 +9,18 @@ const HomePageCardWrper = () => {
                 <h1 className="text-3xl font-bold text-gray-900 pb-8">Expolor Best Photos:</h1>
 
                 <div className="grid grid-cols-12 items-center gap-5">
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
-                    <ImageCard />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
+                    <ImageCard link={'/searchresult'} />
                 </div>
                 <div className="mt-10 flex justify-center items-center">
                     <Link href={'/searchresult'} className="w-fit pbg text-white py-3 px-5 rounded-md cursor-pointer">View All</Link>

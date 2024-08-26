@@ -6,7 +6,7 @@ import FilterSearch from "../../componnent/clientcomponnent/searchResultpage/Fil
 
 const SearchResult = () => {
     return (
-        <div className="h-fit pt-36 pb-14">
+        <main className="h-fit pt-36 pb-14">
             <Container>
                 <div className="grid grid-cols-12 gap-5">
                     <div className={`col-span-12 lg:col-span-3 w-full h-fit lg:stickyheader`}>
@@ -17,7 +17,7 @@ const SearchResult = () => {
                     </div>
                 </div>
             </Container>
-        </div>
+        </main>
     )
 }
 

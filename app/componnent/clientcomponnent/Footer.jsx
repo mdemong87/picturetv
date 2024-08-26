@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { AiFillInstagram, AiFillLinkedin, AiOutlineTwitter } from "react-icons/ai";
+import { AiFillInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaPinterest, FaYoutube } from "react-icons/fa";
 import logo from '../../../public/assets/logo.png';
 import styles from "../../../styles/clientconponnent/Footer/Footer.module.css";
 import Container from "../../componnent/clientcomponnent/Container";
@@ -36,18 +36,18 @@ export default function Footer() {
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Follow Us</h4>
                         <div className={styles.Connect}>
-                            <Link href={'/'} className={styles.IWrp}>
+                            <Link href={'https://web.facebook.com/malaspeaksunday/?_rdc=1&_rdr'} className={styles.IWrp}>
                                 <FaFacebookF className={styles.contaceIcons} />
                             </Link>
-                            <div className={styles.IWrp}>
-                                <AiOutlineTwitter className={styles.contaceIcons} />
-                            </div>
-                            <div className={styles.IWrp}>
+                            <Link href={'https://www.instagram.com/malaspeaksunday/'} className={styles.IWrp}>
                                 <AiFillInstagram className={styles.contaceIcons} />
-                            </div>
-                            <div className={styles.IWrp}>
-                                <AiFillLinkedin className={styles.contaceIcons} />
-                            </div>
+                            </Link>
+                            <Link href={'https://www.youtube.com/@malaspeaksunday'} className={styles.IWrp}>
+                                <FaYoutube className={styles.contaceIcons} />
+                            </Link>
+                            <Link href={'https://www.pinterest.com/malaspeaksunday/'} className={styles.IWrp}>
+                                <FaPinterest className={styles.contaceIcons} />
+                            </Link>
                         </div>
                     </div>
 
