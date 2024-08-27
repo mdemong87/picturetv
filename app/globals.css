@@ -68,7 +68,7 @@ h6 {
   }
 
   .bannartransparentBgforActor {
-    background: rgba(0, 0, 0, 0.755);
+    background: rgba(0, 0, 0, 0.838);
   }
 
 
@@ -105,6 +105,43 @@ h6 {
     position: sticky !important;
     position: -webkit-sticky !important;
     top: 120px !important;
+  }
+
+
+  .sinpleImageGrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+    gap: 20px;
+    grid-template-areas:
+      "sinpleImageGridLeft sinpleImageGridCenter sinpleImageGridRight";
+  }
+
+  .sinpleImageGridLeft {
+    grid-area: sinpleImageGridLeft;
+  }
+
+  .sinpleImageGridCenter {
+    grid-area: sinpleImageGridCenter;
+  }
+
+  .sinpleImageGridRight {
+    grid-area: sinpleImageGridRight;
+  }
+
+}
+
+
+
+@media (max-width:1124px) {
+  .sinpleImageGrid {
+    height: fit-content !important;
+    overflow-y: scroll;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "sinpleImageGridCenter"
+      "sinpleImageGridRight"
+      "sinpleImageGridLeft";
   }
 
 }

@@ -1,9 +1,11 @@
+'use client'
+
 import Image from "next/image";
 import iamgecardimage from "../../../../../public/assets/bg-4.jpg";
 
-const ImageCard = () => {
+const ImageCard = ({ setshowimageSlide }) => {
     return (
-        <div className="w-full h-[350px] col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-2 rounded-md cursor-pointer relative">
+        <div onClick={() => { setshowimageSlide(true) }} className="w-full h-[350px] col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3 rounded-md cursor-pointer relative">
             <Image src={iamgecardimage} alt="Image-Card-Image" className="rounded-md object-cover w-full h-full" width={1000} height={1000} />
 
 
