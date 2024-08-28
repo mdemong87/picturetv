@@ -15,8 +15,8 @@ export default function Footer() {
                 <div className={styles.footerWrp}>
                     <div className={styles.singleWrp}>
                         <Image className={`w-full h-full ${styles.foooterLogo}`} src={logo} width={1000} height={1000} alt="footer-logo" />
-                        <p className="text-md text-gray-300 text-center md:text-left translate-y-4 md:-translate-y-4 pl-2">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore!
+                        <p className="text-lg text-gray-300 text-center md:text-left translate-y-4 md:-translate-y-4 pl-2">
+                            Your Entertainment  & Educational Network
                         </p>
                     </div>
                     <div className={styles.singleWrp}>
