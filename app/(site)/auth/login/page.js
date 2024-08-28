@@ -50,10 +50,10 @@ const Login = () => {
                         <div className="text-center">
                             <p>
                                 Don&#39;t Have an Account?
-                                <Link className="pcl2 pl-2" href={'/auth/ragester'}>Ragester</Link>
+                                <Link className="pcl2 pl-2 underline" href={'/auth/ragester'}>Ragester</Link>
                             </p>
                             <p>OR</p>
-                            <Link href={'/'} className="pcl2">Forget Password</Link>
+                            <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link>
                         </div>
 
                     </div>

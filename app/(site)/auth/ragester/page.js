@@ -66,7 +66,12 @@ const Ragester = () => {
                         </button>
 
 
-                        <Link href={'/auth/login'} className="text-center pcl2 text-lg font-semibold">Login</Link>
+                        <div className="text-center">
+                            <p>
+                                Already Have an Account?
+                                <Link className="pcl2 pl-2 underline" href={'/auth/login'}>Login</Link>
+                            </p>
+                        </div>
 
                     </div>
                 </div>

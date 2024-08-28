@@ -86,11 +86,13 @@
 
 .Connect {
     width: 80%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     margin-top: 25px;
 }
+
 
 .IWrp {
     display: flex;
@@ -158,7 +160,11 @@
     }
 
     .Connect {
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 10px;
+        margin: auto;
+        margin-top: 30px;
     }
 
     .Subscribe {
@@ -173,10 +179,7 @@
         justify-self: center;
     }
 
-    .Connect {
-        width: 80%;
-        margin: auto;
-    }
+
 }
 
 @media (max-width:330px) {

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
 import { FaFacebookF, FaPinterest, FaYoutube } from "react-icons/fa";
+import { FaPatreon, FaXTwitter } from "react-icons/fa6";
 import logo from '../../../public/assets/logo.png';
 import styles from "../../../styles/clientconponnent/Footer/Footer.module.css";
 import Container from "../../componnent/clientcomponnent/Container";
@@ -14,7 +15,7 @@ export default function Footer() {
                 <div className={styles.footerWrp}>
                     <div className={styles.singleWrp}>
                         <Image className={`w-full h-full ${styles.foooterLogo}`} src={logo} width={1000} height={1000} alt="footer-logo" />
-                        <p className="text-md text-gray-300 text-center md:text-left -translate-y-4 pl-2">
+                        <p className="text-md text-gray-300 text-center md:text-left translate-y-4 md:-translate-y-4 pl-2">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore!
                         </p>
                     </div>
@@ -28,7 +29,7 @@ export default function Footer() {
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Information</h4>
                         <ul className={styles.ul}>
-                            <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>About Us</span></a></li>
+                            <li><a href="/aboutus"><BsArrowRight className={styles.rightArrowIcons} /><span>About Us</span></a></li>
                             <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Terms and Conditions</span></a></li>
                             <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Cookies Policy</span></a></li>
                         </ul>
@@ -36,6 +37,7 @@ export default function Footer() {
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Follow Us</h4>
                         <div className={styles.Connect}>
+
                             <Link href={'https://web.facebook.com/malaspeaksunday/?_rdc=1&_rdr'} className={styles.IWrp}>
                                 <FaFacebookF className={styles.contaceIcons} />
                             </Link>
@@ -48,6 +50,14 @@ export default function Footer() {
                             <Link href={'https://www.pinterest.com/malaspeaksunday/'} className={styles.IWrp}>
                                 <FaPinterest className={styles.contaceIcons} />
                             </Link>
+
+                            <Link href={'https://x.com/malaspeaksunday'} className={styles.IWrp}>
+                                <FaXTwitter className={styles.contaceIcons} />
+                            </Link>
+                            <Link href={'/'} className={styles.IWrp}>
+                                <FaPatreon className={styles.contaceIcons} />
+                            </Link>
+
                         </div>
                     </div>
 
