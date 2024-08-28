@@ -1,7 +1,11 @@
 
-
 export const GET = () => {
 
 
-    console.log("hi...this is api route........");
+
+    return Response.json({
+        name: "Emon hossen",
+        status: 200
+    })
+
 }
