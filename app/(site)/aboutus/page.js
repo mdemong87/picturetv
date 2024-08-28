@@ -11,71 +11,9 @@ const AboutUS = () => {
                     </p>
                 </div>
                 <div>
-                    <div className="mt-20">
-                        <form className='w-full grid grid-cols-1 gap-5'>
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingFirstName">First Name:</label>
-                                <input
-                                    type="text"
-                                    name="bookingFirstName"
-                                    id="bookingFirstName"
-                                    className='booking-input-field p-3 rounded-md'
-                                    placeholder='First Name'
-                                />
+                    <div className="mt-20 text-red-900 text-3xl">
 
-                            </div>
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingLastName">Last Name:</label>
-                                <input
-                                    type="text"
-                                    name="bookingLastName"
-                                    id="bookingLastName"
-                                    className='booking-input-field p-3 rounded-md'
-                                    placeholder='Last Name'
-                                />
-
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingEmail">Email:</label>
-                                <input
-                                    type="email"
-                                    name="bookingEmail"
-                                    id="bookingEmail"
-
-                                    className='booking-input-field p-3 rounded-md'
-                                    placeholder='info@gmail.com'
-                                />
-
-                            </div>
-
-                            <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingRequest">Discribe Message:</label>
-                                <textarea
-                                    name="bookingRequest"
-                                    id="bookingRequest"
-                                    cols="30"
-                                    rows="5"
-                                    className='booking-input-field p-3 rounded-md'
-                                    placeholder='Discribe Message:'
-                                >
-                                </textarea>
-                            </div>
-
-
-                            <div className="my-4">
-                                <div className="flex gap-3 items-center mt-2">
-                                    <input className="w-[20px] h-[20px]" type="checkbox" />
-                                    <span className="text-xl pcl2">Join Our Newsletter</span>
-                                </div>
-                            </div>
-
-
-
-                            <button className="pbg2 px-10 py-3 w-fit text-center text-xl font-semibold text-white rounded-md">Submit</button>
-
-                        </form>
-
+                        Contact information will be added here soon
 
                     </div>
                 </div>

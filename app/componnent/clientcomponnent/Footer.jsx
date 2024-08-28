@@ -30,8 +30,9 @@ export default function Footer() {
                         <h4 className={styles.footerhadering}>Information</h4>
                         <ul className={styles.ul}>
                             <li><a href="/aboutus"><BsArrowRight className={styles.rightArrowIcons} /><span>About Us</span></a></li>
+                            <li><a href="/contactus"><BsArrowRight className={styles.rightArrowIcons} /><span>Contact Us</span></a></li>
                             <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Terms and Conditions</span></a></li>
-                            <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Cookies Policy</span></a></li>
+
                         </ul>
                     </div>
                     <div className={styles.singleWrp}>
