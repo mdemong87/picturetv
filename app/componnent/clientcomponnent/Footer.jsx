@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
-import { FaFacebookF, FaPinterest, FaYoutube } from "react-icons/fa";
-import { FaPatreon, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaPinterest, FaYoutube } from "react-icons/fa";
+import { FaPatreon, FaSquareXTwitter } from "react-icons/fa6";
 import logo from '../../../public/assets/logo.png';
 import styles from "../../../styles/clientconponnent/Footer/Footer.module.css";
 import Container from "../../componnent/clientcomponnent/Container";
@@ -39,24 +39,24 @@ export default function Footer() {
                         <h4 className={styles.footerhadering}>Follow Us</h4>
                         <div className={styles.Connect}>
 
-                            <Link href={'https://web.facebook.com/malaspeaksunday/?_rdc=1&_rdr'} className={styles.IWrp}>
-                                <FaFacebookF className={styles.contaceIcons} />
+                            <Link href={'https://web.facebook.com/malaspeaksunday/?_rdc=1&_rdr'} target="blank" className={styles.IWrp}>
+                                <FaFacebook className={`${styles.contaceIcons} text-[#4267B2]`} />
                             </Link>
-                            <Link href={'https://www.instagram.com/malaspeaksunday/'} className={styles.IWrp}>
-                                <AiFillInstagram className={styles.contaceIcons} />
+                            <Link href={'https://www.instagram.com/malaspeaksunday/'} target="blank" className={styles.IWrp}>
+                                <AiFillInstagram className={`${styles.contaceIcons} text-[#c1558b]`} />
                             </Link>
-                            <Link href={'https://www.youtube.com/@malaspeaksunday'} className={styles.IWrp}>
-                                <FaYoutube className={styles.contaceIcons} />
+                            <Link href={'https://www.youtube.com/@malaspeaksunday'} target="blank" className={styles.IWrp}>
+                                <FaYoutube className={`${styles.contaceIcons} text-[#C4302B]`} />
                             </Link>
-                            <Link href={'https://www.pinterest.com/malaspeaksunday/'} className={styles.IWrp}>
-                                <FaPinterest className={styles.contaceIcons} />
+                            <Link href={'https://www.pinterest.com/malaspeaksunday/'} target="blank" className={styles.IWrp}>
+                                <FaPinterest className={`${styles.contaceIcons} text-[#E60023]`} />
                             </Link>
 
-                            <Link href={'https://x.com/malaspeaksunday'} className={styles.IWrp}>
-                                <FaXTwitter className={styles.contaceIcons} />
+                            <Link href={'https://x.com/malaspeaksunday'} target="blank" className={styles.IWrp}>
+                                <FaSquareXTwitter className={`${styles.contaceIcons} text-[#00ACEE]`} />
                             </Link>
-                            <Link href={'/'} className={styles.IWrp}>
-                                <FaPatreon className={styles.contaceIcons} />
+                            <Link href={'https://pin.it/56Ht7FrEW'} target="blank" className={styles.IWrp}>
+                                <FaPatreon className={`${styles.contaceIcons} text-[#f96854]`} />
                             </Link>
 
                         </div>
@@ -66,8 +66,7 @@ export default function Footer() {
 
 
 
-                    <div className={styles.copyRight}>Copyright © 2024
-                        PictureTV. All Rights Reserved
+                    <div className={styles.copyRight}>Powered by Picture Time - Picture TV Copy Right at 2015 Picture TV all rights reserved
                         {/* || <Link style={{ color: "#77a041" }} href="https://emonhossen.xyz">Developed By Md Emon Hossen</Link> */}
                     </div>
                 </div>

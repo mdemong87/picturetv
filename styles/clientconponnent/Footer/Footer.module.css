@@ -102,17 +102,19 @@
     transition: .3s;
     width: 40px;
     height: 40px;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     background: #659e0f;
+    background: #fff;
+    padding: 4px;
 
 }
 
 .contaceIcons {
-    width: 27px;
-    height: 27px;
+    width: 100% !important;
+    height: 100% !important;
+    border-radius: 50%;
 }
-
 
 .IWrp:hover {
     background: #fff;

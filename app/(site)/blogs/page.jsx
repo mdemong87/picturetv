@@ -1,29 +1,22 @@
-import AsideCard from "@/app/componnent/clientcomponnent/AsideCard";
+import SingleBlogCard from "@/app/componnent/clientcomponnent/blog/singleBlogCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
-import Vedio from "@/app/componnent/clientcomponnent/Vedio";
 
 const Blogs = () => {
     return (
-        <main className="h-fit pt-36 pb-14">
+        <main className="h-fit pt-36 pb-14 blogBgbannar">
             <Container>
-                <div className="grid grid-cols-12 gap-4">
-                    <div className="col-span-12 lg:col-span-8 w-full">
-                        <div className="h-[520px] w-full">
-                            <Vedio />
-                        </div>
-                        <div className="bg-white rounded-lg mt-4 p-3 h-[90px]">
-
-                        </div>
+                <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-12 lg:col-span-8 w-full h-fit text-white rounded-md flex flex-col gap-5">
+                        <SingleBlogCard />
+                        <SingleBlogCard />
+                        <SingleBlogCard />
+                        <SingleBlogCard />
+                        <SingleBlogCard />
+                        <SingleBlogCard />
                     </div>
-                    <aside className="col-span-12 lg:col-span-4 flex flex-col gap-4 w-full h-full">
-                        <AsideCard />
-                        <AsideCard />
-                        <AsideCard />
-                        <AsideCard />
-                        <AsideCard />
-                        <AsideCard />
-                        <AsideCard />
-                    </aside>
+                    <aside className="col-span-4 w-full bg-[#8888887c] text-white rounded-md h-full p-5 hidden lg:block">
+                        <h1 className=" text-3xl">Blog side data added here very soon</h1>
+                    </aside >
                 </div>
             </Container>
         </main>

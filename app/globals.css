@@ -129,6 +129,14 @@ h6 {
     grid-area: sinpleImageGridRight;
   }
 
+  .blogBgbannar {
+    background: linear-gradient(rgba(74, 74, 74, 0.804), rgba(68, 68, 68, 0.832)), url('../public/assets/bg-4.jpg');
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center;
+    height: fit-content;
+  }
+
 }
 
 
