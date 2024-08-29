@@ -20,12 +20,42 @@ export default function Footer() {
                         </p>
                     </div>
                     <div className={styles.singleWrp}>
+                        <h4 className={styles.footerhadering}>General Contact</h4>
+                        <ul className={styles.ul}>
+                            <li>
+                                <Link href="tel:929.888.3820" target="blank">
+                                    <BsArrowRight className={`${styles.rightArrowIcons}`} />
+                                    <span>
+                                        929.888.3820
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="mailto:picturetimetv@gmail.com" target="blank">
+                                    <BsArrowRight className={styles.rightArrowIcons} />
+                                    <span>
+                                        picturetimetv@gmail.com
+                                    </span>
+                                </Link>
+                            </li>
+                            <li>
+                                <Link href="https://maps.app.goo.gl/x5vwU51htrRVnf1z7" target="blank">
+                                    <BsArrowRight className={`${styles.rightArrowIcons} text-2xl`} />
+                                    <span>
+                                        228 Park Ave South Suite 949383 New York, NY 10003
+                                    </span>
+                                </Link>
+                            </li>
+
+                        </ul>
+                    </div>
+                    {/* <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Join Now</h4>
                         <ul className={styles.ul}>
                             <li><a href="/auth/ragester"><BsArrowRight className={styles.rightArrowIcons} /><span>Sign Up</span></a></li>
                             <li><a href="/auth/login"><BsArrowRight className={styles.rightArrowIcons} /><span>Sign In</span></a></li>
                         </ul>
-                    </div>
+                    </div> */}
                     <div className={styles.singleWrp}>
                         <h4 className={styles.footerhadering}>Information</h4>
                         <ul className={styles.ul}>

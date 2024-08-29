@@ -7,7 +7,7 @@ const PortfolioCardWrper = () => {
             <PortfolioCard title="Beauty" />
             <PortfolioCard title="Fashion" />
             <PortfolioCard title="Fitness" />
-            <PortfolioCard title="Educational" />
+            <PortfolioCard title="Editorial" />
             <PortfolioCard title="Children" />
         </div>
     )

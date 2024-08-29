@@ -12,7 +12,7 @@ const Two = ({ ispersonal, setrander }) => {
                 {
                     !ispersonal ? (
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-                            <BookingCard setrander={setrander} title="Handshot" />
+                            <BookingCard setrander={setrander} title="Headshot" />
                             <BookingCard setrander={setrander} title="Event" />
                             <BookingCard setrander={setrander} title="Real Estate" />
                             <BookingCard setrander={setrander} title="Team & Office" />

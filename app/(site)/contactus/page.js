@@ -56,6 +56,17 @@ const ContactUs = () => {
                             </textarea>
                         </div>
 
+                        <div className="mt-6">
+                            <div className="flex gap-3 items-center">
+                                <input className="w-[20px] h-[20px]" type="checkbox" />
+                                <span className="text-xl pcl2">I Agree to the Terms and Conditions</span>
+                            </div>
+                            <div className="flex gap-3 items-center mt-2">
+                                <input className="w-[20px] h-[20px]" type="checkbox" />
+                                <span className="text-xl pcl2">Subscribe for the Newsletter</span>
+                            </div>
+                        </div>
+
                         <button className="pbg2 mt-5 px-10 py-3 w-fit text-center text-xl font-semibold text-white rounded-md">Submit</button>
 
                     </form>

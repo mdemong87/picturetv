@@ -3,7 +3,9 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import ImageCard from "@/app/componnent/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
+import { FaImage, FaVideo } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import slide from "../../../../../public/assets/bg-3.jpg";
 import logo from "../../../../../public/assets/logo-2.png";
@@ -16,6 +18,29 @@ const ImagePage = () => {
     return (
         <main className="h-fit pt-36 pb-14">
             <Container>
+
+
+                <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center mb-6 gap-8">
+                        <Link href={'/searchresult/vedioorimage/image'} className={`flex items-center text-[#343a40] gap-5 border border-gray-300 p-5 rounded-md hover:bg-[#7AA140] hover:text-white duration-500`}>
+                            <div>
+                                <FaImage className='text-2xl' />
+                            </div>
+                            <div>
+                                <p className='text-base'>Image</p>
+                            </div>
+                        </Link>
+                        <Link href={'/searchresult/vedioorimage/video'} className={`flex items-center text-[#343a40] gap-5 border border-gray-300 p-5 rounded-md hover:bg-[#7AA140] hover:text-white duration-500`}>
+                            <div>
+                                <FaVideo className='text-2xl' />
+                            </div>
+                            <div>
+                                <p className='text-base'>Video</p>
+                            </div>
+                        </Link>
+                    </div>
+                </div>
+
                 <div className="w-full grid gap-3 grid-cols-12 items-center">
                     <ImageCard setshowimageSlide={setshowimageSlide} />
                     <ImageCard setshowimageSlide={setshowimageSlide} />
