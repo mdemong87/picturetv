@@ -62,6 +62,7 @@ export default function Footer() {
                             <li><a href="/aboutus"><BsArrowRight className={styles.rightArrowIcons} /><span>About Us</span></a></li>
                             <li><a href="/contactus"><BsArrowRight className={styles.rightArrowIcons} /><span>Contact Us</span></a></li>
                             <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Terms and Conditions</span></a></li>
+                            <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Subscribe to our newsletter</span></a></li>
 
                         </ul>
                     </div>
@@ -96,7 +97,7 @@ export default function Footer() {
 
 
 
-                    <div className={styles.copyRight}>Powered by Picture Time - Picture TV Copy Right at 2015 Picture TV all rights reserved
+                    <div className={styles.copyRight}>Power by Signature Model Management - Picture TV Copyright at 2024 - Picture TV all rights reserved
                         {/* || <Link style={{ color: "#77a041" }} href="https://emonhossen.xyz">Developed By Md Emon Hossen</Link> */}
                     </div>
                 </div>

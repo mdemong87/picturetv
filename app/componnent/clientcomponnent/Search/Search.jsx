@@ -75,9 +75,10 @@ const SearchWper = () => {
                         {/* selet option div start from here */}
                         <div className='col-span-12 md:col-span-6 lg:col-span-2'>
                             <select className='w-full pl-10 bg-white p-3 rounded-md' name="type">
-                                <option value="Image">Image</option>
-                                <option value="Vedio">Vedio</option>
                                 <option value="Event">Event</option>
+                                <option value="Image">Photo</option>
+                                <option value="Vedio">Video</option>
+
                             </select>
                             <BiSolidSelectMultiple className='text-gray-600 text-xl absolute -translate-y-8 translate-x-3' />
                         </div>

@@ -63,7 +63,7 @@ const ContactUs = () => {
                             </div>
                             <div className="flex gap-3 items-center mt-2">
                                 <input className="w-[20px] h-[20px]" type="checkbox" />
-                                <span className="text-xl pcl2">Subscribe for the Newsletter</span>
+                                <span className="text-xl pcl2">Subscribe to our newsletter</span>
                             </div>
                         </div>
 
