@@ -20,14 +20,13 @@ const Dashboard = async () => {
 
     return (
         <main className="h-screen">
-            <div>
-                <h1>This is check componnent</h1>
+            <div className="flex flex-col justify-center items-center w-screen h-screen">
+                <h1 className="text-3xl font-bold text-red-700">This is the Dashboard page for Client,Photographer,Vidiographer</h1>
+                <h1 className="text-3xl font-bold text-red-500 pt-3">Data Will be added very soon</h1>
 
-                fsdfasd
+                <h1 className="text-2xl pt-6 font-bold text-gray-700">Click User Icon in the Header for Logout</h1>
 
             </div>
-            <button className="bg-red-800 text-white p-2">hello</button>
-
             <ToastContainer />
         </main>
     )
