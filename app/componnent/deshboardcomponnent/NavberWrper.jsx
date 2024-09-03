@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
-import Navber from "./Navbar";
+import Navber from "./Navber";
 
 const NavberWrper = () => {
 

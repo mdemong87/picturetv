@@ -1,18 +1,20 @@
 'use client'
 
+import { FaUser } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-import styles from "../../../../styles/clientconponnent/Header/UserToggle.module.css";
+import styles from "../../../styles/clientconponnent/Header/UserToggle.module.css";
+import Logout from "./Logout";
 
 function UserToggle({ toggleController }) {
 
 
     return (
         <div className={`fixed overflow-hidden top-0 left-0 w-screen h-screen z-10 ${styles.userToogleWrper}`}>
-            <div className="h-screen pbg3">
+            <div className="h-screen pbg3 flex flex-col justify-between">
                 <div className="flex justify-between ">
                     <div className="flex gap-3 items-center">
-                        <div className="w-[3rem] h-[3rem] md:w-[3.30rem] md:h-[3.30rem] rounded-full">
-                            <img className="rounded-full" src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="User-Photo" />
+                        <div className="w-[3rem] h-[3rem] md:w-[3.30rem] pbg rounded-full flex items-center justify-center md:h-[3.30rem] rounded-full">
+                            <FaUser className="text-white text-2xl" />
                         </div>
                         <div>
                             <h3 className="text-lg md:text-xl font-medium text-gray-600">Md Emon Hossen</h3>
@@ -25,8 +27,11 @@ function UserToggle({ toggleController }) {
                 </div>
 
                 <div className="mt-8 md:mt-14">
-                    fsadfasdfasdf
-                    asdfasdf
+
+
+                    <div className="w-full h-full">
+                        <Logout />
+                    </div>
                 </div>
             </div>
         </div>

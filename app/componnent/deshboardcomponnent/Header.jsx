@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../../public/assets/logo.png";
-import styles from "../../../../styles/clientconponnent/Header/Header.module.css";
-import Container from "../Container";
+import logo from "../../../public/assets/logo.png";
+import styles from "../../../styles/clientconponnent/Header/Header.module.css";
+import Container from "../../componnent/clientcomponnent/Container";
 import NavberWrper from "./NavberWrper";
 
 

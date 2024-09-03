@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import { FaUser } from "react-icons/fa";
 import UserToggle from "./UserToggle";
 
 function HeaderUser() {
@@ -12,8 +13,8 @@ function HeaderUser() {
 
     return (
         <div>
-            <div onClick={() => setshowToggle(true)} className="w-[3rem] h-[3rem] md:w-[3.08rem] md:h-[3.08rem] rounded-full">
-                <img className="rounded-full" src="https://static.vecteezy.com/system/resources/thumbnails/002/002/403/small/man-with-beard-avatar-character-isolated-icon-free-vector.jpg" alt="User-Photo" />
+            <div onClick={() => setshowToggle(true)} className="w-[3rem] h-[3rem] md:w-[3.08rem] md:h-[3.08rem] rounded-full bg-white flex items-center justify-center">
+                <FaUser className="pcl text-3xl" />
             </div>
             {
                 showToggle && <UserToggle toggleController={setshowToggle} />

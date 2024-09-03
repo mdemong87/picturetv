@@ -1,7 +1,34 @@
-const Dashboard = () => {
+import { auth } from "@/lib/auth";
+import { redirect } from "next/navigation";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
+const Dashboard = async () => {
+
+
+
+
+    const session = await auth();
+
+    console.log(session?.user);
+
+    if (!session?.user) {
+        redirect('/auth/login');
+    }
+
+
     return (
-        <main>
-            This is dashborad page.............
+        <main className="h-screen">
+            <div>
+                <h1>This is check componnent</h1>
+
+                fsdfasd
+
+            </div>
+            <button className="bg-red-800 text-white p-2">hello</button>
+
+            <ToastContainer />
         </main>
     )
 }
