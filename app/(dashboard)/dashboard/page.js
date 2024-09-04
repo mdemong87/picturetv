@@ -1,5 +1,4 @@
-import { auth } from "@/lib/auth";
-import { redirect } from "next/navigation";
+import gertusersession from "@/lib/helper/getusersesssion";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -8,14 +7,7 @@ const Dashboard = async () => {
 
 
 
-
-    const session = await auth();
-
-    console.log(session?.user);
-
-    if (!session?.user) {
-        redirect('/auth/login');
-    }
+    const session = gertusersession();
 
 
     return (

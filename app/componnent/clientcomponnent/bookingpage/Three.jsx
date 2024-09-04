@@ -221,11 +221,13 @@ const Three = () => {
                 <div className="mt-6">
                     <div className="flex gap-3 items-center">
                         <input className="w-[20px] h-[20px]" type="checkbox" />
-                        <span className="text-xl pcl2">Terms and Conditions</span>
+                        <span className="text-xl pcl2">
+                            I Agree to the Terms and Conditions
+                        </span>
                     </div>
                     <div className="flex gap-3 items-center mt-2">
                         <input className="w-[20px] h-[20px]" type="checkbox" />
-                        <span className="text-xl pcl2">Newsletter</span>
+                        <span className="text-xl pcl2">Subscribe to our newsletter</span>
                     </div>
                 </div>
 

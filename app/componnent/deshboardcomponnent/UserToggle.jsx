@@ -21,7 +21,7 @@ function UserToggle({ toggleController }) {
                             <p className="text-gray-400 font-normal text-sm md:text-md">@mdemong87</p>
                         </div>
                     </div>
-                    <div onClick={() => toggleController(false)} className={'w-[39px] h-[39px] md:w-[43px] md:h-[43px] pbg rounded-lg flex justify-center items-center hover:rotate-180 transition duration-500'}>
+                    <div onClick={() => toggleController(false)} className={'w-[39px] h-[39px] md:w-[43px] md:h-[43px] pbg rounded-lg flex justify-center cursor-pointer items-center hover:rotate-180 transition duration-500'}>
                         <RxCross2 className="text-gray-50 text-2xl" />
                     </div>
                 </div>

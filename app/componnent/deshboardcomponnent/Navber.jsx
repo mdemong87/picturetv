@@ -12,8 +12,8 @@ const Navber = ({ setshownav }) => {
 
     return (
         <nav className='flex flex-col md:flex-row items-center gap-5'>
-            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/"}>Dashboard</Link>
-            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/portfolio"}>My Events</Link>
+            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/dashboard"}>Dashboard</Link>
+            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/dashboard/addevent"}>Add Event</Link>
             <HeaderUser />
         </nav>
     )
