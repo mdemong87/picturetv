@@ -1,4 +1,7 @@
+import Container from "@/app/componnent/clientcomponnent/Container";
+import EventCard from "@/app/componnent/deshboardcomponnent/EventCard";
 import gertusersession from "@/lib/helper/getusersesssion";
+import Link from "next/link";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -6,17 +9,66 @@ import 'react-toastify/dist/ReactToastify.css';
 const Dashboard = async () => {
 
 
+    //get sission data
+    const session = await gertusersession();
 
-    const session = gertusersession();
+
+
+    //fetch data event data from the api/dashboard
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dashboard`, {
+        method: "GET",
+        headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${session?.user?.email}`
+        }
+    });
+    const data = await res.json();
+
+    console.log(data);
+
+
+
 
 
     return (
-        <main className="h-screen">
-            <div className="flex flex-col justify-center items-center w-screen h-screen">
-                <h1 className="text-3xl font-bold text-red-700">This is the Dashboard page for Client,Photographer,Vidiographer</h1>
-                <h1 className="text-3xl font-bold text-red-500 pt-3">Data Will be added very soon</h1>
+        <main className="h-fit">
+            <div className="flex flex-col justify-center items-center w-screen h-fit py-32">
 
-                <h1 className="text-2xl pt-6 font-bold text-gray-700">Click User Icon in the Header for Logout</h1>
+                <Container>
+
+
+                    {
+                        data.data.length > 0 ? (
+
+                            <div className="grid grid-cols-12 items-center gap-5">
+                                {
+                                    data?.data?.map((singleCard, index) => {
+                                        return (
+                                            <EventCard key={index} data={singleCard} />
+                                        )
+                                    })
+                                }
+                            </div>
+
+                        ) : (
+
+
+                            <div className="w-full flex  justify-center items-center">
+                                <div className="mt-20 text-center">
+                                    <h1 className="text-4xl font-semibold">Welcome to the Dashboard</h1>
+                                    <h2 className="py-4 text-2xl font-semibold">Make your Frist Event</h2>
+                                    <Link className="pbg2 text-white p-2 rounded-md font-semibold" href={'/dashboard/addevent'}>Go To Add Event</Link>
+                                </div>
+                            </div>
+                        )
+                    }
+
+
+
+
+
+
+                </Container>
 
             </div>
             <ToastContainer />

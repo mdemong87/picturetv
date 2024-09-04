@@ -1,5 +1,5 @@
 import getUserByEmail from "@/lib/helper/getUserByEmail";
-import UIDGanarator from "@/lib/helper/uIdGanarator";
+import { UIDGanaratorForUser } from "@/lib/helper/uIdGanarator";
 import UserModel from "@/lib/model/userModel";
 import ConnectDB from "../../../../lib/connectionDB";
 
@@ -21,7 +21,7 @@ export const POST = async (req) => {
 
         //user object data formet
         const userObject = {
-            uid: await UIDGanarator(),
+            uid: await UIDGanaratorForUser(),
             fullname,
             email,
             password,
