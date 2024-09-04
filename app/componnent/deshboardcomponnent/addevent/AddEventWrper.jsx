@@ -126,10 +126,10 @@ function AddEventWper({ session }) {
                 <div className="flex items-centener gap-5">
                     {
                         file.length > 0 && (
-                            file?.map((singleFile) => {
+                            file?.map((singleFile, index) => {
                                 return (
 
-                                    <Image src={singleFile} className="w-[160px] border-2 border-green-300 rounded-md h-[160px] object-cover" width={1000} height={1000} alt="Image" />
+                                    <Image key={index} src={singleFile} className="w-[160px] border-2 border-green-300 rounded-md h-[160px] object-cover" width={1000} height={1000} alt="Image" />
 
                                 )
                             })
