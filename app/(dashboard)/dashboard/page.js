@@ -6,14 +6,8 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Dashboard = async () => {
 
-
-    //get sission data
-    const session = await gertusersession();
-
-
-
+const getEvent = async (session) => {
     //fetch data event data from the api/dashboard
     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dashboard`, {
         method: "GET",
@@ -23,12 +17,18 @@ const Dashboard = async () => {
         }
     });
     const data = await res.json();
-
-    console.log(data);
-
-
+    return data;
+}
 
 
+
+
+const Dashboard = async () => {
+
+    //get sission data
+    const session = await gertusersession();
+
+    const data = await getEvent(session);
 
     return (
         <main className="h-fit">
