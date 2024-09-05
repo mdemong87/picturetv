@@ -1,18 +1,16 @@
 import gertusersession from "@/lib/helper/getusersesssion";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/assets/logo.png";
-import styles from "../../../styles/clientconponnent/Header/Header.module.css";
-import Container from "../../componnent/clientcomponnent/Container";
-import NavberWrper from "./NavberWrper";
+import logo from "../../../../public/assets/logo.png";
+import styles from "../../../../styles/clientconponnent/Header/Header.module.css";
+import Container from "../../../componnent/clientcomponnent/Container";
+import NavberWrper from "./Navberwrper";
 
 
 const Header = async () => {
 
-
     //get sission data
     const session = await gertusersession();
-
 
 
     return (
@@ -25,7 +23,7 @@ const Header = async () => {
                         </Link>
                     </div>
                     <div className={styles.right}>
-                        <NavberWrper session={session?.user} />
+                        <NavberWrper session={session} />
                     </div>
                 </div>
             </Container>
@@ -34,4 +32,4 @@ const Header = async () => {
     )
 }
 
-export default Header
+export default Header;

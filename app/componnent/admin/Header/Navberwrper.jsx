@@ -11,8 +11,6 @@ const NavberWrper = ({ session }) => {
     const [shownav, setshownav] = useState(false);
 
 
-
-
     return (
         <div className="">
             <div className="hidden md:block">

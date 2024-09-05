@@ -1,6 +1,6 @@
 const Admin = () => {
     return (
-        <main>
+        <main className="pt-28 pb-6">
             This is admin page.............
         </main>
     )
