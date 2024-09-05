@@ -130,10 +130,10 @@ const Ragester = () => {
 
                         <select onChange={(e) => { setrole(e.target.value) }} className='booking-input-field p-3 rounded-md'>
                             <option value="Role">Select Category</option>
-                            <option value="Client">Register</option>
+                            <option value="Register">Register</option>
                             <option value="Client">Client</option>
                             <option value="Photographer">Photographer</option>
-                            <option value="Photographer">Videographer</option>
+                            <option value="Videographer">Videographer</option>
                         </select>
 
 

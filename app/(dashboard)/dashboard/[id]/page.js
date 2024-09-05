@@ -53,6 +53,16 @@ const SingleDashBoardEvent = async ({ params }) => {
                                     <span className="text-2xl text-gray-600">{data?.data?.dis}</span>
                                 </h2>
 
+                                <h2 className="flex gap-2 items-center">
+                                    <b className="text-2xl text-gray-700">Event Status:</b>
+                                    <span className="text-2xl text-gray-600">{data?.data?.isApproved ? "Approved" : "Disapproved"}</span>
+                                </h2>
+
+                                <h2 className="flex gap-2 items-center">
+                                    <b className="text-2xl text-gray-700">Total <span>{data?.data?.type}</span>:</b>
+                                    <span className="text-2xl text-gray-600">{data?.data?.file?.length}</span>
+                                </h2>
+
                             </div>
 
                         </div>

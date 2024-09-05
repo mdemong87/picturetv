@@ -1,4 +1,5 @@
 import { signIn } from "@/lib/auth";
+import getUserByEmail from "@/lib/helper/getUserByEmail";
 
 
 export const POST = async (req) => {
@@ -18,11 +19,14 @@ export const POST = async (req) => {
         });
 
 
+        //get the current user
+        const user = await getUserByEmail(email);
+
         //response back to the frontend
         return Response.json({
             message: "Login Successfull",
             status: 200,
-            data: response,
+            data: user,
             success: true
         })
 

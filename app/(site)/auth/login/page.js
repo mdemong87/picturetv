@@ -56,7 +56,11 @@ const Login = () => {
             if (res.success) {
                 toast.success(res.message);
                 setTimeout(() => {
-                    router.push("/dashboard");
+                    if (res?.data?.role === "Admin") {
+                        router.push('admin/dashboard');
+                    } else {
+                        router.push("/dashboard");
+                    }
                 }, 500);
             } else {
                 toast.error(res.message);
