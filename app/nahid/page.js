@@ -1,20 +1,18 @@
 'use client'
 import Loading from "@/app/componnent/clientcomponnent/Loading";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
-const Login = () => {
+const AdminLogin = () => {
 
 
     const router = useRouter();
 
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
-    const [role, setrole] = useState('');
     const [isloading, setisloading] = useState(false);
 
 
@@ -41,7 +39,7 @@ const Login = () => {
                 body: JSON.stringify({
                     email,
                     password,
-                    role
+                    role: "admin"
                 })
 
             })
@@ -51,14 +49,13 @@ const Login = () => {
             setisloading(false);
             setemail('');
             setpassword('');
-            setrole('');
 
             if (res.success) {
                 toast.success(res.message);
                 setTimeout(() => {
 
                     //redirect to dashboard page
-                    router.push("/dashboard");
+                    router.push("/admin");
                 }, 500);
             } else {
                 toast.error(res.message);
@@ -70,19 +67,16 @@ const Login = () => {
 
 
 
-
-
-
     }
 
 
 
     return (
-        <main className="h-fit pt-36 pb-14 w-screen">
+        <main className="h-screen w-screen">
             {isloading && <Loading />}
-            <div className="flex justify-center items-cetner w-full h-full">
-                <div className="border border-gray-300 p-8 rounded-md h-fit w-fit">
-                    <h2 className="text-2xl text-center font-bold text-shadow-lg text-gray-800">Login</h2>
+            <div className="w-screen h-screen flex justify-center items-center">
+                <div className="border border-2 border-gray-300 p-8 rounded-md h-fit w-fit">
+                    <h2 className="text-2xl text-center font-bold text-shadow-lg text-gray-800">Admin Login</h2>
 
                     <div
                         className="mt-6 flex flex-col gap-5">
@@ -97,9 +91,6 @@ const Login = () => {
                         />
 
 
-
-
-
                         <input onChange={(e) => { setpassword(e.target.value) }}
                             type="password"
                             name="password"
@@ -109,29 +100,14 @@ const Login = () => {
                         />
 
 
-
-                        <select onChange={(e) => setrole(e.target.value)} className='booking-input-field p-3 rounded-md'>
-                            <option value="Role">Select Category</option>
-                            <option value="Register">Register</option>
-                            <option value="Client">Client</option>
-                            <option value="Photographer">Photographer</option>
-                            <option value="Vediographer">Videographer</option>
-                        </select>
-
-
-
                         <button onClick={() => { handlelogin() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
-                            Login
+                            Admin Login
                         </button>
 
-                        <div className="text-center">
-                            <p>
-                                Don&#39;t have an Account?
-                                <Link className="pcl2 pl-2 underline" href={'/auth/ragester'}>Register</Link>
-                            </p>
-                            <p>OR</p>
+                        {/* <div className="text-center">
+                        
                             <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link>
-                        </div>
+                        </div> */}
 
                     </div>
                 </div>
@@ -141,4 +117,4 @@ const Login = () => {
     )
 }
 
-export default Login;
+export default AdminLogin;

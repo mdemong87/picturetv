@@ -7,8 +7,6 @@ import Logout from "./Logout";
 
 function UserToggle({ session, toggleController }) {
 
-    console.log('this is user togle');
-    console.log(session);
 
     return (
         <div className={`fixed overflow-hidden top-0 left-0 w-screen h-screen z-10 ${styles.userToogleWrper}`}>
