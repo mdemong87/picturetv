@@ -50,6 +50,10 @@ const SingleAllEventPage = async ({ params }) => {
                             <span className="text-2xl text-gray-600">{data?.data?.fullname}</span>
                         </h2>
                         <h2 className="flex gap-2 items-center">
+                            <b className="text-2xl text-gray-700">Creator Email:</b>
+                            <span className="text-2xl text-gray-600">{data?.data?.email}</span>
+                        </h2>
+                        <h2 className="flex gap-2 items-center">
                             <b className="text-2xl text-gray-700">Event Title:</b>
                             <span className="text-2xl text-gray-600">{data?.data?.title}</span>
                         </h2>

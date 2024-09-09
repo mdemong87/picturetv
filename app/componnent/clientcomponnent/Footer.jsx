@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiFillInstagram } from "react-icons/ai";
 import { BsArrowRight } from "react-icons/bs";
-import { FaFacebook, FaPinterest, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaLinkedin, FaPinterest, FaYoutube } from "react-icons/fa";
 import { FaPatreon, FaSquareXTwitter } from "react-icons/fa6";
 import logo from '../../../public/assets/logo.png';
 import styles from "../../../styles/clientconponnent/Footer/Footer.module.css";
@@ -16,7 +16,7 @@ export default function Footer() {
                     <div className={styles.singleWrp}>
                         <Image className={`w-full h-full ${styles.foooterLogo}`} src={logo} width={1000} height={1000} alt="footer-logo" />
                         <p className="text-lg text-gray-300 text-center md:text-left translate-y-4 md:-translate-y-4 pl-2">
-                            Your Entertainment  & Educational Network
+                            Your Media Entertainment & Educational Network
                         </p>
                     </div>
                     <div className={styles.singleWrp}>
@@ -86,8 +86,12 @@ export default function Footer() {
                             <Link href={'https://x.com/malaspeaksunday'} target="blank" className={styles.IWrp}>
                                 <FaSquareXTwitter className={`${styles.contaceIcons} text-[#00ACEE]`} />
                             </Link>
-                            <Link href={'https://pin.it/56Ht7FrEW'} target="blank" className={styles.IWrp}>
+                            <Link href={'https://www.patreon.com/MalaspeakSunday?utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink'} target="blank" className={styles.IWrp}>
                                 <FaPatreon className={`${styles.contaceIcons} text-[#f96854]`} />
+                            </Link>
+
+                            <Link href={'https://www.linkedin.com/in/mala-seza-b674b960/'} target="blank" className={styles.IWrp}>
+                                <FaLinkedin className={`${styles.contaceIcons} text-[#00ACEE]`} />
                             </Link>
 
                         </div>
