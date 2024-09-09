@@ -26,10 +26,12 @@ h6 {
 }
 
 
+
 /* scrollber */
 ::-webkit-scrollbar {
   display: none;
 }
+
 
 
 

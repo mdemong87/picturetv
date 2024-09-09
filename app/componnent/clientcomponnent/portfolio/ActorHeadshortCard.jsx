@@ -11,6 +11,25 @@ const ActorHeadShortCard = ({ data }) => {
 
 
     const [showimageSlide, setshowimageSlide] = useState(false);
+    let [currentIndex, setcurrentIndex] = useState(0);
+
+    const allImage = data?.file;
+
+    //for right arror function
+    function CurrentIndexIncrise() {
+
+        if (currentIndex < allImage.length - 1) {
+            setcurrentIndex(currentIndex + 1);
+        }
+    }
+
+    //for left arror function
+    function CurrecntIndexDecrrese() {
+        if (currentIndex > 0) {
+            setcurrentIndex(currentIndex - 1);
+        }
+    }
+
 
 
 
@@ -49,19 +68,19 @@ const ActorHeadShortCard = ({ data }) => {
                         </div>
                     </div>
                     <div className="flex justify-center items-center">
-                        <b className="text-white text-center w-full">{data?.file?.length}</b>
+                        <b className="text-white text-center w-full">{currentIndex + 1}/{data?.file?.length}</b>
                     </div>
                     <div className="flex justify-between gap-3 md:gap-0 items-center h-full w-full">
                         <div>
-                            <div className="w-[60px] h-[60px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
+                            <div onClick={() => { CurrecntIndexDecrrese() }} className="w-[60px] h-[60px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
                                 <FaAngleLeft className="text-4xl text-white" />
                             </div>
                         </div>
                         <div>
-                            <Image src={data?.file[0]?.secure_url} width={1000} height={1000} alt="Slide-Image" />
+                            <Image src={data?.file[currentIndex]?.secure_url} width={1000} height={1000} alt="Slide-Image" />
                         </div>
                         <div>
-                            <div className="w-[60px] h-[60px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
+                            <div onClick={() => { CurrentIndexIncrise() }} className="w-[60px] h-[60px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
                                 <FaAngleRight className="text-4xl text-white" />
                             </div>
                         </div>
