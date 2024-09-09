@@ -13,9 +13,6 @@ const ActorHeadShortCard = ({ data }) => {
     const [showimageSlide, setshowimageSlide] = useState(false);
 
 
-    console.log(showimageSlide);
-
-
 
     return (
 

@@ -3,7 +3,7 @@ import HomeSlider from "../componnent/clientcomponnent/HomeSlider";
 import Search from "../componnent/clientcomponnent/Search/Search";
 
 
-const getEvent = async (session) => {
+const getEvent = async () => {
   //fetch data event data from the api/dashboard
   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin`);
   const data = await res.json();
@@ -23,10 +23,7 @@ const Home = async () => {
         <HomeSlider />
         <Search />
       </div>
-
-
       <div className="py-[60px]">
-        <h1 className="text-center text-4xl text-red-500">This website is Under Developing. We Will Fixed All Issues Very soon.</h1>
         <HomePageCardWrper data={data} />
       </div>
     </main>
