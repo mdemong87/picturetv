@@ -1,20 +1,20 @@
-import HomePageCardWrper from "../componnent/clientcomponnent/HomepageCardWrper";
+// import HomePageCardWrper from "../componnent/clientcomponnent/HomepageCardWrper";
 import HomeSlider from "../componnent/clientcomponnent/HomeSlider";
 import Search from "../componnent/clientcomponnent/Search/Search";
 
 
-const getEvent = async () => {
-  //fetch data event data from the api/dashboard
-  const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin`);
-  const data = await res.json();
-  return data;
-}
+// const getEvent = async () => {
+//   //fetch data event data from the api/dashboard
+//   const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin`);
+//   const data = await res.json();
+//   return data;
+// }
 
 
 const Home = async () => {
 
 
-  const data = await getEvent();
+  // const data = await getEvent();
 
 
   return (
@@ -24,7 +24,7 @@ const Home = async () => {
         <Search />
       </div>
       <div className="py-[60px]">
-        <HomePageCardWrper data={data} />
+        {/* <HomePageCardWrper data={data} /> */}
       </div>
     </main>
   )
