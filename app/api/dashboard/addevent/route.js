@@ -1,7 +1,13 @@
-import { issingleormultipulUpload } from "@/lib/cloudinaryConfig";
 import getUserByEmail from "@/lib/helper/getUserByEmail";
 import { UIDGanaratorForEvent } from "@/lib/helper/uIdGanarator";
 import EventModel from "@/lib/model/eventModel";
+
+
+export const config = {
+    runtime: 'edge',
+};
+
+
 
 export const POST = async (req) => {
 
@@ -20,6 +26,11 @@ export const POST = async (req) => {
         const eventUniqueId = await UIDGanaratorForEvent();
 
 
+
+        //upload image or vedio in the cloud
+        const cloudFile = await issingleormultipulUpload(file, type, type);
+
+
         //get ready for the crete database recoard
         const objectData = {
             eventid: eventUniqueId,
@@ -30,9 +41,11 @@ export const POST = async (req) => {
             title: title,
             type: type,
             dis: dis,
-            file: await issingleormultipulUpload(file, type)
+            file: cloudFile
         }
 
+
+        console.log(objectData);
 
 
         //create Event in database

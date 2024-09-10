@@ -9,6 +9,12 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from "../../clientcomponnent/Loading";
 
+
+
+
+
+
+
 function AddEventWper({ session }) {
 
 
@@ -28,6 +34,8 @@ function AddEventWper({ session }) {
 
         setisloading(true);
 
+
+
         const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dashboard/addevent`, {
             method: 'POST',
             headers: {
@@ -38,7 +46,7 @@ function AddEventWper({ session }) {
                 title,
                 type,
                 dis,
-                file
+                file: file
             })
 
         })
@@ -58,6 +66,7 @@ function AddEventWper({ session }) {
         } else {
             toast.error(res.message);
         }
+
 
     }
 

@@ -1,7 +1,7 @@
 import { LocalDateConvart } from "@/lib/helper/LocalDateConvart";
 import Image from "next/image";
 import Link from "next/link";
-import { FaCloudDownloadAlt } from "react-icons/fa";
+import { FaImages } from "react-icons/fa";
 
 const EventCard = ({ data }) => {
     return (
@@ -20,13 +20,13 @@ const EventCard = ({ data }) => {
                     <div className="mt-4">
                         <div className="flex gap-3 items-center">
 
-                            <div className="flex gap-1 px-1 py-0 rounded-md items-center pbg3">
-                                <FaCloudDownloadAlt className="text-xl text-gray-500" />
-                                <span className="text-gray-500 font-semibold">64</span>
+                            <div className="flex gap-3 px-3 py-1 rounded-md items-center pbg3">
+                                <FaImages className="text-xl text-gray-500" />
+                                <span className="text-gray-500 font-semibold">{data?.file?.length}</span>
                             </div>
 
                             <div className={`flex gap-1 px-1 py-0 rounded-md items-center ${data?.isApproved ? "bg-green-200" : "bg-red-200"}`}>
-                                <span className="text-gray-600 font-semibold">
+                                <span className="text-gray-600 px-3 py-1 font-semibold">
                                     {
                                         data?.isApproved ? "Approved" : "Disapproved"
                                     }
