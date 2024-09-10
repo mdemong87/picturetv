@@ -1,6 +1,6 @@
 {
     "functions": {
-        "api/dashboard/addevent": {
+        "/api/dashboard/addevent": {
             "maxDuration": 60
         }
     }
