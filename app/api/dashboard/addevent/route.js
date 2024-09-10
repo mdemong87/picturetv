@@ -3,10 +3,7 @@ import { UIDGanaratorForEvent } from "@/lib/helper/uIdGanarator";
 import EventModel from "@/lib/model/eventModel";
 
 
-export const config = {
-    runtime: 'edge',
-};
-
+export const runtime = "edge"
 
 
 export const POST = async (req) => {
