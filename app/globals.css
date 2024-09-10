@@ -82,6 +82,18 @@ h6 {
     overflow: hidden;
   }
 
+  .opacitylogo {
+    opacity: .4;
+  }
+
+
+  .bannerSlideImage {
+    height: 80vh !important;
+    overflow: hidden !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+
   .cardImageForHoverEffect {
     transition: all 1s;
   }

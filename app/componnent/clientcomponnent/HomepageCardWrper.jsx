@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Container from "./Container";
 import ImageCard from "./imageCard";
 
@@ -16,7 +15,7 @@ const HomePageCardWrper = ({ data }) => {
 
 
                     {
-                        data?.data?.map((singleCard, index) => {
+                        data?.map((singleCard, index) => {
                             return (
                                 <ImageCard key={index} data={singleCard} />
 
@@ -25,9 +24,9 @@ const HomePageCardWrper = ({ data }) => {
                     }
 
                 </div>
-                <div className="mt-10 flex justify-center items-center">
+                {/* <div className="mt-10 flex justify-center items-center">
                     <Link href={'/searchresult'} className="w-fit pbg text-white py-3 px-5 rounded-md cursor-pointer">View All</Link>
-                </div>
+                </div> */}
             </Container>
         </div>
     )

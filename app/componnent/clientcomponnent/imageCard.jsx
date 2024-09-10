@@ -6,12 +6,15 @@ import { FaImages } from "react-icons/fa";
 const ImageCard = ({ data }) => {
 
 
+    console.log(data);
+
+
 
     return (
         <Link href={`/${data?.eventid}`} className="border shadow-xl col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3 h-fit rounded-md cursor-pointer cardHover">
             <div className="w-full">
                 <div className="w-full rounded-t-md cardimagecomponnentImageWrper">
-                    <Image src={data?.file[0]?.secure_url} alt="image" width={1000} height={1000} className="rounded-t-md h-[180px] object-cover cardImageForHoverEffect" />
+                    <Image src={data?.file[0]} alt="image" width={1000} height={1000} className="rounded-t-md h-[180px] object-cover cardImageForHoverEffect" />
                 </div>
                 <div className="p-3 bg-white rounded-b-md">
                     <p className="text-gray-400 text-md">{LocalDateConvart(data)}</p>

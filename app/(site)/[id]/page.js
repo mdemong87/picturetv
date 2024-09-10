@@ -3,11 +3,11 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import ImageOrVideoBtn from "@/app/componnent/clientcomponnent/ImageOrVideoBtn";
 import Image from "next/image";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
-import logo from "../../../public/assets/logo-2.png";
-import ImageCard from "../../componnent\/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
-
+import eventdata from "../../../data/EventData";
+import logo from '../../../public/assets/logo-2.png';
+import ImageCard from "../../componnent/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
 
 
 const SingleAllEventPage = ({ params }) => {
@@ -20,27 +20,33 @@ const SingleAllEventPage = ({ params }) => {
     const [isImage, setisImage] = useState(true);
 
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        const GetSingleEvent = async (id) => {
-            try {
+    //     const GetSingleEvent = async (id) => {
+    //         try {
 
-                //fetch data event data from the api/dashboard
-                const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent/${id}`);
-                const response = await res.json();
+    //             //fetch data event data from the api/dashboard
+    //             const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent/${id}`);
+    //             const response = await res.json();
 
-                //update the data variable
-                setdata(response);
+    //             //update the data variable
+    //             setdata(response);
 
-            } catch (error) {
-                console.log("Fetching Single Event Failed");
-            }
-        }
+    //         } catch (error) {
+    //             console.log("Fetching Single Event Failed");
+    //         }
+    //     }
 
 
-        GetSingleEvent(id);
+    //     GetSingleEvent(id);
 
-    }, [id])
+    // }, [id])
+
+    const singledata = eventdata?.filter((items) => {
+
+        return items.eventid == id;
+    })
+
 
 
 
@@ -63,7 +69,7 @@ const SingleAllEventPage = ({ params }) => {
                                 {
 
 
-                                    data?.data?.file?.map((singleData, index) => {
+                                    singledata[0]?.file?.map((singleData, index) => {
                                         return (
                                             <ImageCard key={index} setcurrentItems={setcurrentItems} data={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} />
                                         )
@@ -128,8 +134,11 @@ const SingleAllEventPage = ({ params }) => {
                                             <p className="text-gray-300">© PictureTV.com 2024</p>
                                         </div>
                                     </div>
-                                    <div className="w-full sinpleImageGridCenter">
-                                        <Image src={currentItems?.secure_url} className="w-full object-cover h-[520px]" width={1000} height={1000} alt="Slide-Image" />
+                                    <div className="w-full sinpleImageGridCenter relative">
+                                        <Image src={currentItems} className="w-full object-contain h-[520px]" width={1000} height={1000} alt="Slide-Image" />
+                                        <div className="absolute bottom-0 right-[30%] opacitylogo">
+                                            <Image className="w-[120px]" src={logo} width={1000} height={1000} alt="logo" />
+                                        </div>
                                     </div>
                                     <div className="w-full sinpleImageGridRight">
                                         <div>
@@ -148,9 +157,7 @@ const SingleAllEventPage = ({ params }) => {
                                             <h2 className="my-5 text-white text-3xl font-bold">$85.0</h2>
                                             <button className="rounded-md p-3 text-2xl pbg2 text-white w-full">Download</button>
                                         </div>
-                                        <div className="flex justify-center items-center">
-                                            <Image className="w-[170px]" src={logo} width={1000} height={1000} alt="logo" />
-                                        </div>
+
                                     </div>
                                 </div>
                             </Container>
