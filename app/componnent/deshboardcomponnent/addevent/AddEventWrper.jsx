@@ -62,8 +62,6 @@ function AddEventWper({ session }) {
     }
 
 
-
-
     return (
         <div className="pt-24">
             {isloading && <Loading />}
@@ -115,6 +113,7 @@ function AddEventWper({ session }) {
                     <input
                         onChange={(e) => { ConvartMediaToBase64(e, file, setfile) }}
                         type="file"
+                        multiple={true}
                         name="EventImageofVideo"
                         id="EventImageofVideo"
                         className='booking-input-field border border-gray-400  p-3 rounded-md'
@@ -123,7 +122,7 @@ function AddEventWper({ session }) {
 
                 </div>
 
-                <div className="flex items-centener gap-5">
+                <div className="flex items-centener flex-wrap gap-5">
                     {
                         file.length > 0 && (
                             file?.map((singleFile, index) => {

@@ -20,8 +20,6 @@ export const POST = async (req) => {
         const eventUniqueId = await UIDGanaratorForEvent();
 
 
-        console.log(eventUniqueId);
-
         //get ready for the crete database recoard
         const objectData = {
             eventid: eventUniqueId,
