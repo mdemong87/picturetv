@@ -1,6 +1,6 @@
 {
     "functions": {
-        "/api/dashboard/addevent": {
+        "api/dashboard/addevent/route.js": {
             "maxDuration": 60
         }
     }
