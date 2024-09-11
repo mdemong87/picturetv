@@ -1,5 +1,4 @@
-import ConnectDB from "@/lib/connectionDB";
-import EventModel from "../../../lib/model/eventModel";
+import { allresourse } from "@/lib/cloudinaryConfig";
 
 
 export const GET = async () => {
@@ -7,19 +6,18 @@ export const GET = async () => {
     try {
 
 
-        //database connection
-        ConnectDB();
+        const res = await allresourse();
 
-        // geting one user 
-        const found = await EventModel.find({});
+
+        console.log(res);
 
 
         //response back to the front end
         return Response.json({
-            message: "Fetching Event Successfull",
+            message: "Fetching Image Resouses Successfull",
             status: 200,
             success: true,
-            data: found
+            data: res
         })
 
     } catch (error) {

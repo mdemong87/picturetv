@@ -19,19 +19,6 @@ const ImageCard = ({ setcurrentItems, data, setshowimageSlide }) => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
     )
 }

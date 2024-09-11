@@ -1,5 +1,6 @@
 'use client'
 
+import BackBtn from "@/app/componnent/BackBtn";
 import Container from "@/app/componnent/clientcomponnent/Container";
 import ImageOrVideoBtn from "@/app/componnent/clientcomponnent/ImageOrVideoBtn";
 import Image from "next/image";
@@ -57,7 +58,8 @@ const SingleAllEventPage = ({ params }) => {
 
 
 
-                    <div className="flex items-center justify-center w-full">
+                    <div className="flex items-center justify-between w-full">
+                        <BackBtn link={'/'} />
                         <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
                     </div>
 
@@ -136,7 +138,7 @@ const SingleAllEventPage = ({ params }) => {
                                     </div>
                                     <div className="w-full sinpleImageGridCenter relative">
                                         <Image src={currentItems} className="w-full object-contain h-[520px]" width={1000} height={1000} alt="Slide-Image" />
-                                        <div className="absolute bottom-0 right-[30%] opacitylogo">
+                                        <div className="absolute bg-red-500 bottom-0 right-[30%] opacitylogo">
                                             <Image className="w-[120px]" src={logo} width={1000} height={1000} alt="logo" />
                                         </div>
                                     </div>
@@ -154,7 +156,7 @@ const SingleAllEventPage = ({ params }) => {
                                                 <option value="Web And Print (Single Use)">Web And Print (Single Use)</option>
                                             </select>
 
-                                            <h2 className="my-5 text-white text-3xl font-bold">$85.0</h2>
+                                            <h2 className="my-5 text-white text-3xl font-bold">$25.0</h2>
                                             <button className="rounded-md p-3 text-2xl pbg2 text-white w-full">Download</button>
                                         </div>
 
