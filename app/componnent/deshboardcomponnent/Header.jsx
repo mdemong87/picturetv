@@ -1,6 +1,7 @@
 import gertusersession from "@/lib/helper/getusersesssion";
 import Image from "next/image";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 import logo from "../../../public/assets/logo.png";
 import styles from "../../../styles/clientconponnent/Header/Header.module.css";
 import Container from "../../componnent/clientcomponnent/Container";
@@ -12,6 +13,21 @@ const Header = async () => {
 
     //get sission data
     const session = await gertusersession();
+    const userSession = JSON.parse(session);
+
+    console.log(userSession);
+
+    if (userSession) {
+
+        console.log(userSession.role);
+
+        if (!userSession.role) {
+            redirect('/auth/login');
+        }
+    } else {
+        redirect('/auth/login');
+    }
+
 
 
 
@@ -25,7 +41,7 @@ const Header = async () => {
                         </Link>
                     </div>
                     <div className={styles.right}>
-                        <NavberWrper session={session?.user} />
+                        <NavberWrper session={session} />
                     </div>
                 </div>
             </Container>

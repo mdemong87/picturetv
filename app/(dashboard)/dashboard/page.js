@@ -28,6 +28,7 @@ const Dashboard = async () => {
     //get sission data
     const session = await gertusersession();
 
+    //get event data
     const data = await getEvent(session);
 
     return (

@@ -18,10 +18,6 @@ const Login = () => {
     const [isloading, setisloading] = useState(false);
 
 
-
-
-
-
     //handle handlelogin function here
     async function handlelogin() {
 
@@ -130,7 +126,8 @@ const Login = () => {
                                 <Link className="pcl2 pl-2 underline" href={'/auth/ragester'}>Register</Link>
                             </p>
                             <p>OR</p>
-                            <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link>
+                            {/* <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link> */}
+                            <Link href={'/auth/verifieduser'} className="pcl2 underline">Verify User</Link>
                         </div>
 
                     </div>

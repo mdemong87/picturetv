@@ -7,7 +7,7 @@ export const POST = async (req) => {
 
 
     //get sign up data from the frontend
-    const { fullname, email, password, role } = await req.json();
+    const { fullname, email, phone, password, role } = await req.json();
 
 
 
@@ -24,6 +24,7 @@ export const POST = async (req) => {
             uid: await UIDGanaratorForUser(),
             fullname,
             email,
+            phone,
             password,
             role
         }

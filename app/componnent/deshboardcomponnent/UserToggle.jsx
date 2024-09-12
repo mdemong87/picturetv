@@ -8,6 +8,9 @@ import Logout from "./Logout";
 function UserToggle({ session, toggleController }) {
 
 
+
+
+
     return (
         <div className={`fixed overflow-hidden top-0 left-0 w-screen h-screen z-10 ${styles.userToogleWrper}`}>
             <div className="h-screen pbg3 flex flex-col justify-between">
@@ -17,8 +20,11 @@ function UserToggle({ session, toggleController }) {
                             <FaUser className="text-white text-2xl" />
                         </div>
                         <div>
-                            <h3 className="text-lg md:text-xl font-medium text-gray-600">{session?.email}</h3>
-                            {/* <p className="text-gray-400 font-normal text-sm md:text-md">@mdemong87</p> */}
+                            <div className="flex gap-2 items-center">
+                                <h3 className="text-lg md:text-xl font-medium text-gray-600">{session?.fullname}</h3>
+                                <span className="bg-green-300 rounded-md p-1 text-base text-white">{session?.role}</span>
+                            </div>
+                            <p className="text-gray-400 font-normal text-sm md:text-md">{session?.email}</p>
                         </div>
                     </div>
                     <div onClick={() => toggleController(false)} className={'w-[39px] h-[39px] md:w-[43px] md:h-[43px] pbg rounded-lg flex justify-center cursor-pointer items-center hover:rotate-180 transition duration-500'}>

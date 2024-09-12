@@ -1,0 +1,36 @@
+const SlideImage = [
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118099/Media_Page_slide_replace_the_piano24_xbyhbg.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118088/Media_Page_slide_replace_the_piano23_ewxx5m.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118079/Media_Page_slide_replace_the_piano10_wbx7av.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118079/Media_Page_slide_replace_the_piano27_v0oh7j.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118078/Media_Page_slide_replace_the_piano31_euvhd9.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118075/Media_Page_slide_replace_the_piano32_nhznuc.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118074/Media_Page_slide_replace_the_piano29_bu3nh8.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118068/Media_Page_slide_replace_the_piano30_io4rwr.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118067/Media_Page_slide_replace_the_piano28_gfsujd.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118066/Media_Page_slide_replace_the_piano26_v7sh9f.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118057/Media_Page_slide_replace_the_piano19_uyugo1.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118053/Media_Page_slide_replace_the_piano25_nlhcsx.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118050/Media_Page_slide_replace_the_piano20_zefy8f.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118048/Media_Page_slide_replace_the_piano21_whzwjj.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118048/Media_Page_slide_replace_the_piano22_atk8ta.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118048/Media_Page_slide_replace_the_piano06_oph8qr.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118047/Media_Page_slide_replace_the_piano18_jvp0yd.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118047/Media_Page_slide_replace_the_piano15_uv1pog.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118046/Media_Page_slide_replace_the_piano03_dwjg6h.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118046/Media_Page_slide_replace_the_piano16_gulwse.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118045/Media_Page_slide_replace_the_piano17_mdczk0.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118044/Media_Page_slide_replace_the_piano02_ms4ve7.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118043/Media_Page_slide_replace_the_piano13_ryfbwq.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118043/Media_Page_slide_replace_the_piano14_xxqwlf.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118042/Media_Page_slide_replace_the_piano12_swtyhj.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118041/Media_Page_slide_replace_the_piano11_ocvqay.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118041/Media_Page_slide_replace_the_piano08_oiktsz.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118041/Media_Page_slide_replace_the_piano07_wfpjaf.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118040/Media_Page_slide_replace_the_piano09_gf98pf.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118040/Media_Page_slide_replace_the_piano05_zgwksw.jpg",
+    "https://res.cloudinary.com/picturetv/image/upload/v1726118040/Media_Page_slide_replace_the_piano04_tokdqa.jpg"
+]
+
+
+export default SlideImage;

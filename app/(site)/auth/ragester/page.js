@@ -14,6 +14,7 @@ const Ragester = () => {
 
     const [fullname, setfullname] = useState('');
     const [email, setemail] = useState('');
+    const [phone, setphone] = useState('');
     const [password, setpassword] = useState('');
     const [conpass, setconpass] = useState('');
     const [role, setrole] = useState('');
@@ -26,7 +27,7 @@ const Ragester = () => {
 
 
 
-        if (fullname !== '' || email !== '' || password !== '' || conpass !== '' || role !== '' || role !== "Role") {
+        if (fullname !== '' || email !== '' || phone !== '' || password !== '' || conpass !== '' || role !== '' || role !== "Role") {
 
             if (password === conpass) {
 
@@ -40,6 +41,7 @@ const Ragester = () => {
                     body: JSON.stringify({
                         fullname,
                         email,
+                        phone,
                         password,
                         role
                     })
@@ -50,6 +52,7 @@ const Ragester = () => {
 
                 setisloading(false);
                 setemail('');
+                setphone('');
                 setconpass('');
                 setfullname('');
                 setpassword('');
@@ -102,6 +105,15 @@ const Ragester = () => {
                             id="email"
                             className='booking-input-field p-3 rounded-md'
                             placeholder='Email'
+                        />
+
+                        <input
+                            onChange={(e) => { setphone(e.target.value) }}
+                            type="tel"
+                            name="phone"
+                            id="phone"
+                            className='booking-input-field p-3 rounded-md'
+                            placeholder='Mobile Number'
                         />
 
 
