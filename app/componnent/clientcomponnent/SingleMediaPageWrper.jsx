@@ -39,11 +39,9 @@ const SingleMediaPageWrper = ({ id, session }) => {
     //handle image download function
     const handleDownload = () => {
 
-        const userSession = JSON.parse(session);
 
-        console.log(userSession);
 
-        if (!userSession.role) {
+        if (!session?.role) {
             router.push('/auth/loginforperchas');
         } else {
             setisloading(true);

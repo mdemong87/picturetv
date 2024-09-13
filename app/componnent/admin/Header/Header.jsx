@@ -12,9 +12,8 @@ const Header = async () => {
 
     //get sission data
     const session = await gertusersession();
-    const userSession = JSON?.parse(session);
 
-    if (!userSession || userSession.role !== 'admin') {
+    if (!session || session?.role !== 'admin') {
         redirect('/auth/login');
     }
 
@@ -30,7 +29,7 @@ const Header = async () => {
                         </Link>
                     </div>
                     <div className={styles.right}>
-                        <NavberWrper session={userSession} />
+                        <NavberWrper session={session} />
                     </div>
                 </div>
             </Container>

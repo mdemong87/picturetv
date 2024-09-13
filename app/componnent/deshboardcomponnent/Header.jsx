@@ -13,15 +13,11 @@ const Header = async () => {
 
     //get sission data
     const session = await gertusersession();
-    const userSession = JSON.parse(session);
 
-    console.log(userSession);
 
-    if (userSession) {
+    if (session) {
 
-        console.log(userSession.role);
-
-        if (!userSession.role) {
+        if (!session?.role) {
             redirect('/auth/login');
         }
     } else {
