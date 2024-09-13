@@ -201,7 +201,7 @@ const VerifiedUser = () => {
                                         name="email"
                                         id="email"
                                         className='booking-input-field border border-gray-500 p-3 w-full rounded-md'
-                                        placeholder='Enter OTP'
+                                        placeholder='Enter 6 Digit OTP Code'
                                     />
 
 

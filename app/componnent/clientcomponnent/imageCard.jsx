@@ -12,7 +12,7 @@ const ImageCard = ({ data }) => {
             <div className="w-full">
                 <div className="w-full rounded-t-md cardimagecomponnentImageWrper">
 
-                    <Image src={data?.file[0]} alt="image" width={1000} height={1000} className="rounded-t-md h-[210px] object-cover cardImageForHoverEffect" />
+                    <Image src={data?.file[0]} width={1000} height={1000} className="rounded-t-md h-[250px] object-cover cardImageForHoverEffect" alt="image" />
 
 
                 </div>

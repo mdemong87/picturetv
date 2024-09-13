@@ -13,7 +13,7 @@ const Header = async () => {
     //get sission data
     const session = await gertusersession();
 
-    if (!session || session?.role !== 'admin') {
+    if (!session || session?.role !== 'Admin') {
         redirect('/auth/login');
     }
 

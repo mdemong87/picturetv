@@ -8,7 +8,7 @@ const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide }) =>
 
 
     return (
-        <div onClick={() => { setshowimageSlide(true), setcurrentItems(singleitems) }} className="w-full h-[400px] col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3 rounded-md cursor-pointer relative">
+        <div onClick={() => { setshowimageSlide(true), setcurrentItems(singleitems) }} className="w-full h-auto col-span-12 sm:col-span-6 md:col-span-4 xl:col-span-3 rounded-md cursor-pointer relative">
 
             <Image src={singleitems} alt="Image-Card-Image" className="rounded-md object-cover w-full h-full" width={1000} height={1000} />
 

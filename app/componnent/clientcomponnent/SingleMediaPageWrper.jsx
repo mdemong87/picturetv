@@ -40,11 +40,14 @@ const SingleMediaPageWrper = ({ id, session }) => {
     const handleDownload = () => {
 
 
+        setisloading(true);
+
 
         if (!session?.role) {
+            setisloading(false);
             router.push('/auth/loginforperchas');
         } else {
-            setisloading(true);
+
 
 
             setTimeout(() => {
@@ -82,7 +85,7 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
                                     singledata[0]?.file?.map((singleData, index) => {
                                         return (
-                                            <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} />
+                                            index > 1 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} />
                                         )
                                     })
 
