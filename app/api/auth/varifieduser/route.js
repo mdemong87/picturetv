@@ -46,11 +46,12 @@ export const POST = async (req) => {
 
                 //have to work here
 
+                //have to change after
                 //response back to the frontend
                 return Response.json({
-                    message: "OTP Send Successfull Mobile Number",
-                    status: 200,
-                    success: true
+                    message: "OTP get Via Phone Number Servises in unablable Right Now",
+                    status: 500,
+                    success: false
                 })
 
             }
