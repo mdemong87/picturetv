@@ -51,7 +51,6 @@ const SingleMediaPageWrper = ({ id, session }) => {
     }, [currentItems])
 
 
-    console.log(Image_Url);
 
     //handle image download function
     const handleDownload = async () => {
