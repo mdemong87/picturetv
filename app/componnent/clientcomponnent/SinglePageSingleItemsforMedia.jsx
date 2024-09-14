@@ -1,14 +1,13 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Image from "next/image";
-import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
 
 
 
-const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, currentItems, handleDownload }) => {
+const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, currentItems, handleDownload, setprice, price }) => {
 
-    const [price, setprice] = useState("55");
+
 
 
 
@@ -37,7 +36,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                         <div>
                             <h5 className="text-white text-base">Event Type:</h5>
-                            <p className="text-gray-300">{currentEventData?.type}</p>
+                            <p className="text-gray-300">{currentEventData?.eventtype}</p>
                         </div>
                         <div>
                             <h5 className="text-white text-base">Location:</h5>
@@ -45,11 +44,11 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                         <div>
                             <h5 className="text-white text-base">Date:</h5>
-                            <p className="text-gray-300">Thu, Aug 08 2024</p>
+                            <p className="text-gray-300">Spring Fall Winter</p>
                         </div>
                         <div>
                             <h5 className="text-white text-base">Editor Credit:</h5>
-                            <p className="text-gray-300">Thomas Razzano/PictureTV.com</p>
+                            <p className="text-gray-300">Picture TV</p>
                         </div>
                         <div>
                             <h5 className="text-white text-base">Copyright Owner:</h5>
@@ -57,9 +56,9 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                     </div>
                     <div className="w-full sinpleImageGridCenter relative">
-                        <Image src={currentItems} className="w-full object-contain h-[520px]" width={1000} height={1000} alt="Slide-Image" />
+                        <Image src={currentItems} className="w-full object-contain h-[750px]" width={1000} height={1000} alt="Slide-Image" />
                         <div className="absolute w-full h-full transbgforprotect flex justify-center items-end bottom-0 right-0 left-0 opacitylogo">
-                            <Image className="w-[160px] translate-x-16 -translate-y-4" src={logo} width={1000} height={1000} alt="logo" />
+                            <Image className="w-[240px] translate-x-16 -translate-y-12" src={logo} width={1000} height={1000} alt="logo" />
                         </div>
                     </div>
                     <div className="w-full sinpleImageGridRight">
