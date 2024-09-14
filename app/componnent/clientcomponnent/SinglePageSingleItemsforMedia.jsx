@@ -1,5 +1,6 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Image from "next/image";
+import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
 
@@ -9,7 +10,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
 
-
+    const [downloadtype, setdownloadtype] = useState('Digital Download');
 
 
 
@@ -63,17 +64,33 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                     </div>
                     <div className="w-full sinpleImageGridRight">
                         <div>
-                            <select className='w-full bg-gray-800 text-white border p-3 mb-5 rounded-md'>
-                                <option value="Digital Download">Digital Download </option>
-                                <option value="Physical Print">Physical Print</option>
-                            </select>
 
-                            <select onChange={(e) => { setprice(e.target.value) }} className='w-full bg-gray-800 text-white border p-3 rounded-md'>
-                                <option value="55">Web Edition (Single Use) </option>
-                                <option value="65">PR Usage (Multi Use)</option>
-                                <option value="75">Print (Single use)</option>
-                                <option value="85">Web And Print (Single Use)</option>
-                            </select>
+                            <div className="w-full mb-5 flex items-center justify-between gap-5">
+                                <button onClick={(e) => { setdownloadtype(e.target.value) }} value={"Digital Download"} className={`${downloadtype == "Digital Download" ? "pbg2" : "bg-gray-800"} text-white border p-3 rounded-md w-full`}>Digital Download</button>
+                                <button onClick={(e) => { setdownloadtype(e.target.value) }} value={'Physical Print'} className={`${downloadtype == "Physical Print" ? "pbg2" : "bg-gray-800"} text-white border p-3 rounded-md w-full`}>Physical Print</button>
+                            </div>
+
+                            {
+                                downloadtype == "Digital Download" ? (
+
+                                    <select onChange={(e) => { setprice(e.target.value) }} className='w-full bg-gray-800 text-white border p-3 rounded-md'>
+                                        <option value="55">Web Edition (Single Use) </option>
+                                        <option value="400">PR Usage (Multi Use)</option>
+                                        <option value="170">Print (Single use)</option>
+                                        <option value="225">Web And Print (Single Use)</option>
+                                    </select>
+
+                                ) : (
+                                    <select onChange={(e) => { setprice(e.target.value) }} className='w-full bg-gray-800 text-white border p-3 rounded-md'>
+                                        <option value="10">4*6</option>
+                                        <option value="20">5*7</option>
+                                        <option value="30">8*10</option>
+                                        <option value="40">11*14</option>
+                                    </select>
+                                )
+                            }
+
+
 
                             <h2 className="my-5 text-white text-3xl font-bold">{`$ ${price}.00`}</h2>
                             <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl pbg2 text-white w-full">Download</button>

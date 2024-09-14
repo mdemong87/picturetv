@@ -98,8 +98,6 @@ h6 {
   .bannerSlideImage {
     height: 80vh !important;
     overflow: hidden !important;
-    object-fit: cover !important;
-    object-position: center !important;
   }
 
   .cardImageForHoverEffect {
