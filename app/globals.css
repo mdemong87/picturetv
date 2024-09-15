@@ -100,6 +100,10 @@ h6 {
     overflow: hidden !important;
   }
 
+  .objectpoostion {
+    object-position: 100% 25%;
+  }
+
   .cardImageForHoverEffect {
     transition: all 1s;
   }

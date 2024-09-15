@@ -3,6 +3,7 @@
 const { default: Container } = require("@/app/componnent/clientcomponnent/Container")
 import downloadImage from "@/lib/helper/DownloadImage";
 import { useStore } from "@/lib/store";
+import Link from "next/link";
 import { useEffect } from "react";
 import { SiTicktick } from "react-icons/si";
 import { ToastContainer, toast } from 'react-toastify';
@@ -31,6 +32,7 @@ const Success = () => {
                         </div>
                         <h3 className="font-bold text-gray-700 text-xl">Payment Was Successfull</h3>
                         <h3 className="font-bold text-gray-700 text-xl">Your Image Started to Download Automatically</h3>
+                        <Link href={'/'} className="underline">Go to Media Page</Link>
 
                     </div>
                 </div>

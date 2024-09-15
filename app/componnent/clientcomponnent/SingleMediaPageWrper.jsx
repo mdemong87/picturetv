@@ -45,7 +45,6 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
 
 
-
     useEffect(() => {
         updateImage_Url(currentItems);
     }, [currentItems])
@@ -57,58 +56,39 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
         setisloading(true);
 
-
-        if (!session?.role) {
-            setisloading(false);
-            router.push('/auth/loginforperchas');
-        } else {
-
-            try {
+        try {
 
 
 
-                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/payment-checkout`, {
-                    method: 'POST',
-                    headers: {
-                        "Content-Type": "Application/json"
-                    },
-                    body: JSON.stringify({
-                        price
-                    })
-
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/payment-checkout`, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify({
+                    price
                 })
 
-                const res = await response.json();
+            })
+
+            const res = await response.json();
 
 
-                if (res.success) {
-                    setisloading(false);
-                    router.push(res?.paymentData?.url);
-
-                } else {
-                    setisloading(false);
-                    toast.error("There was a server side Problem");
-                }
-
-
-            } catch (error) {
+            if (res.success) {
                 setisloading(false);
-                console.log(error);
+                router.push(res?.paymentData?.url);
+
+            } else {
+                setisloading(false);
                 toast.error("There was a server side Problem");
             }
 
 
-
-
-
-
-
-
-
-
+        } catch (error) {
+            setisloading(false);
+            console.log(error);
+            toast.error("There was a server side Problem");
         }
-
-
 
     }
 
@@ -138,7 +118,7 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
                                     singledata[0]?.file?.map((singleData, index) => {
                                         return (
-                                            index > 1 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} />
+                                            index > 1 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} />
                                         )
                                     })
 
