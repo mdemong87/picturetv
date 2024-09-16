@@ -13,7 +13,7 @@ const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, sess
     //handle show function is here
     function handleShow() {
         if (!session?.role) {
-            router.push('/auth/loginforperchas');
+            router.push('/auth/login');
         } else {
             setshowimageSlide(true);
             setcurrentItems(singleitems);

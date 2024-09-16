@@ -9,7 +9,6 @@ import NavberWrper from "./NavberWrper";
 
 const Header = async () => {
 
-
     //get sission data
     const session = await gertusersession();
 

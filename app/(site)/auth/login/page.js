@@ -52,9 +52,7 @@ const Login = () => {
             if (res.success) {
                 toast.success(res.message);
                 setTimeout(() => {
-
-                    //redirect to dashboard page
-                    router.push("/");
+                    location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
                 }, 500);
             } else {
                 toast.error(res.message);
@@ -123,11 +121,11 @@ const Login = () => {
                         <div className="text-center">
                             <p>
                                 Don&#39;t have an Account?
-                                <Link className="pcl2 pl-2 underline" href={'/auth/ragester'}>Register</Link>
+                                <Link className="pcl2 pl-2 underline" href={'/auth/ragester'}>Sign Up</Link>
                             </p>
                             <p>OR</p>
-                            {/* <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link> */}
-                            <Link href={'/auth/verifieduser'} className="pcl2 underline">Verify User</Link>
+                            <Link href={'/auth/forgetpass'} className="pcl2 underline">Forget Password</Link>
+                            {/* <Link href={'/auth/verifieduser'} className="pcl2 underline">Verify User</Link> */}
                         </div>
 
                     </div>

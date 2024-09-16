@@ -28,7 +28,7 @@ const Logout = ({ toggleController }) => {
             toast.success('Log out Successfull');
             setTimeout(() => {
                 toggleController(false);
-                router.push("/auth/login");
+                location.href = `${process.env.NEXT_PUBLIC_BASE_URL}/auth/login`;
             }, 500);
         } else {
             toast.error("Log out Failed");

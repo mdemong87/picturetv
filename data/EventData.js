@@ -10,7 +10,7 @@ const data = [
         "eventtype": "Fashion Show",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [
-            "https://res.cloudinary.com/picturetv/image/upload/v1726118088/Media_Page_slide_replace_the_piano23_ewxx5m.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726508998/Media_Page_slide_replace_the_piano23_ewxx5m_nhcpnv.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726209383/IMG_0221_p4r68t_nfga4g.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1725968803/IMG_0221_p4r68t.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1725968771/IMG_0508_yul9qv.jpg",
@@ -32,7 +32,8 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1725968493/IMG_0003_yfp4xg.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1725968459/IMG_0126_r8lhiv.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1725968455/IMG_0080_yjcqfd.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1725968455/IMG_0061_qearjn.jpg"
+            "https://res.cloudinary.com/picturetv/image/upload/v1725968455/IMG_0061_qearjn.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726118088/Media_Page_slide_replace_the_piano23_ewxx5m.jpg",
         ],
         "isApproved": true,
         "createdAt": "2024-09-10T14:30:00Z"
