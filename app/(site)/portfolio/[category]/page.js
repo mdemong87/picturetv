@@ -2,12 +2,12 @@
 
 const { default: Container } = require("@/app/componnent/clientcomponnent/Container")
 import ActorHeadShortCard from "@/app/componnent/clientcomponnent/portfolio/ActorHeadshortCard";
+import portfolioImagedata from "@/data/portfolioData";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
-
 
 
 
@@ -29,28 +29,29 @@ const ActorHeadShorts = () => {
 
 
     useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allportfolio/${category}`);
-                const data = await res.json();
+        const data = portfolioImagedata?.filter((item) => {
+            const filteritem = item?.category == category;
+            return filteritem;
+        })
 
-                // Set your data to state here if needed
-                setdata(data);
-            } catch (error) {
-                console.error('Error fetching data:', error);
-            }
-        };
+        setdata(data);
 
-        fetchData();
     }, [category]);
 
 
 
 
+    console.log('here');
+    console.log(data);
+
     //for right arror function
+
+
+
+
     function CurrentIndexIncrise() {
 
-        if (currentIndex < currentItem?.file?.length - 1) {
+        if (currentIndex < data[0]?.file?.length - 1) {
             setcurrentIndex(currentIndex + 1);
         }
     }
@@ -70,9 +71,9 @@ const ActorHeadShorts = () => {
                 <div className="grid grid-cols-12 gap-5">
 
                     {
-                        data?.data?.map((singleitem, index) => {
+                        data[0]?.file?.map((singleitem, index) => {
                             return (
-                                <ActorHeadShortCard key={index} data={singleitem} setshowimageSlide={setshowimageSlide} currentIndex={currentIndex} setcurrentIndex={setcurrentIndex} setcurrentItem={setcurrentItem} />
+                                <ActorHeadShortCard key={index} data={singleitem} setshowimageSlide={setshowimageSlide} index={index} setcurrentIndex={setcurrentIndex} setcurrentIndex={setcurrentIndex} />
                             )
                         })
                     }
@@ -89,8 +90,8 @@ const ActorHeadShorts = () => {
                             <RxCross2 className="text-white text-3xl" />
                         </div>
                     </div>
-                    <div className="flex justify-center items-center">
-                        <b className="text-white text-center w-full">{currentIndex + 1}/{currentItem?.file?.length}</b>
+                    <div className="flex justify-center w-full items-center z-30">
+                        <b className="text-white text-center pbg2 text-white p-1 rounded-md w-fit">{currentIndex + 1}/{data[0]?.file?.length}</b>
                     </div>
                     <div className="flex justify-between gap-3 md:gap-0 items-center h-full w-full">
                         <div>
@@ -98,8 +99,8 @@ const ActorHeadShorts = () => {
                                 <FaAngleLeft className="text-4xl text-white" />
                             </div>
                         </div>
-                        <div>
-                            <Image src={currentItem?.file[currentIndex]?.secure_url} width={1000} height={1000} alt="Slide-Image" />
+                        <div className="-z-10">
+                            <Image src={data[0]?.file[currentIndex]} className="w-[700px] object-cover" width={1000} height={1000} alt="Slide-Image" />
                         </div>
                         <div>
                             <div onClick={() => { CurrentIndexIncrise() }} className="w-[60px] h-[60px] rounded-full pbg2 flex items-center justify-center cursor-pointer">

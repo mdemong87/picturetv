@@ -34,7 +34,7 @@ export const POST = async (req) => {
     } catch (err) {
         //response back to the frontend
         return Response.json({
-            message: "Check Your Email,Password and Role Again",
+            message: "Check Your Email,Password and Role Again Or Verify your Account",
             status: 500,
             success: false
         })

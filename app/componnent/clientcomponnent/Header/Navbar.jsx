@@ -3,11 +3,13 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import HeaderUser from "../../deshboardcomponnent/HeaderUser";
 
 
-const Navber = ({ setshownav }) => {
+const Navber = ({ setshownav, session }) => {
 
     const [islogin, setislogin] = useState(false);
+
 
     return (
         <nav className='flex flex-col md:flex-row items-center gap-5'>
@@ -16,8 +18,22 @@ const Navber = ({ setshownav }) => {
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/booking"}>Booking</Link>
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/searchresult/vedioorimage"}>Events</Link>
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/blogs"}>Blog</Link>
-            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/auth/login"}>Login</Link>
-            <Link onClick={() => { setshownav(false) }} className='pbg2 rounded-md text-base font-medium p-3 text-white' href={"/ptv"}>Watch</Link>
+
+
+            {
+                session && session?.role ? (
+                    <>
+                        <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/ptv"}>Watch</Link>
+                        <HeaderUser session={session} />
+                    </>
+                ) : (
+                    <>
+                        <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/auth/login"}>Login</Link>
+                        <Link onClick={() => { setshownav(false) }} className='pbg2 rounded-md text-base font-medium p-3 text-white' href={"/ptv"}>Watch</Link>
+                    </>
+                )
+            }
+
         </nav>
     )
 }

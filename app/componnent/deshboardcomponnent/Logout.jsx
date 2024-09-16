@@ -6,7 +6,7 @@ import { toast } from 'react-toastify';
 
 
 
-const Logout = () => {
+const Logout = ({ toggleController }) => {
 
 
     const router = useRouter();
@@ -27,6 +27,7 @@ const Logout = () => {
         if (res.success) {
             toast.success('Log out Successfull');
             setTimeout(() => {
+                toggleController(false);
                 router.push("/auth/login");
             }, 500);
         } else {

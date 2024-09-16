@@ -36,7 +36,7 @@ function UserToggle({ session, toggleController }) {
 
 
                     <div className="w-full h-full">
-                        <Logout />
+                        <Logout toggleController={toggleController} />
                     </div>
                 </div>
             </div>

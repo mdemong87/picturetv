@@ -54,7 +54,7 @@ const Login = () => {
                 setTimeout(() => {
 
                     //redirect to dashboard page
-                    router.push("/dashboard");
+                    router.push("/");
                 }, 500);
             } else {
                 toast.error(res.message);

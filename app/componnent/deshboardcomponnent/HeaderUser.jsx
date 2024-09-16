@@ -14,7 +14,7 @@ function HeaderUser({ session }) {
 
     return (
         <div>
-            <div onClick={() => setshowToggle(true)} className="w-[3rem] h-[3rem] md:w-[3.08rem] md:h-[3.08rem] rounded-full bg-white flex items-center justify-center cursor-pointer">
+            <div onClick={() => setshowToggle(true)} className="w-[2.8rem] h-[2.8rem] rounded-full bg-white flex items-center justify-center cursor-pointer">
                 <FaUser className="pcl text-3xl" />
             </div>
             {

@@ -1,3 +1,4 @@
+import gertusersession from "@/lib/helper/getusersesssion";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../../../public/assets/logo.png";
@@ -9,6 +10,9 @@ import NavberWrper from "./NavberWrper";
 const Header = async () => {
 
 
+    //get sission data
+    const session = await gertusersession();
+
     return (
         <header className="w-screen bg-[#000] text-white fixed z-50">
             <Container>
@@ -19,7 +23,7 @@ const Header = async () => {
                         </Link>
                     </div>
                     <div className={styles.right}>
-                        <NavberWrper />
+                        <NavberWrper session={session} />
                     </div>
                 </div>
             </Container>
