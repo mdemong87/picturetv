@@ -161,6 +161,12 @@ h6 {
     height: fit-content;
   }
 
+  .overslog {
+    overflow-y: scroll;
+    height: 100vh;
+    border-radius: 15px;
+  }
+
 }
 
 

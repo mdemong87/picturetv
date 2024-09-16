@@ -1,10 +1,7 @@
-export default function Vedio({ currentvideo }) {
+export default function Vedio({ src }) {
     return (
-        <div className="w-full h-full pbg2 rounded-lg z-0">
-            <video className="w-full rounded-lg h-full" autoPlay={true} controls={true}>
-                <source src={currentvideo} type="video/mp4" />
-
-            </video>
+        <div className="h-fit">
+            <iframe className="w-full h-[500px] rounded-lg" width="560" height="500" src={src?.file} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen={true}></iframe>
         </div>
     )
 }
