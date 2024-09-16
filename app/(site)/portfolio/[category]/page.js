@@ -29,20 +29,17 @@ const ActorHeadShorts = () => {
 
 
     useEffect(() => {
-        const data = portfolioImagedata?.filter((item) => {
+        const filterdata = portfolioImagedata?.filter((item) => {
             const filteritem = item?.category == category;
             return filteritem;
         })
 
-        setdata(data);
+        setdata(filterdata);
 
     }, [category]);
 
 
 
-
-    console.log('here');
-    console.log(data);
 
     //for right arror function
 
@@ -73,7 +70,7 @@ const ActorHeadShorts = () => {
                     {
                         data[0]?.file?.map((singleitem, index) => {
                             return (
-                                <ActorHeadShortCard key={index} data={singleitem} setshowimageSlide={setshowimageSlide} index={index} setcurrentIndex={setcurrentIndex} setcurrentIndex={setcurrentIndex} />
+                                <ActorHeadShortCard key={index} data={singleitem} setshowimageSlide={setshowimageSlide} index={index} setcurrentIndex={setcurrentIndex} />
                             )
                         })
                     }
