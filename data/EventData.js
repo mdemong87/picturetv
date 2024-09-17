@@ -1162,6 +1162,69 @@ const data = [
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726573584/Pamala_Roland_Media_Page_97_zpp9zw_jzjd8f.png",
 
+            "https://res.cloudinary.com/picturetv/image/upload/v1726573584/Pamala_Roland_Media_Page_97_zpp9zw_jzjd8f.png",
+
+
+        ],
+        "isApproved": false,
+        "createdAt": "2024-09-10T15:00:00Z"
+
+    },
+
+    {
+        "eventid": 10,
+        "uid": 10,
+        "fullname": "Carolina Herrera ",
+        "email": "carolinaherrera@gmail.com",
+        "role": "Photographer",
+        "title": "Mercedes Benz New York Fashion Week",
+        "type": "Image",
+        "eventtype": "Fashion Show",
+        "dis": "A seminar highlighting the latest innovations in technology.",
+        file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575183/Carolina_Herrera_Media_Page_207_n1mdvf_ck0su5.png",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575183/Carolina_Herrera_Media_Page_207_n1mdvf_ck0su5.png",
+
+        ],
+        "isApproved": false,
+        "createdAt": "2024-09-10T15:00:00Z"
+
+    },
+
+    {
+        "eventid": 11,
+        "uid": 11,
+        "fullname": "Richard Chai ",
+        "email": "richardchai@gmail.com",
+        "role": "Photographer",
+        "title": "Mercedes Benz New York Fashion Week",
+        "type": "Image",
+        "eventtype": "Fashion Show",
+        "dis": "A seminar highlighting the latest innovations in technology.",
+        file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575201/RICHARD_CHAI_Media_Page_126_iqjtia_yxl0wo.png",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575201/RICHARD_CHAI_Media_Page_126_iqjtia_yxl0wo.png",
+
+        ],
+        "isApproved": false,
+        "createdAt": "2024-09-10T15:00:00Z"
+
+    },
+
+    {
+        "eventid": 12,
+        "uid": 12,
+        "fullname": "Naeem khan ",
+        "email": "Neem Khana@gmail.com",
+        "role": "Photographer",
+        "title": "Mercedes Benz New York Fashion Week",
+        "type": "Image",
+        "eventtype": "Fashion Show",
+        "dis": "A seminar highlighting the latest innovations in technology.",
+        file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575195/Naeem_khan_Media_Page_192_i5wori_kx1esc.png",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726575195/Naeem_khan_Media_Page_192_i5wori_kx1esc.png",
+
         ],
         "isApproved": false,
         "createdAt": "2024-09-10T15:00:00Z"

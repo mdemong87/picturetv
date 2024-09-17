@@ -122,7 +122,7 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
                                     singledata[0]?.file?.map((singleData, index) => {
                                         return (
-                                            index > 1 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} />
+                                            index > 0 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} />
                                         )
                                     })
 
