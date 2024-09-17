@@ -49,7 +49,7 @@ const data = [
         "eventtype": "Fashion Show",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
-            "https://res.cloudinary.com/picturetv/image/upload/v1725972792/_CID9623_owazbp.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726572009/_CID9623_owazbp_wcs6jg_c4ejls.tiff",
             "https://res.cloudinary.com/picturetv/image/upload/v1725972653/_CID9612_izdsxv.tiff",
             "https://res.cloudinary.com/picturetv/image/upload/v1725972651/_CID9619_xgpjb9.tiff",
             "https://res.cloudinary.com/picturetv/image/upload/v1725972629/_CID9605_ft91m6.tiff",
@@ -1160,7 +1160,7 @@ const data = [
         "eventtype": "Fashion Show",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
-            "https://res.cloudinary.com/picturetv/image/upload/v1726329475/Pamala_Roland_Media_Page_97_nnwcju.nef",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726573584/Pamala_Roland_Media_Page_97_zpp9zw_jzjd8f.png",
 
         ],
         "isApproved": false,

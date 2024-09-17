@@ -11,6 +11,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import eventdata from "../../../data/EventData";
 import ImageCard from "../../componnent/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
+import ForwordBtn from "../ForwordBtn";
 import SinglePageSingleItemsForMedia from "./SinglePageSingleItemsforMedia";
 
 
@@ -42,7 +43,7 @@ const SingleMediaPageWrper = ({ id, session }) => {
     const router = useRouter();
 
 
-
+    const forword = Number(id) + 1;
 
 
     useEffect(() => {
@@ -104,7 +105,10 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
 
                     <div className="flex items-center justify-between w-full">
-                        <BackBtn link={'/'} />
+                        <div className="flex items-center gap-4">
+                            <BackBtn link={'/'} />
+                            <ForwordBtn link={`/${forword}`} />
+                        </div>
                         <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
                     </div>
 
