@@ -62,7 +62,7 @@ export default function Footer() {
                             <li><a href="/aboutus"><BsArrowRight className={styles.rightArrowIcons} /><span>About Us</span></a></li>
                             <li><a href="/contactus"><BsArrowRight className={styles.rightArrowIcons} /><span>Contact Us</span></a></li>
                             <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Terms and Conditions</span></a></li>
-                            <li><a href="#"><BsArrowRight className={styles.rightArrowIcons} /><span>Subscribe to our newsletter</span></a></li>
+                            <li><a href="/newslatter"><BsArrowRight className={styles.rightArrowIcons} /><span>Subscribe to our newsletter</span></a></li>
 
                         </ul>
                     </div>

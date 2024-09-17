@@ -16,7 +16,7 @@ import SingleSlide from './SingleSlide';
 const HomeSlider = () => {
 
     return (
-        <section className='pt-[60px] sm:pt-[75px] md:pt-[77px] lg:pt-[80px]'>
+        <section className='sm:pt-[72px] md:pt-[77px] lg:pt-[80px]'>
             <div className=''>
                 <div className=''>
                     <Swiper

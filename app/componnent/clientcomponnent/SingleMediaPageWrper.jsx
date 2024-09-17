@@ -43,8 +43,6 @@ const SingleMediaPageWrper = ({ id, session }) => {
     const router = useRouter();
 
 
-    const forword = Number(id) + 1;
-
 
     useEffect(() => {
         updateImage_Url(currentItems);
@@ -104,10 +102,16 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
 
 
-                    <div className="flex items-center justify-between w-full">
-                        <div className="flex items-center gap-4">
-                            <BackBtn link={'/'} />
-                            <ForwordBtn link={`/${forword}`} />
+                    <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+                        <div className="flex justify-between md:justify-start items-center gap-4 w-full">
+                            {
+                                id == '1' ? (
+                                    <BackBtn link={'/'} />
+                                ) : (
+                                    <BackBtn link={`/${Number(id) - 1}`} />
+                                )
+                            }
+                            <ForwordBtn link={`/${Number(id) + 1}`} />
                         </div>
                         <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
                     </div>

@@ -2,8 +2,10 @@
 import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const AdminLogin = () => {
@@ -14,6 +16,7 @@ const AdminLogin = () => {
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
     const [isloading, setisloading] = useState(false);
+    const [ispassshow, setispassshow] = useState(false);
 
 
 
@@ -91,13 +94,28 @@ const AdminLogin = () => {
                         />
 
 
-                        <input onChange={(e) => { setpassword(e.target.value) }}
-                            type="password"
-                            name="password"
-                            id="password"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Password'
-                        />
+                        <div className="relative">
+                            <input onChange={(e) => { setpassword(e.target.value) }}
+                                type={`${ispassshow ? "text" : "password"}`}
+                                name="password"
+                                id="password"
+                                className='w-[320px] p-3 rounded-md'
+                                placeholder='Password'
+                            />
+                            <div className="absolute right-0">
+
+                                {
+                                    ispassshow ? (
+                                        <FaEyeSlash onClick={() => { setispassshow(false) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                    ) : (
+                                        <FaEye onClick={() => { setispassshow(true) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                    )
+                                }
+
+
+
+                            </div>
+                        </div>
 
 
                         <button onClick={() => { handlelogin() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">

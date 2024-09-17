@@ -3,6 +3,7 @@ import Loading from "@/app/componnent/clientcomponnent/Loading";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -14,7 +15,7 @@ const Login = () => {
 
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
-    const [role, setrole] = useState('');
+    const [ispassshow, setispassshow] = useState(false);
     const [isloading, setisloading] = useState(false);
 
 
@@ -25,7 +26,7 @@ const Login = () => {
 
 
 
-        if (email !== '' || password !== '' || role !== '' || role !== "Role") {
+        if (email !== '' && password !== '') {
 
             setisloading(true);
 
@@ -79,14 +80,14 @@ const Login = () => {
                     <h2 className="text-2xl text-center font-bold text-shadow-lg text-gray-800">Login</h2>
 
                     <div
-                        className="mt-6 flex flex-col gap-5">
+                        className="mt-6 flex w-fit flex-col gap-5">
 
                         <input
                             onChange={(e) => { setemail(e.target.value) }}
                             type="email"
                             name="email"
                             id="email"
-                            className='booking-input-field p-3 rounded-md'
+                            className='w-[320px] p-3 rounded-md'
                             placeholder='Email'
                         />
 
@@ -94,23 +95,38 @@ const Login = () => {
 
 
 
-                        <input onChange={(e) => { setpassword(e.target.value) }}
-                            type="password"
-                            name="password"
-                            id="password"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Password'
-                        />
+                        <div className="relative">
+                            <input onChange={(e) => { setpassword(e.target.value) }}
+                                type={`${ispassshow ? "text" : "password"}`}
+                                name="password"
+                                id="password"
+                                className='w-[320px] p-3 rounded-md'
+                                placeholder='Password'
+                            />
+                            <div className="absolute right-0">
+
+                                {
+                                    ispassshow ? (
+                                        <FaEyeSlash onClick={() => { setispassshow(false) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                    ) : (
+                                        <FaEye onClick={() => { setispassshow(true) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                    )
+                                }
 
 
 
-                        <select onChange={(e) => setrole(e.target.value)} className='booking-input-field p-3 rounded-md'>
+                            </div>
+                        </div>
+
+
+
+                        {/* <select onChange={(e) => setrole(e.target.value)} className='booking-input-field p-3 rounded-md'>
                             <option value="Role">Select Category</option>
                             <option value="Register">Register</option>
                             <option value="Client">Client</option>
                             <option value="Photographer">Photographer</option>
                             <option value="Vediographer">Videographer</option>
-                        </select>
+                        </select> */}
 
 
 

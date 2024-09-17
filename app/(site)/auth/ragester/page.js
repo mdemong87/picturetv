@@ -1,6 +1,7 @@
 'use client'
 
 import Loading from "@/app/componnent/clientcomponnent/Loading";
+import { SendOTPviaEmail } from "@/lib/helper/SendOTP";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -18,11 +19,136 @@ const Ragester = () => {
     const [password, setpassword] = useState('');
     const [conpass, setconpass] = useState('');
     const [role, setrole] = useState('');
-
+    const [via, setvia] = useState("Email");
     const [isloading, setisloading] = useState(false);
+    const [stape, setstape] = useState(1);
+    const [userData, setuserData] = useState('');
+    const [otp, setotp] = useState('');
 
 
 
+
+
+
+
+
+
+    //handle verify email with 6 digit code
+    async function sendotp() {
+
+
+        if (email != "") {
+
+
+            setisloading(true);
+
+            try {
+
+
+                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/varifieduser`, {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "Application/json"
+                    },
+                    body: JSON.stringify({
+                        email,
+                        via
+                    })
+
+                });
+
+                const res = await response.json();
+                setisloading(false);
+
+                if (res.success) {
+                    setTimeout(() => {
+
+                        //redirect to dashboard page
+                        setuserData(res?.data?.user);
+
+                    }, 500);
+
+
+                    if (via == "Email") {
+                        const issend = await SendOTPviaEmail(res?.data?.otp, res?.data?.user?.fullname, res?.data?.email);
+
+                        if (issend?.status == 200) {
+                            toast.success(res.message);
+                            setTimeout(() => {
+
+                                setstape(2);
+                                setuserData(res.data?.user);
+
+                            }, 500);
+                        } else {
+                            toast.error("Email Send Failed");
+                        }
+                    }
+                } else {
+                    toast.error(res.message);
+                }
+
+            } catch (error) {
+                setisloading(false);
+                console.log(error);
+            }
+
+        } else {
+            toast.error("Enter Email");
+        }
+
+    }
+
+
+
+
+    //varification otp function here
+    async function varification() {
+
+        if (otp != '') {
+
+            setisloading(true);
+
+            try {
+
+                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/varifieduser/varifiedotp`, {
+                    method: 'POST',
+                    headers: {
+                        "Content-Type": "Application/json"
+                    },
+                    body: JSON.stringify({
+
+                        otp,
+                        userData
+                    })
+
+                });
+                const res = await response.json();
+                setisloading(false);
+
+                if (res.success) {
+
+                    toast.success(res.message);
+                    setstape(3);
+                } else {
+                    toast.error(res.message);
+                }
+
+
+            } catch (error) {
+                toast.error("OTP Verification Failed");
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+    //handle signup function for stape two
     async function handleSignUp() {
 
 
@@ -80,89 +206,135 @@ const Ragester = () => {
 
 
 
+
+
+
     return (
         <main className="h-fit pt-36 pb-14 w-screen">
             {isloading && <Loading />}
             <div className="flex justify-center items-cetner w-full h-full">
                 <div className="border border-gray-300 p-8 rounded-md h-fit w-fit">
-                    <h2 className="text-2xl text-center font-bold text-shadow-lg text-gray-800">Sign Up</h2>
+                    <h2 className="text-2xl text-center font-bold text-shadow-lg text-gray-800 pb-5">Sign Up</h2>
 
-                    <div className="mt-6 flex flex-col gap-5">
+                    {
+                        stape == 1 || stape == 2 ? (
+                            <div>
+                                <input
+                                    onChange={(e) => { setemail(e.target.value) }}
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    className='booking-input-field border border-gray-500 p-3 w-full rounded-md'
+                                    placeholder='Enter Registration Email'
+                                />
 
-                        <input
-                            onChange={(e) => { setfullname(e.target.value) }}
-                            type="text"
-                            name="fullname"
-                            id="fullname"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Full Name'
-                        />
-
-                        <input
-                            onChange={(e) => { setemail(e.target.value) }}
-                            type="email"
-                            name="email"
-                            id="email"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Email'
-                        />
-
-                        <input
-                            onChange={(e) => { setphone(e.target.value) }}
-                            type="tel"
-                            name="phone"
-                            id="phone"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Mobile Number'
-                        />
+                                {
+                                    stape == 2 && (
+                                        <input
+                                            onChange={(e) => { setotp(e.target.value) }}
+                                            type="number"
+                                            name="email"
+                                            id="email"
+                                            className='booking-input-field border border-gray-500 p-3 mt-3 w-full rounded-md'
+                                            placeholder='Enter 6 Digit OTP Code'
+                                        />
+                                    )
+                                }
 
 
+                                <button onClick={() => { stape == 1 ? sendotp() : stape == 2 && varification() }} className="pbg mt-5 w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
+                                    {
+                                        stape == 1 ? (
+                                            "Verify Email with 6 Digit Code"
+                                        ) : (
+                                            stape == 2 && "Verify Email"
+                                        )
+
+                                    }
+                                </button>
+
+
+                                <div className="text-center mt-4">
+                                    <p>
+                                        Already have an Account?
+                                        <Link className="pcl2 pl-2 underline" href={'/auth/login'}>Login</Link>
+                                    </p>
+                                </div>
+                            </div>
+                        ) : (
+                            <div>
+                                <div className="mt-6 flex flex-col gap-5">
+
+                                    <input
+                                        onChange={(e) => { setfullname(e.target.value) }}
+                                        type="text"
+                                        name="fullname"
+                                        id="fullname"
+                                        className='booking-input-field w-[320px] p-3 rounded-md'
+                                        placeholder='Full Name'
+                                    />
+
+
+                                    <input
+                                        onChange={(e) => { setphone(e.target.value) }}
+                                        type="tel"
+                                        name="phone"
+                                        id="phone"
+                                        className='booking-input-field w-[320px] p-3 rounded-md'
+                                        placeholder='Mobile Number'
+                                    />
 
 
 
-                        <input
-                            onChange={(e) => { setpassword(e.target.value) }}
-                            type="password"
-                            name="password"
-                            id="password"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Password'
-                        />
-
-                        <input
-                            onChange={(e) => { setconpass(e.target.value) }}
-                            type="password"
-                            name="conpass"
-                            id="conpass"
-                            className='booking-input-field p-3 rounded-md'
-                            placeholder='Confirm password'
-                        />
 
 
+                                    <input
+                                        onChange={(e) => { setpassword(e.target.value) }}
+                                        type="password"
+                                        name="password"
+                                        id="password"
+                                        className='booking-input-field w-[320px] p-3 rounded-md'
+                                        placeholder='Password'
+                                    />
 
-                        <select onChange={(e) => { setrole(e.target.value) }} className='booking-input-field p-3 rounded-md'>
-                            <option value="Role">Select Category</option>
-                            <option value="Register">Register</option>
-                            <option value="Client">Client</option>
-                            <option value="Photographer">Photographer</option>
-                            <option value="Videographer">Videographer</option>
-                        </select>
+                                    <input
+                                        onChange={(e) => { setconpass(e.target.value) }}
+                                        type="password"
+                                        name="conpass"
+                                        id="conpass"
+                                        className='booking-input-field w-[320px] p-3 rounded-md'
+                                        placeholder='Confirm password'
+                                    />
 
 
 
-                        <button onClick={(e) => { handleSignUp() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
-                            Sign Up
-                        </button>
+                                    <select onChange={(e) => { setrole(e.target.value) }} className='booking-input-field w-[320px] p-3 rounded-md'>
+                                        <option value="Role">Select Category</option>
+                                        <option value="Register">Register</option>
+                                        <option value="Client">Client</option>
+                                        <option value="Photographer">Photographer</option>
+                                        <option value="Videographer">Videographer</option>
+                                    </select>
 
 
-                        <div className="text-center">
-                            <p>
-                                Already have an Account?
-                                <Link className="pcl2 pl-2 underline" href={'/auth/login'}>Login</Link>
-                            </p>
-                        </div>
 
-                    </div>
+                                    <button onClick={(e) => { handleSignUp() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
+                                        Sign Up
+                                    </button>
+
+
+                                    <div className="text-center">
+                                        <p>
+                                            Already have an Account?
+                                            <Link className="pcl2 pl-2 underline" href={'/auth/login'}>Login</Link>
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        )
+                    }
+
                 </div>
             </div>
             <ToastContainer />

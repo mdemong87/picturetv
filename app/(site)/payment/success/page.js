@@ -31,7 +31,7 @@ const Success = () => {
                             <SiTicktick className="text-white text-6xl" />
                         </div>
                         <h3 className="font-bold text-gray-700 text-xl">Payment Was Successfull</h3>
-                        <h3 className="font-bold text-gray-700 text-xl">Your Image Started to Download Automatically</h3>
+                        <h3 className="font-bold text-gray-700 text-center text-xl">Your Image Started to Download Automatically</h3>
                         <Link href={'/'} className="underline">Go to Media Page</Link>
 
                     </div>
