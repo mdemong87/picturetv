@@ -16,7 +16,7 @@ const PTV = () => {
             <Container>
                 <div className="grid grid-cols-12 gap-4">
                     <div className="col-span-12 lg:col-span-8 w-full">
-                        <div className="h-[500px] w-full">
+                        <div className="h-fit w-full">
                             {
                                 ptv?.map((item, index) => {
                                     return (

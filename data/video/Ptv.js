@@ -1,8 +1,35 @@
 const ptv = [
     {
-        title: "This is the frist",
-        dis: "this is the frist dis",
+        title: "TexWorld SGS #fabric #luxury #design #lifestyle #fashion #sustainability #mexico #technology #sport",
+        dis: "THE PATH DOES MATTER WHEN YOU WANT TO REACH YOUR GOAL Founded in 2010 in Puebla, Mexico and supplier to the entire retail market in the country, from department stores and self-service stores, to specialty stores and wholesalers.",
         file: "https://res.cloudinary.com/dmo0gctub/video/upload/v1724511789/videoplayback_puhptt.mp4"
+    },
+
+    {
+        title: "Life Begins * Where Fear End | Mala Speak Sunday | Episode 1 | Segment I #knowledge #success #learn",
+        dis: "Mala Speak Sunday Is BASED on me and everything around my well-being including getting deep into my personal life and the scopes of the week. For the past months I seeing a lot of my friends and collogues heading into the wrong path so I ASK MYSELF, how can I help them coming out of depression, sadness and suicidal thought.  Watch the whole video then you can comments later & share with me what need to be done. Drugs & Alcohol is not the answer. Sex is only a temporary feeling until you wake up from a deep sleep after.",
+        file: 'https://res.cloudinary.com/picturetv/video/upload/v1726495163/Life_Begins_-_Where_Fear_End_-_Mala_Speak_Sunday_-_Episode_1_-_Segment_I_knowledge_success_learn_iuswcz.mp4'
+    },
+
+    {
+        title: "65 years looks 25 | The best active plant cells works to erase all wrinkles from all over the face.",
+        dis: "An innovative and growing company Set up in Bordeaux in 2003, Naolys is one of the leading biotech companies in South West of France.A pioneer and a market leader in its field Thanks to a unique know how associated with a European registered patent, Naolys develops and produces cosmetic active ingredients dedicated to the cosmetic industry. They are innovative actives, active plant cells made through a biotechnology process, the plant cell culture.A company with international relations.A strong network, many partnersNaolys is closely involved with various experts and research centres specialized in life sciences, plants and human biology. Its major partners are the University of Bordeaux I (University of Sciences), the University of Bordeaux II (Medical School and School of Pharmacy), and INRA (The Bordeaux National Institute on Agronomic Research).With regard to the products safety and their harmlessness, Naolys relies on the advice of toxicology experts and university professors to validate these points.Philosophy From the very beginning, Naolys main goal is to focus on: Respecting skin • Highly checked product safety • Thanks to selected cosmetic activities in harmony with the skin metabolism Respecting environment • Using a sustainable energy to produce our cell actives • Selective sorting of waste • Production of active ingredients on demand: no waste for customers Respecting our partners • By favoring long term partnerships • By keeping open talks • By keeping our partners duly informed about our decisions Our ranges Anti-ageing Brightening Hair Vegetal Species",
+        file: 'https://res.cloudinary.com/picturetv/video/upload/v1726496310/65_years_looks_25_ufhpgy.mp4'
+    },
+    {
+        title: "Below The Belt | Living With Endometriosis Panel | Part 1#fitness #health #healthy #healing #2024",
+        dis: "Directed by: Shannon Cohn Executive Producers: Hillary Rodham Clinton, Mae Whitman, Rosario Dawson, Corinne Foxx Featured Subjects: Iris Orbuch, MD , Jenneh Rishe , Emily Hatch Manwaring , Mary Alice Hatc h,  Kyung Jeon-Miranda Synopsis: Through the lens of four patients urgently searching for answers to mysterious symptoms, BELOW THE BELT exposes widespread problems in our healthcare system that disproportionately affect women. From societal taboos and gender bias to uninformed doctors and profit-driven healthcare, the film reveals how millions of women with endometriosis are effectively silenced. WHO:Mae Whitman (Executive Producer) Shannon Cohn (Director) Film Subjects Iris Orbuch, MD (Film Subject, Endometriosis Surgeon Jenneh Rishe (Film Subject) Emily Hatch Manwaring (Film Subject; granddaughter of Sen. Orrin Hatch) Mary Alice Hatch (Film Subject; daughter-in-law of Sen. Hatch) Kyung Jeon-Miranda (Film Subject) Additional Guests Molly Qerim (ESPN First Take host) Megan McCormick (Globetrekker host, PBS, Travel Channel) Yadi Ramirez (Food Network host) Edgardo Miranda-Rodriguez (Marvel Comics graphic artist, creator of La Boriquena in partnership with Rosario Dawson)",
+        file: 'https://res.cloudinary.com/picturetv/video/upload/v1726495206/Below_The_Belt_-_Living_With_Endometriosis_Panel_-_Part_1_fitness_health_healthy_healing_2024_bolsl3.mp4'
+    },
+    {
+        title: "#2024 #best #plantbased #beauty #products #foryou #glass #skin #skincare #cosmetics #healing #luxury",
+        dis: "Extracts-Unlimited, LLC is a young company with long established roots in the Cosmetics, Personal Care and Nutritional Supplement industries.  Founded by David C. Fondots in 2016, the focus of the company’s business is to supply high quality, All Natural, Organic and Botanically based Extracts, Nutritive Oils, Butters and Unique Specialty ingredients.  Building upon long established relationships with global suppliers, Extracts-Unlimited strives to offer customers in North America a responsible and reliable local supplier whose mission statement is as follows:Transparency, forthright dealings and timely information flow are the defining characteristics of our firm.  In addition, we pledge to treat every order with the same level of attention and care, no matter what the quantity.  Our product focus is 100% natural and botanical ingredients and raw materials. I give my personal assurance of the above mentioned promises.",
+        file: 'https://res.cloudinary.com/picturetv/video/upload/v1726498742/2024_best_plantbased_beauty_products_foryou_glass_skin_skincare_cosmetics_healing_luxury_zfuhsj.mp4'
+    },
+    {
+        title: "this is the seceond",
+        dis: "this is the second dis",
+        file: 'https://res.cloudinary.com/picturetv/video/upload/v1726494789/Editorial_2_oelmol.mov'
     },
     {
         title: "this is the seceond",

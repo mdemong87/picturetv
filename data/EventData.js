@@ -1078,7 +1078,97 @@ const data = [
         "isApproved": false,
         "createdAt": "2024-09-10T15:00:00Z"
 
-    }
+    },
+
+    {
+        "eventid": 8,
+        "uid": 8,
+        "fullname": "BCBG",
+        "email": "bcbg@gmail.com",
+        "role": "Photographer",
+        "title": "Mercedes Benz New York Fashion Week",
+        "type": "Image",
+        "eventtype": "Fashion Show",
+        "dis": "A seminar highlighting the latest innovations in technology.",
+        file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726555034/BCBG_Media_Page_7_lwwwf5_yruijv.png",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243709/BCBG_Media_Page_12_brflrr.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243700/BCBG_Media_Page_11_chkeqa.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243698/BCBG_Media_Page_10_t7vyce.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243663/BCBG_Media_Page_9_pmmbz5.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243657/BCBG_Media_Page_8_kpmph6.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243646/BCBG_Media_Page_7_lwwwf5.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243638/BCBG_Media_Page_6_ttfyjy.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243635/BCBG_Media_Page_5_fzwhhx.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243632/BCBG_Media_Page_4_sqssmp.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243619/BCBG_Media_Page_3_av0tby.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243614/BCBG_Media_Page_2_uwepbv.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243612/BCBG_Media_Page_1_nrineb.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243599/BCBG_Media_Page_50_x4eoal.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243596/BCBG_Media_Page_49_oqdoyb.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243590/BCBG_Media_Page_48_wgh7dz.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243582/BCBG_Media_Page_47_zhppig.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243574/BCBG_Media_Page_46_tvqvhd.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243569/BCBG_Media_Page_45_y2wbvh.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243560/BCBG_Media_Page_44_xfkrzs.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243552/BCBG_Media_Page_43_tdqqcl.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243544/BCBG_Media_Page_42_al3vq7.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243537/BCBG_Media_Page_41_dbnjpa.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243530/BCBG_Media_Page_40_j4njiy.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243524/BCBG_Media_Page_39_dpwwjf.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243517/BCBG_Media_Page_38_hh6bru.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243514/BCBG_Media_Page_37_qemmr0.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243507/BCBG_Media_Page_36_leprdm.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243498/BCBG_Media_Page_35_cxy3mx.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243492/BCBG_Media_Page_34_rooken.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243487/BCBG_Media_Page_33_z7kpjk.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243483/BCBG_Media_Page_32_lqbevg.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243469/BCBG_Media_Page_31_fjewdc.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243466/BCBG_Media_Page_30_xeciht.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243462/BCBG_Media_Page_29_ispqw6.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243457/BCBG_Media_Page_28_zi66n2.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243451/BCBG_Media_Page_27_an4fky.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243445/BCBG_Media_Page_26_nqpqtu.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243441/BCBG_Media_Page_25_glonkd.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243433/BCBG_Media_Page_24_ueqohn.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243430/BCBG_Media_Page_23_iowtif.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243429/BCBG_Media_Page_22_qrft5m.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243422/BCBG_Media_Page_21_omc8mu.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243418/BCBG_Media_Page_20_xyasfd.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243412/BCBG_Media_Page_19_aqcdzl.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243406/BCBG_Media_Page_18_g217si.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243405/BCBG_Media_Page_17_krbjet.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243398/BCBG_Media_Page_16_yemyy0.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243396/BCBG_Media_Page_15_hf3lhv.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243391/BCBG_Media_Page_14_ei0umd.tiff",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726243389/BCBG_Media_Page_13_xmeizs.tiff",
+
+        ],
+        "isApproved": false,
+        "createdAt": "2024-09-10T15:00:00Z"
+
+    },
+
+    {
+        "eventid": 9,
+        "uid": 9,
+        "fullname": "Pamela Roland",
+        "email": "pamelaroland@gmail.com",
+        "role": "Photographer",
+        "title": "Mercedes Benz New York Fashion Week",
+        "type": "Image",
+        "eventtype": "Fashion Show",
+        "dis": "A seminar highlighting the latest innovations in technology.",
+        file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726329475/Pamala_Roland_Media_Page_97_nnwcju.nef",
+
+        ],
+        "isApproved": false,
+        "createdAt": "2024-09-10T15:00:00Z"
+
+    },
+
+
 
 ]
 
