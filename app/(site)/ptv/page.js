@@ -21,7 +21,7 @@ const PTV = () => {
                                 ptv?.map((item, index) => {
                                     return (
 
-                                        currentvideo == index && <Vedio key={index} src={item} />
+                                        currentvideo == index && <Vedio key={index} src={item} currentvideo={currentvideo} setcurrentvideo={setcurrentvideo} />
 
                                     )
                                 })

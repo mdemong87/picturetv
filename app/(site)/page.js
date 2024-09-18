@@ -19,6 +19,7 @@ const Home = async () => {
   // const data = await getEvent();
 
 
+
   return (
     <main className="h-fit">
       <div className="relative">
