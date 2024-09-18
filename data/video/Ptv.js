@@ -26,16 +26,6 @@ const ptv = [
         dis: "Extracts-Unlimited, LLC is a young company with long established roots in the Cosmetics, Personal Care and Nutritional Supplement industries.  Founded by David C. Fondots in 2016, the focus of the company’s business is to supply high quality, All Natural, Organic and Botanically based Extracts, Nutritive Oils, Butters and Unique Specialty ingredients.  Building upon long established relationships with global suppliers, Extracts-Unlimited strives to offer customers in North America a responsible and reliable local supplier whose mission statement is as follows:Transparency, forthright dealings and timely information flow are the defining characteristics of our firm.  In addition, we pledge to treat every order with the same level of attention and care, no matter what the quantity.  Our product focus is 100% natural and botanical ingredients and raw materials. I give my personal assurance of the above mentioned promises.",
         file: 'https://res.cloudinary.com/picturetv/video/upload/v1726498742/2024_best_plantbased_beauty_products_foryou_glass_skin_skincare_cosmetics_healing_luxury_zfuhsj.mp4'
     },
-    // {
-    //     title: "this is the seceond",
-    //     dis: "this is the second dis",
-    //     file: 'https://res.cloudinary.com/picturetv/video/upload/v1726494789/Editorial_2_oelmol.mov'
-    // },
-    // {
-    //     title: "this is the seceond",
-    //     dis: "this is the second dis",
-    //     file: 'https://res.cloudinary.com/picturetv/video/upload/v1726493997/Editorial_1_qxfs6f.mov'
-    // },
 
     {
         title: "Look Who's Talking Endometriosis | Mala Speak Sunday Spec Guest Part II #artist #art #artwork #2024",

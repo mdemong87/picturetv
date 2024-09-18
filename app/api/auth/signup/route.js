@@ -1,4 +1,3 @@
-import getUserByEmail from "@/lib/helper/getUserByEmail";
 import { UIDGanaratorForUser } from "@/lib/helper/uIdGanarator";
 import UserModel from "@/lib/model/userModel";
 import ConnectDB from "../../../../lib/connectionDB";
@@ -26,35 +25,20 @@ export const POST = async (req) => {
             email,
             phone,
             password,
-            role
+            role,
+            isvarified: true
         }
 
 
-        // check already user exist or not
-        const found = await getUserByEmail(email);
+        //create user in database
+        await UserModel.create(userObject);
 
-        if (!found) {
-
-            //create user in database
-            await UserModel.create(userObject);
-
-            //response back to the frontend
-            return Response.json({
-                message: "Registration Succesfull",
-                status: 200,
-                success: true
-            })
-
-
-        } else {
-            //response back to the frontend
-            return Response.json({
-                message: "User Already Exists",
-                status: 500,
-                success: false
-            })
-        }
-
+        //response back to the frontend
+        return Response.json({
+            message: "Registration Succesfull",
+            status: 200,
+            success: true
+        })
 
 
 

@@ -58,33 +58,29 @@ const Ragester = () => {
                 });
 
                 const res = await response.json();
-                setisloading(false);
+
 
                 if (res.success) {
-                    setTimeout(() => {
 
-                        //redirect to dashboard page
-                        setuserData(res?.data?.user);
-
-                    }, 500);
 
 
                     if (via == "Email") {
-                        const issend = await SendOTPviaEmail(res?.data?.otp, res?.data?.user?.fullname, res?.data?.email);
+                        const issend = await SendOTPviaEmail(res?.data?.otp, res?.data?.email);
 
                         if (issend?.status == 200) {
+                            setisloading(false);
                             toast.success(res.message);
-                            setTimeout(() => {
+                            setstape(2);
+                            setuserData(res.data?.user);
 
-                                setstape(2);
-                                setuserData(res.data?.user);
 
-                            }, 500);
                         } else {
+                            setisloading(false);
                             toast.error("Email Send Failed");
                         }
                     }
                 } else {
+                    setisloading(false);
                     toast.error(res.message);
                 }
 
@@ -153,7 +149,7 @@ const Ragester = () => {
 
 
 
-        if (fullname !== '' || email !== '' || phone !== '' || password !== '' || conpass !== '' || role !== '' || role !== "Role") {
+        if (fullname !== '' && phone !== '' && password !== '' && conpass !== '' && role !== '' && role !== "Role") {
 
             if (password === conpass) {
 
@@ -225,7 +221,7 @@ const Ragester = () => {
                                     name="email"
                                     id="email"
                                     className='booking-input-field border border-gray-500 p-3 w-full rounded-md'
-                                    placeholder='Enter Registration Email'
+                                    placeholder='Enter Email'
                                 />
 
                                 {
@@ -310,7 +306,7 @@ const Ragester = () => {
 
                                     <select onChange={(e) => { setrole(e.target.value) }} className='booking-input-field w-[320px] p-3 rounded-md'>
                                         <option value="Role">Select Category</option>
-                                        <option value="Register">Register</option>
+                                        <option value="New Member">New Member</option>
                                         <option value="Client">Client</option>
                                         <option value="Photographer">Photographer</option>
                                         <option value="Videographer">Videographer</option>

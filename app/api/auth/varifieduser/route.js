@@ -17,7 +17,7 @@ export const POST = async (req) => {
 
 
 
-        if (isfoundUser) {
+        if (!isfoundUser) {
 
 
 
@@ -34,7 +34,6 @@ export const POST = async (req) => {
                     status: 200,
                     data: {
                         otp: createOTP,
-                        user: isfoundUser,
                         email: email
 
                     },
@@ -61,7 +60,7 @@ export const POST = async (req) => {
         } else {
             //response back to the frontend
             return Response.json({
-                message: "This Email is not Register in the System",
+                message: "User Already Exists",
                 status: 500,
                 success: false
             })

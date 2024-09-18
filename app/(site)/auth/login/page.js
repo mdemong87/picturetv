@@ -1,5 +1,6 @@
 'use client'
 import Loading from "@/app/componnent/clientcomponnent/Loading";
+import { SendOTPviaEmail } from "@/lib/helper/SendOTP";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -17,6 +18,8 @@ const Login = () => {
     const [password, setpassword] = useState('');
     const [ispassshow, setispassshow] = useState(false);
     const [isloading, setisloading] = useState(false);
+    const [stape, setstape] = useState(1);
+    const [otp, setotp] = useState('');
 
 
     //handle handlelogin function here
@@ -38,37 +41,85 @@ const Login = () => {
                 body: JSON.stringify({
                     email,
                     password,
-                    role
                 })
 
             })
 
             const res = await response.json();
 
+            if (res.success) {
+
+
+
+                const issend = await SendOTPviaEmail(res?.data?.otp, res?.data?.email);
+
+                if (issend?.status == 200) {
+                    setisloading(false);
+                    setstape(2);
+                    toast.success("One Time Password Send Successfully");
+
+                } else {
+                    setisloading(false);
+                    toast.error("There was a server side Problem. Try Again");
+                }
+
+            } else {
+                setisloading(false);
+                toast.error(res.message);
+            }
+
+        } else {
             setisloading(false);
-            setemail('');
-            setpassword('');
-            setrole('');
+            toast.error("Enter All Flied");
+        }
+
+
+    }
+
+
+
+
+
+    //handle login otp verification
+    async function loginotpVerify() {
+        if (otp != '') {
+
+
+            setisloading(true);
+
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/login/otpverify`, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify({
+                    otp,
+                    email,
+                    password
+                })
+
+            })
+
+            const res = await response.json();
 
             if (res.success) {
+                setisloading(false);
                 toast.success(res.message);
                 setTimeout(() => {
                     location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
                 }, 500);
             } else {
+                setisloading(false);
                 toast.error(res.message);
             }
 
         } else {
-            toast.error("Enter All Flied");
+            toast.warn("Enter OTP");
         }
-
-
-
-
-
-
     }
+
+
+
 
 
 
@@ -82,41 +133,58 @@ const Login = () => {
                     <div
                         className="mt-6 flex w-fit flex-col gap-5">
 
-                        <input
-                            onChange={(e) => { setemail(e.target.value) }}
-                            type="email"
-                            name="email"
-                            id="email"
-                            className='w-[320px] p-3 rounded-md'
-                            placeholder='Email'
-                        />
+                        {
+                            stape == 1 ? (
+                                <div>
+                                    <input
+                                        onChange={(e) => { setemail(e.target.value) }}
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        className='w-[320px] p-3 rounded-md'
+                                        placeholder='Email'
+                                    />
 
 
 
 
 
-                        <div className="relative">
-                            <input onChange={(e) => { setpassword(e.target.value) }}
-                                type={`${ispassshow ? "text" : "password"}`}
-                                name="password"
-                                id="password"
-                                className='w-[320px] p-3 rounded-md'
-                                placeholder='Password'
-                            />
-                            <div className="absolute right-0">
+                                    <div className="relative mt-5">
+                                        <input onChange={(e) => { setpassword(e.target.value) }}
+                                            type={`${ispassshow ? "text" : "password"}`}
+                                            name="password"
+                                            id="password"
+                                            className='w-[320px] p-3 rounded-md'
+                                            placeholder='Password'
+                                        />
+                                        <div className="absolute right-0">
 
-                                {
-                                    ispassshow ? (
-                                        <FaEyeSlash onClick={() => { setispassshow(false) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
-                                    ) : (
-                                        <FaEye onClick={() => { setispassshow(true) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
-                                    )
-                                }
+                                            {
+                                                ispassshow ? (
+                                                    <FaEyeSlash onClick={() => { setispassshow(false) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                                ) : (
+                                                    <FaEye onClick={() => { setispassshow(true) }} className="text-2xl -translate-y-9 -translate-x-3 cursor-pointer" />
+                                                )
+                                            }
 
 
 
-                            </div>
-                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ) : (
+                                <div>
+                                    <input
+                                        onChange={(e) => { setotp(e.target.value) }}
+                                        type="number"
+                                        name="email"
+                                        id="email"
+                                        className='booking-input-field border border-gray-500 p-3 mt-3 w-full rounded-md'
+                                        placeholder='Enter 6 Digit OTP Code'
+                                    />
+                                </div>
+                            )
+                        }
 
 
 
@@ -130,7 +198,7 @@ const Login = () => {
 
 
 
-                        <button onClick={() => { handlelogin() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
+                        <button onClick={() => { stape == 1 ? handlelogin() : stape == 2 && loginotpVerify() }} className="pbg w-full col-span-12 lg:col-span-2 rounded-md text-white p-3">
                             Login
                         </button>
 
