@@ -1,5 +1,6 @@
 import { signIn } from "@/lib/auth";
 import OtpModel from "@/lib/model/otpmodel";
+import ConnectDB from "../../../../../lib/connectionDB";
 
 
 export const POST = async (req) => {
@@ -10,6 +11,8 @@ export const POST = async (req) => {
 
 
     try {
+
+        ConnectDB();
 
 
         const findstoreotp = await OtpModel.find({ _id: "66e30dc501da0e9035b75d60" });
