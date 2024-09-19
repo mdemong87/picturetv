@@ -10,7 +10,7 @@ const Newslatter = () => {
             <Container>
                 <div>
                     <h2 className="text-3xl font-bold text-center pt-8">Subscribe to Our Newsletter</h2>
-                    <form className='w-full grid grid-cols-1 gap-5'>
+                    <form className='w-full grid grid-cols-2 gap-7 mt-10 p-5 border border-gray-300 rounded-md'>
 
 
                         <div className="flex flex-col gap-2">
@@ -66,13 +66,13 @@ const Newslatter = () => {
 
                         <div className="flex flex-col gap-2">
                             <label htmlFor="bookingLastName">Conpany Activity:</label>
-                            <input
-                                type="text"
-                                name="bookingLastName"
-                                id="bookingLastName"
-                                className='booking-input-field p-3 rounded-md'
-                                placeholder='Conpany Activity'
-                            />
+                            <select className='booking-input-field w-full p-3 rounded-md'>
+                                <option value="Select">Please Select</option>
+                                <option value="Brand">Brand</option>
+                                <option value="Distributor/Retailer">Distributor/Retailer</option>
+                                <option value="Supplier">Supplier</option>
+                                <option value="Other">Other</option>
+                            </select>
 
                         </div>
 
