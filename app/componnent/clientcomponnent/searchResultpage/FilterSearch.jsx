@@ -1,6 +1,7 @@
 'use client'
 
 
+import { useStore } from "@/lib/store";
 import { useState } from "react";
 import { DateRangePicker } from 'react-date-range';
 import 'react-date-range/dist/styles.css'; // main style file
@@ -13,6 +14,10 @@ const FilterSearch = () => {
 
 
     const [opencalender, setopencalender] = useState(false);
+
+
+    const searchText = useStore((state) => state.searchText);
+    const setsearchText = useStore((state) => state.setsearchText);
 
 
 
@@ -93,7 +98,7 @@ const FilterSearch = () => {
             </div>
 
             {/* max price and min price option div start from here */}
-            <div>
+            {/* <div>
                 <div className="flex justify-between items-center mt-5">
                     <b className="w-fit text-white text-xl font-semibold">Min Price:</b>
                     <input className="w-[70px] border-2 border-gray-900 rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
@@ -102,7 +107,7 @@ const FilterSearch = () => {
                     <b className="w-fit text-white text-xl font-semibold">Max Price:</b>
                     <input className="w-[70px] border-2 border-gray-900 rounded-sm h-[25px] p-1 text-lg font-bold" type="number" />
                 </div>
-            </div>
+            </div> */}
             {/* max price and min price option div end from here */}
 
 

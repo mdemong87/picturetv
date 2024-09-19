@@ -5,6 +5,8 @@ const portfolioImagedata = [
         title: "Headshorts",
         category: "headshorts",
         file: [
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1726473337/Headshot_12_mgu93x.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473359/Headshot_22_wc6kqk.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473382/Headshot_30_rpgg08.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473377/Headshot_29_pnhmmq.jpg",
@@ -24,7 +26,7 @@ const portfolioImagedata = [
             "https://res.cloudinary.com/picturetv/image/upload/v1726473344/Headshot_16_xw8q8s.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473340/Headshot_14_nkkqzg.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473338/Headshot_13_x9nnfy.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726473337/Headshot_12_mgu93x.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726473333/Headshot_11_suwlgg.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473331/Headshot_10_gzxa1b.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726473329/Headshot_9_mxcxku.jpg",
@@ -75,10 +77,13 @@ const portfolioImagedata = [
         title: "Fashion",
         category: "fashion",
         file: [
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1726470568/Fashion_40_pbmg87.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726470531/Fashion_10_owtlzk.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470573/Fashion_41_btdhmt.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470568/Fashion_39_lxjrks.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470568/Fashion_40_pbmg87.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726470567/Fashion_37_axxunh.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470567/Fashion_38_hcgnen.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470564/Fashion_36_hjnwiq.jpg",
@@ -124,8 +129,11 @@ const portfolioImagedata = [
         title: "Editorial",
         category: "editorial",
         file: [
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470849/Editorial_91_sj0puo.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726470901/Editorial_119_pcq583.jpg",
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1726470849/Editorial_91_sj0puo.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726470900/Editorial_118_lqzx66.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470899/Editorial_122_ppbkdb.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726470899/Editorial_121_m8ldn1.jpg",
@@ -174,6 +182,9 @@ const portfolioImagedata = [
         title: "Children",
         category: "children",
         file: [
+            "https://res.cloudinary.com/picturetv/image/upload/v1726472042/Childrean_60_dtgzid.jpg",
+
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726472027/Childrean_52_ywgbau.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472114/Childrean_95_vmjjvd.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472113/Childrean_93_o0v2t4.jpg",
@@ -210,7 +221,8 @@ const portfolioImagedata = [
             "https://res.cloudinary.com/picturetv/image/upload/v1726472049/Childrean_63_xsyibs.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472046/Childrean_62_u7piuz.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472044/Childrean_61_ytpyyi.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726472042/Childrean_60_dtgzid.jpg",
+
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726472041/Childrean_59_rgpury.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472037/Childrean_58_grppgy.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1726472036/Childrean_57_cjhmjn.jpg",
@@ -279,13 +291,13 @@ const portfolioImagedata = [
         title: "Fitness",
         category: "fitness",
         file: [
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470454/Fitness_2_umvsbd.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470457/Fitness_5_toyopn.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470456/Fitness_7_xfsq7y.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470454/Fitness_6_ps6hvf.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470453/Fitness_4_x7mgj5.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470453/Fitness_3_dew7oh.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1726470451/Fitness_1_klz17x.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769544/Fitness_7_orxzcj.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769541/Fitness_4_tcrolh.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769547/Fitness_3_xx6udg.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769543/Fitness_2_izkqzw.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769543/Fitness_5_zhx2rx.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769542/Fitness_6_nsrneb.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1726769541/Fitness_1_pcxygt.jpg"
         ]
 
     },
@@ -294,10 +306,13 @@ const portfolioImagedata = [
         title: "Wedding",
         category: "wedding",
         file: [
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1726469985/Wedding_19_bz95en.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1726469981/Wedding_14_yi2pp9.jpg",
             'https://res.cloudinary.com/picturetv/image/upload/v1726469979/Wedding_11_hzt4gn.jpg',
             'https://res.cloudinary.com/picturetv/image/upload/v1726469983/Wedding_17_dtltxz.jpg',
-            "https://res.cloudinary.com/picturetv/image/upload/v1726469985/Wedding_19_bz95en.jpg",
+
             'https://res.cloudinary.com/picturetv/image/upload/v1726469984/Wedding_18_f3pgtv.jpg',
             'https://res.cloudinary.com/picturetv/image/upload/v1726469987/Wedding_21_uhwgzz.jpg',
             "https://res.cloudinary.com/picturetv/image/upload/v1726469978/Wedding_10_rmllan.jpg",

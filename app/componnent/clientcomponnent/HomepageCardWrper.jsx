@@ -1,16 +1,18 @@
 import Container from "./Container";
 import ImageCard from "./imageCard";
 
-const HomePageCardWrper = ({ data }) => {
+const HomePageCardWrper = ({ data, fromPage }) => {
 
 
 
     return (
         <div className="pt-[195px] md:pt-[135px] lg:pt-[30px]">
             <Container>
-                <h1 className="text-3xl font-bold text-gray-900 pb-8">Expolor Best Photos:</h1>
+                {
+                    fromPage == "home" && <h1 className="text-3xl font-bold text-gray-900 pb-8">Expolor Best Photos:</h1>
+                }
 
-                <div className="grid grid-cols-12 items-center gap-5">
+                <div className={`grid ${fromPage == "home" ? "grid-cols-12" : "grid-cols-9"} items-center gap-5`}>
 
 
 

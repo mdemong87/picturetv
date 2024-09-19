@@ -1,7 +1,7 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
-import SearchPageCardWrper from "@/app/componnent/clientcomponnent/searchResultpage/SearchPageCardWrper";
+import HomePageCardWrper from "@/app/componnent/clientcomponnent/HomepageCardWrper";
+import data from "../../../data/EventData";
 import FilterSearch from "../../componnent/clientcomponnent/searchResultpage/FilterSearch";
-
 
 
 const SearchResult = () => {
@@ -13,7 +13,7 @@ const SearchResult = () => {
                         <FilterSearch />
                     </div>
                     <div className="col-span-12 lg:col-span-9 w-full">
-                        <SearchPageCardWrper />
+                        <HomePageCardWrper data={data} fromPage="search" />
                     </div>
                 </div>
             </Container>

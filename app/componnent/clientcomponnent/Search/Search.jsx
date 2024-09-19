@@ -1,6 +1,7 @@
 'use client'
 
 
+import { useStore } from '@/lib/store';
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 import { DateRangePicker } from 'react-date-range';
@@ -14,6 +15,13 @@ const SearchWper = () => {
 
     const router = useRouter();
     const [opencalender, setopencalender] = useState(false);
+
+
+
+    const searchText = useStore((state) => state.searchText);
+    const setsearchText = useStore((state) => state.setsearchText);
+    console.log(searchText);
+
 
 
     //handle date range function here
@@ -60,7 +68,8 @@ const SearchWper = () => {
 
                         <div className='col-span-12 lg:col-span-5'>
                             <div className='bg-white rounded-md'>
-                                <input
+                                <input onChange={(e) => { setsearchText(e.target.value) }}
+                                    value={searchText}
                                     type="search"
                                     name="imageSearch"
                                     id="imageSearch"

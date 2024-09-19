@@ -12,7 +12,7 @@ const PortfolioCard = ({ title, link, data, index }) => {
 
 
             <div className="rounded-b-md h-full w-full cardimagecomponnentImageWrper">
-                <Image className={`rounded-b-md h-full w-full object-cover portfolioCardHover object-center`} src={data?.file[0]} width={1000} height={1000} alt="portfolio-card-image" />
+                <Image className={`rounded-b-md h-full w-full portfolioCardHover object-cover ${index == 0 || index == 5 ? "objectpoostion" : index == 2 || index == 3 ? "object-top" : "object-center"}`} src={data?.file[0]} width={1000} height={1000} alt="portfolio-card-image" />
             </div>
         </Link>
     )

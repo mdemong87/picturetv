@@ -27,7 +27,7 @@ const Home = async () => {
         <Search />
       </div>
       <div className="py-[60px]">
-        <HomePageCardWrper data={data} />
+        <HomePageCardWrper data={data} fromPage="home" />
       </div>
     </main>
   )
