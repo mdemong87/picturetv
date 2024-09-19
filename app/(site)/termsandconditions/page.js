@@ -12,7 +12,7 @@ const TermsAndCondition = () => {
                     <h1 className="text-3xl text-center py-8 font-bold">Picture TV - Terms and Conditions</h1>
                     <section className="bg-white p-6 rounded-lg shadow-lg mb-8">
                         <h2 className="text-2xl font-semibold mb-4">Terms of Use</h2>
-                        <p className="mb-4">Welcome to PictureTV.Net. These are the terms and conditions, as amended from time to time, that govern the use of our website located at <Link className="underline" href={"www.picturetv.net"}>www.picturetv.net</Link> . The User&lsquo;s access and use of our Website constitutes the User&lsquo;s acceptance of these terms and conditions, as amended from time to time.</p>
+                        <p className="mb-4">Welcome to PictureTV.Net. These are the terms and conditions, as amended from time to time, that govern the use of our website located at <Link target="blank" className="underline" href={'https://www.picturetv.net/'}>www.picturetv.net</Link>. The User&lsquo;s access and use of our Website constitutes the User&lsquo;s acceptance of these terms and conditions, as amended from time to time.</p>
                         <p className="mb-4">The User Terms do not alter in any way the terms or conditions of any other agreement you may have with Signature Model Management Company, LLC. It&lsquo;s subsidiaries or affiliates. By using this Website, you represent and warrant that you are over the age of 18 and are lawfully able to accept the User Terms. If you are using the Website on behalf of any entity, you further represent and warrant that you are authorized to accept these User Terms on such entity&lsquo;s behalf, and that such entity agrees to indemnify PTV for violations of these User Terms.</p>
 
 
@@ -217,7 +217,7 @@ const TermsAndCondition = () => {
                         <div className="mt-14">
                             <p>Mala Seza</p>
                             <p>929.888.3820</p>
-                            <Link className="underline" href={'https://www.picturetv.net/'}>https://www.picturetv.net</Link>
+                            <Link target="blank" className="underline" href={'https://www.picturetv.net/'}>www.picturetv.net</Link>
 
                         </div>
 
