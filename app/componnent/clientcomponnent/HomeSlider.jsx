@@ -38,7 +38,7 @@ const HomeSlider = () => {
                         {
                             SlideImage.map((items, index) => {
                                 return (
-                                    <SwiperSlide key={index}>
+                                    < SwiperSlide key={index} >
                                         <SingleSlide image={items} index={index} />
                                     </SwiperSlide>
 
@@ -50,7 +50,7 @@ const HomeSlider = () => {
                     </Swiper>
                 </div>
             </div>
-        </section>
+        </section >
     );
 
 

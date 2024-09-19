@@ -104,6 +104,18 @@ h6 {
     object-position: 100% 25%;
   }
 
+  .object-positon-bootom {
+    object-position: 100% 65%;
+  }
+
+  .object-bootom-two {
+    object-position: 100% 46%;
+  }
+
+  .object-top-10 {
+    object-position: 100% 10%;
+  }
+
   .cardImageForHoverEffect {
     transition: all 1s;
   }
