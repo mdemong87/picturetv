@@ -1,7 +1,23 @@
+'use client'
+
+import SearchLogic from "@/lib/helper/SearchLogic";
+import { useStore } from "@/lib/store";
 import Container from "./Container";
 import ImageCard from "./imageCard";
 
 const HomePageCardWrper = ({ data, fromPage }) => {
+
+
+
+    const searchText = useStore((state) => state.searchText);
+    const setsearchText = useStore((state) => state.setsearchText);
+    const filterData = SearchLogic(data, searchText);
+
+
+
+
+
+
 
 
 
@@ -17,7 +33,7 @@ const HomePageCardWrper = ({ data, fromPage }) => {
 
 
                     {
-                        data?.map((singleCard, index) => {
+                        filterData?.map((singleCard, index) => {
                             return (
                                 <ImageCard key={index} data={singleCard} />
 

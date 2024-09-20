@@ -56,8 +56,9 @@ const FilterSearch = () => {
     return (
         <div className="pbg2 w-full h-full rounded-md p-4">
             <div className='bg-white rounded-md'>
-                <input
+                <input onChange={(e) => { setsearchText(e.target.value) }}
                     type="search"
+                    value={searchText}
                     name="imageSearch"
                     id="imageSearch"
                     className='w-full p-3 pl-10 outline-none rounded-md'
