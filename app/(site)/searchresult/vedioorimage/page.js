@@ -1,4 +1,5 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
+import UnderDevelopment from "@/app/componnent/clientcomponnent/UnderDevelopment";
 import Link from "next/link";
 import { FaImage, FaVideo } from "react-icons/fa";
 
@@ -35,6 +36,8 @@ const VedioOrImage = () => {
                     </div>
                 </div>
             </Container>
+
+            <UnderDevelopment />
         </main>
     )
 }
