@@ -1,5 +1,6 @@
 import SingleBlogCard from "@/app/componnent/clientcomponnent/blog/singleBlogCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
+import UnderDevelopment from "@/app/componnent/clientcomponnent/UnderDevelopment";
 import Image from "next/image";
 import Link from "next/link";
 import blogImage from "../../../public/assets/bg-3.jpg";
@@ -71,6 +72,7 @@ const Blogs = () => {
                     </aside >
                 </div>
             </Container>
+            <UnderDevelopment />
         </main>
     )
 }
