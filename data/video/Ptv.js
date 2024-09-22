@@ -1,8 +1,36 @@
 const ptv = [
     {
+        title: "#beauty Tips How To Keep Your #makeup #brushes Clean by #cinema #secrets #makeuptutorial #beautiful",
+        dis: "MUAs and makeup enthusiasts rely on Cinema Secrets for all their artistic projects. Known as one of the worlds most-trusted corrective professional-grade makeup brands, Cinema Secrets is used by celebrity, film, and editorial artists worldwide. Treat your kit to pigment-rich makeup and the essential tools every MUA loves, whether you are on set or at an event.Founded by professional makeup artist Maurice Stein, Cinema Secrets is hailed for its highly pigmented, corrective makeup in the film and television industry.With over 200 films and television shows and 4,000+ commercials to his credit, Stein knows how to formulate products that outperform your expectations.In fact, his products have proven clinical applications in the medical industry.As a regular volunteer with cancer patients and burn survivors, Stein has helped many minimize the appearance and discoloration of scars with his remarkable products and techniques.",
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1726999182/beauty_Tips_How_To_Keep_Your_makeup_brushes_Clean_by_cinema_secrets_makeuptutorial_beautiful_az1qbr.mp4"
+    },
+    {
+        title: "Art Expo New York #2024 #art #artist #lifestyle #luxury #design #artwork #artandcraft #creative #nyc",
+        dis: "Redwood Art Group is the leading connector of collectors, galleries, and artists.REDWOOD ART FAIRS With over 40 art fairs spanning more than 11 years, our shows in New York, Miami, Dallas, Santa Fe, and San Diego are celebrated as premier destinations for discovering and collecting contemporary and modern art and design.Attracting nearly 100,000 attendees annually, Redwood Art Group fairs support galleries as they champion the careers of artists, strengthen the local art market, and inspire art lovers from around the world.REDWOOD ONLINE ART MARKETPLACE Our online art shop—curated by art- industry pros with over 68 years of combined experience—allows us to further spread the joy of owning art, from the emerging to the iconic.By selling original art online, we not only nurture the careers of artists and galleries but also give art enthusiasts and collectors alike the opportunity to explore new artistic horizons, to be moved and transported by the works of talented artists, and to be part of our global art community.REDWOOD MEDIA GROUP Redwood Media Group is the parent company of Redwood Art Group.Founded in 2009, Redwood Media Group is the nations leader in exhibitions and event production, media, and marketing for the global fine art community.",
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1726999218/Art_Expo_New_York_2024_art_artist_lifestyle_luxury_design_artwork_artandcraft_creative_nyc_qxp7qk.mp4"
+    },
+    {
         title: "TexWorld SGS #fabric #luxury #design #lifestyle #fashion #sustainability #mexico #technology #sport",
         dis: "THE PATH DOES MATTER WHEN YOU WANT TO REACH YOUR GOAL Founded in 2010 in Puebla, Mexico and supplier to the entire retail market in the country, from department stores and self-service stores, to specialty stores and wholesalers.",
-        file: "https://res.cloudinary.com/dmo0gctub/video/upload/v1724511789/videoplayback_puhptt.mp4"
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1726999228/TexWorld_SGS_fabric_luxury_design_lifestyle_fashion_sustainability_mexico_technology_sport_btbyv8.mp4"
+    },
+
+    {
+        title: "Bullard #safety #protection #construction #biohazard #lab #business #school #hospital #bullard #home",
+        dis: "Bullard is a globally scaled personal protective equipment (PPE) manufacturer based in Kentucky, USA and with locations in Singapore and Germany.Special Thanks To InterPHEX NIGHTIME Track BY Mello Support my channel by Like Comments Share",
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1726999529/Bullard_safety_protection_construction_biohazard_lab_business_school_hospital_bullard_home_v80a7s.mp4"
+    },
+
+    {
+        title: "Studio Ocho Cuartos From ICFF #2024 #business #luxury #design #home #homemade #homedecor #creative",
+        dis: "We are a full service interior design and fabrication studio, based in San Diego, CA. We will put together a complete design of your space with an estimate and timeline for the build and install.We provide renderings, materials, color, and lighting selection as well as all custom fabrication required for your project.If you are looking to turn your space into something magical,then we are the Magos you call.ICFF, North Americas leading platform for contemporary furnishing design, and Wanted Design Manhattan, a trade event for North American studios and international emerging designers, present over 300 exhibitors from 25 countries, and provide an important moment for architects, interior designers and retailers to reconnect and source new product and ideas. ICFF and Wanted Design Manhattan feature product for residential, contract, and hospitality spaces, and showcase furniture, lighting, kitchen and bath, textiles, seating, wall coverings, carpet and flooring, accessories, and materials.",
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1727000688/Studio_Ocho_Cuartos_From_ICFF_2024_business_luxury_design_home_homemade_homedecor_creative_f9tbtf.mp4"
+    },
+
+    {
+        title: "Columbia School Of Business How Do We Get There From Here #motivation  #success #mindset #business",
+        dis: "Although I'm not 100% sure what's going on with the world or politics but I do here and there questions more. This week episode is about love, not just any love but the humanity love. I was caught up in a sticky situation because I see the world different than some of us who more focus on the wrong things, rather how can we come together to solve the biggest issue we are dealing with as a human race. We have door closing in our faces & less opportunities because of our race, gender, colors and more. Asian Hate, Jewish antisemitism hate, Black peoples hate, and all lives mater hate. I would love to share more here with you but you must watch the whole video to understand my point of view and why I believe love is stronger then hate.",
+        file: "https://res.cloudinary.com/picturetv/video/upload/v1726999540/Columbia_School_Of_Business_How_Do_We_Get_There_From_Here_motivation_success_mindset_business_frhrls.mp4"
     },
 
     {

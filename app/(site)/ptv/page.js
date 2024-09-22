@@ -2,7 +2,6 @@
 
 import AsideCard from "@/app/componnent/clientcomponnent/AsideCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
-import UnderDevelopment from "@/app/componnent/clientcomponnent/UnderDevelopment";
 import Vedio from "@/app/componnent/clientcomponnent/Vedio";
 import ptv from "@/data/video/Ptv";
 import { useState } from "react";
@@ -48,8 +47,6 @@ const PTV = () => {
                     </aside>
                 </div>
             </Container>
-
-            <UnderDevelopment />
         </main >
     )
 }

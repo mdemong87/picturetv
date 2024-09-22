@@ -9,7 +9,7 @@ export default function Vedio({ src, currentvideo, setcurrentvideo }) {
                     <source src={src?.file} type="video/mp4" className="" />
                 </video>
             </div>
-            <div className="bg-white rounded-lg mt-1 p-3 h-fit flex items-start justify-between gap-5">
+            <div className="bg-white rounded-lg mt-1 p-3 h-fit flex flex-col md:flex-row items-start justify-between gap-5">
                 <div className="w-full">
                     <h3 className="text-xl font-bold text-gray-700">{src?.title}</h3>
                     <p className="text-gray-500 pt-4">{src?.dis}</p>
