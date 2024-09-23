@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Blogs = () => {
     return (
-        <main className="h-fit pt-36 pb-14 blogBgbannar">
+        <main className="h-fit pt-36 pb-14">
             <Container>
                 <div className="grid grid-cols-12 gap-5">
                     <div className="col-span-12 lg:col-span-8 w-full h-fit text-white rounded-md flex flex-col gap-5">
@@ -37,11 +37,11 @@ const Blogs = () => {
 
 
                     </div>
-                    <aside className="col-span-12 md:col-span-4 w-full bg-[#8888887c] text-white rounded-md h-full p-5">
+                    <aside className="col-span-12 md:col-span-4 w-full bg-white text-white rounded-md h-full p-5">
                         <Image className="col-span-6 lg:col-span-2 w-full rounded-md h-[300px] w-full object-cover object-top" src={"https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-three-1_tvsmxl.jpg"} alt="blog-image" width={1000} height={1000} />
                         <div className="col-span-6 lg:col-span-4 w-full mt-5">
-                            <h2 className="text-xl">Inbal Dror Fall/Winter Bridal Collection</h2>
-                            <p className="text-gray-300 pt-3 text-base">
+                            <h2 className="text-2xl text-gray-900">Inbal Dror Fall/Winter Bridal Collection</h2>
+                            <p className="text-gray-500 pt-3 text-base">
                                 Inbal Dror&lsquo;s Fall/Winter 2016 bridal collection is a seductive blend of elegance and boldness, featuring 32 stunning pieces that range from breathtaking bridal gowns to sultry evening wear. Known for infusing glamour and excitement into each design, Inbal&lsquo;s latest collection is no exception. This season, she incorporates the finest European fabrics and embellishments, from delicate layers of silk tulle to Chantilly lace, matte sequins, laser-cut embroidery, crystal and pearl beading, and even touches of 3D printing.
 
                                 The color palette is a dream of soft ivory, vanilla, champagne, and charcoal blush, providing the perfect backdrop for intricate detailing. Each piece embodies an airy, ethereal quality, with sheer bodices, flowing skirts, plunging necklines, high slits, and lace and beading carefully placed over translucent fabrics.
@@ -68,8 +68,8 @@ const Blogs = () => {
 
                         <Image className="col-span-6 lg:col-span-2 w-full rounded-md mt-[40px] h-[300px] object-top object-cover" src={"https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-four-1_yj7gfl.jpg"} alt="blog-image" width={1000} height={1000} />
                         <div className="col-span-6 lg:col-span-4 w-full mt-5">
-                            <h2 className="text-xl">Dennis Basso&lsquo;s Collection for Kleinfeld: A Tribute to the New York Bride</h2>
-                            <p className="text-gray-300 pt-3 text-base">
+                            <h2 className="text-2xl text-gray-900">Dennis Basso&lsquo;s Collection for Kleinfeld: A Tribute to the New York Bride</h2>
+                            <p className="text-gray-500 pt-3 text-base">
                                 This season, Dennis Basso&lsquo;s collection for Kleinfeld celebrates the essence of the New York bride and her glamorous, jet-setting lifestyle. With a perfect blend of elegance and sophistication, the collection offers a wide array of silhouettes and styles that cater to every woman&lsquo;s unique taste.
 
                                 Standout looks include an ivory strapless tea-length tulle gown, an ivory stretch satin mermaid dress with a chic high collar and bow neckline, and a flirty short ivory silk jacquard cocktail dress—a playful take on the classic short sleeve ball gown, which was the final look to dazzle on the runway.
@@ -99,8 +99,8 @@ const Blogs = () => {
 
                         <Image className="col-span-6 lg:col-span-2 w-full rounded-md mt-[40px] h-[300px] object-top object-cover w-full" src={"https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-five-1_tcu8gz.jpg"} alt="blog-image" width={1000} height={1000} />
                         <div className="col-span-6 lg:col-span-4 w-full mt-5">
-                            <h2 className="text-xl">Isabelle Armstrong - Spring 2016 Collection</h2>
-                            <p className="text-gray-300 pt-3 text-base">
+                            <h2 className="text-2xl text-gray-900">Isabelle Armstrong - Spring 2016 Collection</h2>
+                            <p className="text-gray-500 pt-3 text-base">
                                 As spring approaches, many couples are preparing to say I do in the new year, and for brides-to-be, finding the perfect wedding dress is key to turning that special day into a fairytale. Renowned for luxury and elegance, bridal design house Isabelle Armstrong offers the ultimate blend of beauty and sophistication. With the launch of their Spring 2016 collection, this design powerhouse is a must-visit for any bride searching for her dream gown.The collection dazzles with exquisitely draped silks, delicate laces, and hand-beaded fabrics that bring a true &lsquo;wow&lsquo; factor to each piece. Isabelle Armstrong&lsquo;s bridal gowns, featuring geometric embroidery and soft, romantic fabrics, capture the brilliance of a diamond with their multifaceted designs. Every gown is handcrafted with meticulous attention to detail, combining classic silhouettes with intricate embellishments that make them timeless yet modern.For the bride who seeks both luxury and lasting beauty, Isabelle Armstrong&lsquo;s Spring 2016 collection is the epitome of bridal elegance.
                             </p>
 

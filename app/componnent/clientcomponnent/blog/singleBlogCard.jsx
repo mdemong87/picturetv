@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SingleBlogCard = ({ title, dis, image }) => {
     return (
-        <div className="grid gap-5 grid-cols-6 p-5 rounded-md bg-[#8888887c]">
+        <div className="grid gap-5 grid-cols-6 p-5 rounded-md bg-white">
             <div className="col-span-6 lg:col-span-6 w-full">
 
                 <div className="flex flex-col md:flex-row justify-between gap-4 w-full">
@@ -23,8 +23,8 @@ const SingleBlogCard = ({ title, dis, image }) => {
 
             </div>
             <div className="col-span-6 lg:col-span-6 w-full">
-                <h2 className="text-xl">{title}</h2>
-                <p className="text-gray-300 pt-3 text-base">
+                <h2 className="text-2xl text-gray-900">{title}</h2>
+                <p className="text-gray-500 pt-3 text-base">
                     {dis}
                 </p>
 
