@@ -6,12 +6,14 @@ const SingleBlogCard = ({ title, dis, image }) => {
         <div className="grid gap-5 grid-cols-6 p-5 rounded-md bg-[#8888887c]">
             <div className="col-span-6 lg:col-span-6 w-full">
 
-                <div className="flex justify-between gap-4 w-full">
+                <div className="flex flex-col md:flex-row justify-between gap-4 w-full">
                     {
                         image?.map((item, index) => {
                             return (
 
-                                <Image key={index} className="rounded-md object-cover object-top h-[400px] w-full" src={item} alt="blog-image" width={1000} height={1000} />
+                                <div className="h-[400px] w-full">
+                                    <Image key={index} className="rounded-md object-cover object-top w-full h-full" src={item} alt="blog-image" width={1000} height={1000} />
+                                </div>
 
                             )
                         })
