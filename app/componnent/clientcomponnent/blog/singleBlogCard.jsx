@@ -11,8 +11,8 @@ const SingleBlogCard = ({ title, dis, image }) => {
                         image?.map((item, index) => {
                             return (
 
-                                <div className="h-[400px] w-full">
-                                    <Image key={index} className="rounded-md object-cover object-top w-full h-full" src={item} alt="blog-image" width={1000} height={1000} />
+                                <div key={index} className="h-[400px] w-full">
+                                    <Image className="rounded-md object-cover object-top w-full h-full" src={item} alt="blog-image" width={1000} height={1000} />
                                 </div>
 
                             )
