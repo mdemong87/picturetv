@@ -1,12 +1,24 @@
 import Image from "next/image";
-import blogImage from "../../../../public/assets/bg-2.jpg";
 
 
-const SingleBlogCard = ({ title, dis }) => {
+const SingleBlogCard = ({ title, dis, image }) => {
     return (
         <div className="grid gap-5 grid-cols-6 p-5 rounded-md bg-[#8888887c]">
             <div className="col-span-6 lg:col-span-6 w-full">
-                <Image className="rounded-md w-full" src={blogImage} alt="blog-image" width={1000} height={1000} />
+
+                <div className="flex justify-between gap-4 w-full">
+                    {
+                        image?.map((item, index) => {
+                            return (
+
+                                <Image key={index} className="rounded-md object-cover object-top h-[400px] w-full" src={item} alt="blog-image" width={1000} height={1000} />
+
+                            )
+                        })
+
+                    }
+                </div>
+
             </div>
             <div className="col-span-6 lg:col-span-6 w-full">
                 <h2 className="text-xl">{title}</h2>
