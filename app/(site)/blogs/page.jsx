@@ -97,8 +97,12 @@ const Blogs = () => {
                             <div className="mt-[25px]">
 
 
+
+
+
+
                                 <div className="my-[10px] text-gray-600">
-                                    <Link className="w-fit h-fit" href="/blogs">
+                                    <Link className="w-fit h-fit" href="/blogs/3">
                                         <div className="bg-[#e4edd9] rounded-md p-2">
                                             <h3 className="text-xl font-semibold line-clamp-1">
                                                 Desigual S/S 2014</h3>
@@ -117,15 +121,12 @@ const Blogs = () => {
 
 
 
+
+
+
+
                             </div>
                         </div>
-
-
-
-
-
-
-
 
 
                     </aside >
