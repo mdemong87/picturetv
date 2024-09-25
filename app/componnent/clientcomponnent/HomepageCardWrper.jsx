@@ -35,7 +35,7 @@ const HomePageCardWrper = ({ data, fromPage }) => {
                     {
                         filterData?.map((singleCard, index) => {
                             return (
-                                <ImageCard key={index} data={singleCard} />
+                                <ImageCard key={index} data={singleCard} link={`/${singleCard?.eventid}`} />
 
                             )
                         })

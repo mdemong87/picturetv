@@ -16,7 +16,7 @@ const Navber = ({ setshownav, session }) => {
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/"}>Media</Link>
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/portfolio"}>Portfolio</Link>
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/booking"}>Booking</Link>
-            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/searchresult/vedioorimage"}>Events</Link>
+            <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/events"}>Events</Link>
             <Link onClick={() => { setshownav(false) }} className='text-base font-medium text-white' href={"/blogs"}>Blog</Link>
 
 

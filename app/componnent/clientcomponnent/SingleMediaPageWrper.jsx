@@ -9,13 +9,12 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import eventdata from "../../../data/EventData";
 import ImageCard from "../../componnent/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
 import ForwordBtn from "../ForwordBtn";
 import SinglePageSingleItemsForMedia from "./SinglePageSingleItemsforMedia";
 
 
-const SingleMediaPageWrper = ({ id, session }) => {
+const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
 
     const updateImage_Url = useStore((state) => state.updateImage_Url);
     const Image_Url = useStore((state) => state.Image_Url);
@@ -30,13 +29,7 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
 
 
-
-
-    //filter out the current data
-    const singledata = eventdata?.filter((items) => {
-
-        return items.eventid == id;
-    })
+    const forPage = singledata[0].forPage;
 
 
     //router instance
@@ -102,18 +95,28 @@ const SingleMediaPageWrper = ({ id, session }) => {
 
 
 
-                    <div className="flex flex-col md:flex-row items-center justify-between w-full gap-4">
+                    <div className="flex flex-col md:flex-row items-center justify-between w-full mb-6 gap-4">
                         <div className="flex justify-between md:justify-start items-center gap-4 w-full">
                             {
                                 id == '1' ? (
-                                    <BackBtn link={'/'} />
+                                    <BackBtn link={`${forPage == "Media" ? "/" : "/events"}`} />
                                 ) : (
-                                    <BackBtn link={`/${Number(id) - 1}`} />
+                                    <BackBtn link={`${forPage == "Media" ? `/${Number(id) - 1}` : `/events/images/${Number(id) - 1}`}`} />
                                 )
                             }
-                            <ForwordBtn link={`/${Number(id) + 1}`} />
+
+
+                            <ForwordBtn
+                                link={`${forPage == "Media"
+                                    ? (id < length ? `/${Number(id) + 1}` : `/${Number(id)}`)
+                                    : (id < length ? `/events/images/${Number(id) + 1}` : `/events/images/${Number(id)}`)}`}
+                            />
+
+
                         </div>
-                        <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
+                        {
+                            forPage == "Media" && <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
+                        }
                     </div>
 
 
@@ -147,12 +150,6 @@ const SingleMediaPageWrper = ({ id, session }) => {
                     {
                         showimageSlide && <SinglePageSingleItemsForMedia setshowimageSlide={setshowimageSlide} currentEventData={singledata[0]} currentItems={currentItems} handleDownload={handleDownload} setprice={setprice} price={price} />
                     }
-
-                    {/* {
-                        isloginshow && <PerchasLogin setisloginshow={setisloginshow} />
-                    } */}
-
-
 
 
                 </div>

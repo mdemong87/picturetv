@@ -3,12 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaImages } from "react-icons/fa";
 
-const ImageCard = ({ data }) => {
+const ImageCard = ({ data, link }) => {
 
 
 
     return (
-        <Link href={`/${data?.eventid}`} className="border shadow-xl col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3 h-fit rounded-md cursor-pointer cardHover">
+        <Link href={link} className="border shadow-xl col-span-12 sm:col-span-6 md:col-span-6 lg:col-span-4 xl:col-span-3 h-fit rounded-md cursor-pointer cardHover">
             <div className="w-full">
                 <div className="w-full rounded-t-md cardimagecomponnentImageWrper">
 

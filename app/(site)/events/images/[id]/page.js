@@ -1,6 +1,6 @@
 import SingleMediaPageWrper from "@/app/componnent/clientcomponnent/SingleMediaPageWrper";
 import gertusersession from "@/lib/helper/getusersesssion";
-import data from "../../../data/EventData";
+import data from "../../../../../data/EventPageEventData";
 
 
 
@@ -20,6 +20,7 @@ const SingleAllEventPage = async ({ params }) => {
 
         return items.eventid == id;
     })
+
 
     const length = data.length;
 

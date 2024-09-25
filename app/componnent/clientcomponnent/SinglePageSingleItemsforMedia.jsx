@@ -41,11 +41,11 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                         <div>
                             <h5 className="text-white text-base">Location:</h5>
-                            <p className="text-gray-300">Lincoin Center - New York</p>
+                            <p className="text-gray-300">{currentEventData?.Location}</p>
                         </div>
                         <div>
                             <h5 className="text-white text-base">Date:</h5>
-                            <p className="text-gray-300">Spring Fall Winter</p>
+                            <p className="text-gray-300">{currentEventData?.Eventdate}</p>
                         </div>
                         <div>
                             <h5 className="text-white text-base">Editor Credit:</h5>

@@ -10,6 +10,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1727020679/Claire_Pettibone_Picture_TV_Media_Page_-_01_78_jjazst_hpjxxj.jpg",
@@ -302,6 +305,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -534,6 +540,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -813,6 +822,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -1046,6 +1058,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -1465,6 +1480,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -2574,6 +2592,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726508998/Media_Page_slide_replace_the_piano23_ewxx5m_nhcpnv.jpg",
@@ -2613,6 +2634,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726572009/_CID9623_owazbp_wcs6jg_c4ejls.tiff",
@@ -2665,6 +2689,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726209385/Zang_Toi_Media_Page_209_ufohon_y6oyby_uhpyjd.jpg",
@@ -2922,6 +2949,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726209388/Anna_sui-114_ztnako_deugmf.jpg",
@@ -3104,6 +3134,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726298474/Viviene_Tam_Media_Page-157_hhqnow_t4oeee.jpg",
@@ -3310,6 +3343,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1726299262/Badgley_Mischka_Media_Page_50_hhlcpt_hv7nch.jpg",
@@ -3524,6 +3560,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -3655,6 +3694,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726555034/BCBG_Media_Page_7_lwwwf5_yruijv.png",
@@ -3724,6 +3766,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726573584/Pamala_Roland_Media_Page_97_zpp9zw_jzjd8f.png",
@@ -4065,6 +4110,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726575183/Carolina_Herrera_Media_Page_207_n1mdvf_ck0su5.png",
@@ -4433,6 +4481,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726575201/RICHARD_CHAI_Media_Page_126_iqjtia_yxl0wo.png",
@@ -4590,6 +4641,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
             "https://res.cloudinary.com/picturetv/image/upload/v1726575195/Naeem_khan_Media_Page_192_i5wori_kx1esc.png",
@@ -4935,6 +4989,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -5240,6 +5297,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
@@ -5655,6 +5715,9 @@ const data = [
         "title": "New York Fashion Week",
         "type": "Image",
         "eventtype": "Fashion Show",
+        "Location": "Lincoin Center - New York",
+        "Eventdate": "Spring Fall Winter",
+        "forPage": "Media",
         "dis": "A seminar highlighting the latest innovations in technology.",
         file: [
 
