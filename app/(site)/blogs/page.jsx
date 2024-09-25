@@ -1,6 +1,7 @@
 import SingleBlogCard from "@/app/componnent/clientcomponnent/blog/singleBlogCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Image from "next/image";
+import Link from "next/link";
 
 const Blogs = () => {
     return (
@@ -29,6 +30,12 @@ const Blogs = () => {
 
 
                         <SingleBlogCard title={"Anne Barge Spring 2016 Bridal Collection"} dis="Anne Barge's spring 2016 bridal collection is a beautiful mix of white with tiny hints of  pastel tones.  The soft tones add interest to each piece and on a whole, made the collection enchanting.  The use of tulle overlay, French lace and pale embroidery also made the collection romantic in feel.  Inspire by French gardens, the collection has a beautiful balance of embellishment and a verity of classic shapes and silhouettes. 23 looks were presented for Ann's three distinct collections, Anne Barge Couture, Blue Willow Bride, and Black Label. Given French and floral names, the dresses were elegant, meticulously fitted, and gorgeous. Layered transparent tulle dresses are light and airy with just a swig of color that is not the usual white or ivory. " image={["https://res.cloudinary.com/picturetv/image/upload/v1727078881/blog-six-1_pybott.jpg"]} />
+
+
+
+
+
+                        <SingleBlogCard title={"Dennis Basso&lsquo;s Collection for Kleinfeld: A Tribute to the New York Bride"} dis="As spring approaches, many couples are preparing to say I do in the new year, and for brides-to-be, finding the perfect wedding dress is key to turning that special day into a fairytale. Renowned for luxury and elegance, bridal design house Isabelle Armstrong offers the ultimate blend of beauty and sophistication. With the launch of their Spring 2016 collection, this design powerhouse is a must-visit for any bride searching for her dream gown.The collection dazzles with exquisitely draped silks, delicate laces, and hand-beaded fabrics that bring a true &lsquo;wow&lsquo; factor to each piece. Isabelle Armstrong&lsquo;s bridal gowns, featuring geometric embroidery and soft, romantic fabrics, capture the brilliance of a diamond with their multifaceted designs. Every gown is handcrafted with meticulous attention to detail, combining classic silhouettes with intricate embellishments that make them timeless yet modern.For the bride who seeks both luxury and lasting beauty, Isabelle Armstrong&lsquo;s Spring 2016 collection is the epitome of bridal elegance." image={["https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-five-1_tcu8gz.jpg", "https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-three-1_tvsmxl.jpg"]} />
 
 
 
@@ -68,7 +75,7 @@ const Blogs = () => {
 
                         <Image className="col-span-6 lg:col-span-2 w-full rounded-md mt-[40px] h-[300px] object-top object-cover" src={"https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-four-1_yj7gfl.jpg"} alt="blog-image" width={1000} height={1000} />
                         <div className="col-span-6 lg:col-span-4 w-full mt-5">
-                            <h2 className="text-2xl text-gray-900">Dennis Basso&lsquo;s Collection for Kleinfeld: A Tribute to the New York Bride</h2>
+                            <h2 className="text-2xl text-gray-900"></h2>
                             <p className="text-gray-500 pt-3 text-base">
                                 This season, Dennis Basso&lsquo;s collection for Kleinfeld celebrates the essence of the New York bride and her glamorous, jet-setting lifestyle. With a perfect blend of elegance and sophistication, the collection offers a wide array of silhouettes and styles that cater to every woman&lsquo;s unique taste.
 
@@ -85,28 +92,36 @@ const Blogs = () => {
 
 
 
+                        <div className="mt-[40px]">
+                            <h2 className="text-3xl font-semibold text-gray-800">Related Blogs Post:</h2>
+                            <div className="mt-[25px]">
+
+
+                                <div className="my-[10px] text-gray-600">
+                                    <Link className="w-fit h-fit" href="/blogs">
+                                        <div className="bg-[#e4edd9] rounded-md p-2">
+                                            <h3 className="text-xl font-semibold line-clamp-1">
+                                                Desigual S/S 2014</h3>
+                                            <p className="line-clamp-2 text-gray-500 text-sm">
+                                                Spanish fashion brand Desigual delivered a burst of color yet, managed to show a more subdued side than we&lsquo;ve seen. The show opened with an ode to the 60&lsquo;s as models clad in black and white patterned dresses with matching sun hats strutted their stuff. This was followed by an almost entirely different collection of signature Desigual colored garments.
+
+                                                The printed pant sets for women and the well fitting pant designs for men were a highpoint of the collection. Coats and Jackets from the brand for both sexes will also be a hit this season!
+                                            </p>
+                                            <span className="line-clamp-1 text-gray-500 text-sm">Friday, October 4, 2013</span>
+                                        </div>
+                                    </Link>
+                                </div>
 
 
 
 
 
 
-
-
-
-
-
-
-                        <Image className="col-span-6 lg:col-span-2 w-full rounded-md mt-[40px] h-[300px] object-top object-cover w-full" src={"https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-five-1_tcu8gz.jpg"} alt="blog-image" width={1000} height={1000} />
-                        <div className="col-span-6 lg:col-span-4 w-full mt-5">
-                            <h2 className="text-2xl text-gray-900">Isabelle Armstrong - Spring 2016 Collection</h2>
-                            <p className="text-gray-500 pt-3 text-base">
-                                As spring approaches, many couples are preparing to say I do in the new year, and for brides-to-be, finding the perfect wedding dress is key to turning that special day into a fairytale. Renowned for luxury and elegance, bridal design house Isabelle Armstrong offers the ultimate blend of beauty and sophistication. With the launch of their Spring 2016 collection, this design powerhouse is a must-visit for any bride searching for her dream gown.The collection dazzles with exquisitely draped silks, delicate laces, and hand-beaded fabrics that bring a true &lsquo;wow&lsquo; factor to each piece. Isabelle Armstrong&lsquo;s bridal gowns, featuring geometric embroidery and soft, romantic fabrics, capture the brilliance of a diamond with their multifaceted designs. Every gown is handcrafted with meticulous attention to detail, combining classic silhouettes with intricate embellishments that make them timeless yet modern.For the bride who seeks both luxury and lasting beauty, Isabelle Armstrong&lsquo;s Spring 2016 collection is the epitome of bridal elegance.
-                            </p>
-
-
-
+                            </div>
                         </div>
+
+
+
 
 
 
