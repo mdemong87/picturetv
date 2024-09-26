@@ -28,7 +28,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                 <div className="sinpleImageGrid h-screen w-full">
                     <div className="w-full flex flex-col gap-3 justify-center sinpleImageGridLeft">
                         <div>
-                            <h5 className="text-white text-base">People:</h5>
+                            <h5 className="text-white text-base">Designer:</h5>
                             <p className="text-gray-300">{currentEventData?.fullname}</p>
                         </div>
                         <div>
@@ -53,7 +53,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                         <div>
                             <h5 className="text-white text-base">Copyright Owner:</h5>
-                            <p className="text-gray-300">© PictureTV.com 2024</p>
+                            <p className="text-gray-300">© PictureTV.net 2024</p>
                         </div>
                     </div>
                     <div className="w-full sinpleImageGridCenter relative">

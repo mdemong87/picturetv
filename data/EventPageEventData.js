@@ -4,7 +4,7 @@ const data = [
     {
         "eventid": 1,
         "uid": 1,
-        "fullname": "The fashion Group internationa",
+        "fullname": "The fashion Group international",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
         "title": "The Risen Star",
