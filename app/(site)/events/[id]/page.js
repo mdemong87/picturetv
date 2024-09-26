@@ -1,8 +1,7 @@
 import SingleMediaPageWrper from "@/app/componnent/clientcomponnent/SingleMediaPageWrper";
 import gertusersession from "@/lib/helper/getusersesssion";
-import data from "../../../../../data/EventPageEventData";
-
-
+import replaceSpaceWithUnderscore from "@/lib/helper/spacetounderscore";
+import data from "../../../../data/EventPageEventData";
 
 
 const SingleAllEventPage = async ({ params }) => {
@@ -18,7 +17,8 @@ const SingleAllEventPage = async ({ params }) => {
     //filter out the current data
     const singledata = data?.filter((items) => {
 
-        return items.eventid == id;
+        const singleItem = replaceSpaceWithUnderscore(items.title);
+        return singleItem == id;
     })
 
 

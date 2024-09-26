@@ -20,7 +20,6 @@ const SearchWper = () => {
 
     const searchText = useStore((state) => state.searchText);
     const setsearchText = useStore((state) => state.setsearchText);
-    console.log(searchText);
 
 
 

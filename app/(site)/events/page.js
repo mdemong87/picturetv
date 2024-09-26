@@ -1,38 +1,23 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
-import Link from "next/link";
-import { FaImage, FaVideo } from "react-icons/fa";
+import EventPageEventCardWrper from "@/app/componnent/clientcomponnent/EventPageEventCardWrper";
+import Search from "../../componnent/clientcomponnent/Search/Search";
+
 
 const Event = () => {
+
+
+
+
+
+
+
     return (
         <main className="h-fit pt-36 pb-14">
+            <div className="relative w-full mb-[120px] mt-[40px]">
+                <Search />
+            </div>
             <Container>
-                <div className="flex justify-center items-center w-full h-full">
-                    <div className=" flex gap-10 items-center justify-center w-fit p-10 h-fit my-20 border border-gray-300 rounded-md">
-
-                        {/* Image button */}
-
-                        <Link href={'/events/images'} className={`flex items-center text-[#343a40] gap-5 border border-gray-300 p-5 rounded-md hover:bg-[#7AA140] hover:text-white duration-500`}>
-                            <div>
-                                <FaImage className='text-2xl' />
-                            </div>
-                            <div>
-                                <p className='text-base'>Image</p>
-                            </div>
-                        </Link>
-
-                        <Link href={'/events/videos'} className={`flex items-center gap-5 border text-[#343a40] border-gray-300 p-5 rounded-md hover:bg-[#7AA140] hover:text-white duration-500`}>
-                            <div>
-                                <FaVideo className='text-2xl' />
-                            </div>
-                            <div>
-                                <p className='text-base'>Video</p>
-                            </div>
-                        </Link>
-
-
-
-                    </div>
-                </div>
+                <EventPageEventCardWrper />
             </Container>
         </main>
     )
