@@ -114,9 +114,9 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
 
 
                         </div>
-                        {
-                            forPage == "Media" && <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
-                        }
+
+                        <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
+
                     </div>
 
 
