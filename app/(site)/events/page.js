@@ -13,7 +13,7 @@ const Event = () => {
 
     return (
         <main className="h-fit pt-36 pb-14">
-            <div className="relative w-full mb-[120px] mt-[40px]">
+            <div className="relative w-full mb-[270px] md:mb-[220px] lg:mb-[120px] md:mt-[30px] lg:mt-[40px]">
                 <Search />
             </div>
             <Container>

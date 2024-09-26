@@ -4,14 +4,14 @@ const data = [
     {
         "eventid": 1,
         "uid": 1,
-        "fullname": "The fashion Group international",
+        "fullname": "The Fashion Group International",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
         "title": "The Risen Star",
         "type": "Image",
         "eventtype": "Fashion Show",
         "Location": "Cipriani New York, NY",
-        "Eventdate": "Spring Fall Winter",
+        "Eventdate": "Luncheon and Award",
         "forPage": "Event",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [
