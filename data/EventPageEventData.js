@@ -7,7 +7,7 @@ const data = [
         "fullname": "The fashion Group internationa",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
-        "title": "The Risen Star ⭐",
+        "title": "The Risen Star",
         "type": "Image",
         "eventtype": "Fashion Show",
         "Location": "Cipriani New York, NY",
