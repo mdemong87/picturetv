@@ -12,13 +12,7 @@ export const POST = async (req) => {
 
         const findstoreotp = await OtpModel.find({ _id: "66e30dc501da0e9035b75d60" });
 
-        console.log(findstoreotp);
 
-        console.log(userData);
-
-
-
-        console.log(otp);
 
         if (findstoreotp[0].otp == otp) {
 

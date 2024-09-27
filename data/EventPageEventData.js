@@ -416,14 +416,14 @@ const data = [
     {
         "eventid": 2,
         "uid": 2,
-        "fullname": "Movie Premiere",
+        "fullname": "Honoring To Short, Sway Lil John",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
         "title": "Vibe Magazine",
         "type": "Image",
-        "eventtype": "Movie Premiere",
-        "Location": "Metropolitan Pavilion",
-        "Eventdate": "Tuesday,May 24th",
+        "eventtype": "The After Part",
+        "Location": "New York, NY",
+        "Eventdate": "July 14",
         "forPage": "Event",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [

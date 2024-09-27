@@ -5,35 +5,41 @@ import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { useStore } from "@/lib/store";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const ChangePassword = () => {
 
 
+const VerifyOtp = () => {
 
-    const [pass, setpass] = useState('');
-    const [conpass, setconpass] = useState('');
-    const router = useRouter();
+
+    const [otp, setotp] = useState('');
     const [isloading, setisloading] = useState(false);
     const userData = useStore((state) => state.userData);
+    const router = useRouter();
 
 
 
-    const changgePass = async () => {
-        if (pass == conpass) {
+
+
+
+    //varification otp function here
+    async function varification() {
+
+        if (otp != '') {
 
             setisloading(true);
 
             try {
 
-                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/varifieduser/varifiedotp/changepass`, {
-                    method: 'PUT',
+                const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/varifieduser/varifiedotp`, {
+                    method: 'POST',
                     headers: {
                         "Content-Type": "Application/json"
                     },
                     body: JSON.stringify({
-                        pass,
+
+                        otp,
                         userData
                     })
 
@@ -44,10 +50,7 @@ const ChangePassword = () => {
                 if (res.success) {
 
                     toast.success(res.message);
-
-                    setTimeout(() => {
-                        router.push("/auth/login");
-                    }, 1000);
+                    router.push("/auth/forgetpass/verifyotp/changepassword");
 
                 } else {
                     toast.error(res.message);
@@ -55,40 +58,43 @@ const ChangePassword = () => {
 
 
             } catch (error) {
-                toast.error("Password Does Not Update");
+                toast.error("OTP Verification Failed");
             }
-
-
-        } else {
-            toast.warn("Password Does Not Match");
         }
     }
 
 
 
 
+
+
+
+
+
+
+
+
+
     return (
         <main className="pt-28">
-            {
-                isloading && <Loading />
-            }
+            {isloading && <Loading />}
             <Container>
                 <div>
-                    <h2 className="text-center text-4xl py-6 font-bold">Change Password</h2>
+                    <h2 className="text-center text-4xl py-6 font-bold">Verify OTP</h2>
 
                     <div className="p-7 w-full flex justify-center items-center">
                         <div className="rounded-md border border-gray-300 p-5">
-                            <input onChange={(e) => { setpass(e.target.value) }} type="text" className="w-full p-3 rounded-md" placeholder="Enter New Password" />
+                            <input onChange={(e) => { setotp(e.target.value) }} type="number" className="w-full p-3 rounded-md" placeholder="Your OTP"
+                            />
 
-                            <input onChange={(e) => { setconpass(e.target.value) }} type="text" className="w-full p-3 mt-4 rounded-md" placeholder="Confirm New Password" />
-
-                            <button onClick={() => { changgePass() }} className="pbg2 w-full p-3 mt-4 text-white font-bold text-xl rounded-md">Change Password</button>
+                            <button onClick={() => { varification() }} className="pbg2 w-full p-3 mt-4 text-white font-bold text-xl rounded-md">Verify</button>
                         </div>
                     </div>
                 </div>
             </Container>
+            <ToastContainer />
         </main>
     )
 }
 
-export default ChangePassword;
+export default VerifyOtp;
