@@ -81,21 +81,101 @@ const data = [
     },
 
 
-    // {
-    //     "blogid": 6,
-    //     "uid": 6,
-    //     "title": "Inbal Dror Fall-Winter Bridal Collection",
-    //     "dis": " Inbal Dror&lsquo;s Fall/Winter 2016 bridal collection is a seductive blend of elegance and boldness, featuring 32 stunning pieces that range from breathtaking bridal gowns to sultry evening wear. Known for infusing glamour and excitement into each design, Inbal&lsquo;s latest collection is no exception. This season, she incorporates the finest European fabrics and embellishments, from delicate layers of silk tulle to Chantilly lace, matte sequins, laser-cut embroidery, crystal and pearl beading, and even touches of 3D printing.The color palette is a dream of soft ivory, vanilla, champagne, and charcoal blush, providing the perfect backdrop for intricate detailing. Each piece embodies an airy, ethereal quality, with sheer bodices, flowing skirts, plunging necklines, high slits, and lace and beading carefully placed over translucent fabrics. This collection offers a captivating, transpicuous vibe that exudes confidence and allure—making it perfect for the bride ready to make a bold statement. However, this is not a collection for the faint of heart; it&lsquo;s designed for those who dare to embrace their beauty with fearless sophistication.",
-    //     "file": [
+    {
+        "blogid": 6,
+        "uid": 6,
+        "title": "Desigual S-S 2014",
+        "dis": "Spanish fashion brand Desigual delivered a burst of color yet, managed to show a more subdued side than we&lsquo;ve seen. The show opened with an ode to the 60&lsquo;s as models clad in black and white patterned dresses with matching sun hats strutted their stuff. This was followed by an almost entirely different collection of signature Desigual colored garments.The printed pant sets for women and the well fitting pant designs for men were a highpoint of the collection. Coats and Jackets from the brand for both sexes will also be a hit this season!",
+        "file": [
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539245/Desigual_zdma1m.jpg"
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+    {
+        "blogid": 7,
+        "uid": 7,
+        "title": "Son Jung Wan S-S 2014",
+        "dis": "Son Jung Wan delivered beautiful neutrals that were glamorous yet wearable.  The dresses were perfect for a night out on the town or a cocktail affair in the city. Although simple, the garments were well designed with beautiful detailing that gave great personality to the pieces. The models were super posh wearing teased ponytails pulled to the nape of the neck.The menswear from Wan didn&lsquo;t provide much excitement. It was clean, simple and elegant. I couldn&lsquo;t equate the same enthusiasm I had for the womens wear with the mens. None the less, the entire collection was sensible and wearable. Two qualities we rarely see on the runway.",
+        "file": [
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Son_Jung_Wan_bjmylo.jpg"
+        ],
+        "createdAt": "2024-09-10"
+    },
 
 
-    //         "https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-four-1_yj7gfl.jpg"
+    {
+        "blogid": 8,
+        "uid": 8,
+        "title": "Zang Toi S-S 2014",
+        "dis": "Zang Toi was pure elegance opening with a male ballet dance. There were beautiful gowns with fur sleeves and blazers with long tails. Toi channeled turn of the century and complex simplicity was a statement to be made.Practicality is something we don&lsquo;t see often in collections. Besides the men&lsquo;s blazers that featured long tails, the collection was suitable for the everyday person. A beautiful black jumpsuit was the highlight of the collection. Well done Zang Toi!",
+        "file": [
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Zang_Toi_gqgiu3.jpg"
+        ],
+        "createdAt": "2024-09-10"
+    },
 
 
 
-    //     ],
-    //     "createdAt": "2024-09-10"
-    // },
+    {
+        "blogid": 9,
+        "uid": 9,
+        "title": "Laquan Smith S-S 2014",
+        "dis": "Laquan Smith slyly introduced mens wear into his presentation this season. The polls are in, WE LOVE IT! Once again we saw signature Laquan style pieces that were edgy, futuristic and scuba inspired. Yet, Smith used more neutral tones with slight accents of neon, metallics and army green.Smiths mens wear pieces were simple yet very cool. Hidden statement pieces indeed. The highlight of the collection would definitely be the mens sweat pants; so simple yet chic and very relevant.  Laquan Smith also introduced a line of footwear he designed in collaboration with shoe company Mosaique, &lsquo;Mosaique for Laquan Smith.&lsquo; Haute!",
+        "file": [
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539246/Laquan_Smith_cgfrup.jpg"
+
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+
+
+    {
+        "blogid": 10,
+        "uid": 10,
+        "title": "Jenny Packham S-S 2014",
+        "dis": "Jenny Packham hit hard with a tribute to 70&lsquo;s Hollywood Glam! Big curly hair and flowing pieces, this collection had much to rave about. There were long gowns with sheer overlays.  Shimmering chiffon and sparkle embellished sleeves were the highlight of the show.Later in the collection models clad in short dainty cocktail style dresses were reminiscent of life size doll babies. High waist maxi skirts and wide leg silk pants were topped with beautiful big bowed blouses. These elegant pieces certainly gave me a &lsquo;Packham&lsquo; attack!",
+        "file": [
+
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539244/Jenny_Packham_x8ncfd.jpg"
+
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+
+
+    {
+        "blogid": 11,
+        "uid": 11,
+        "title": "Premier Vision Fall 2013-14 Trade Show",
+        "dis": "On July 11 & 12 2012 Première Vision previewed the fall / winter 2013-14 fabric collections from 111 major international suppliers from around the world, representing 16 countries. The company, Première Vision is one of the leading organizations in the fair business today. The French owned company has been organizing textiles and fashion trade fairs since 1973, with exhibitions in Paris, Shanghai, Beijing, Moscow, Japan, and New York. Held at the prestigious Metropolitan Pavilion & Altman building in New York, Premiere Vision is the best way for designers, buyers, and fashion&lsquo;s crème de la crème to view the latest in global fabric and trends in areas such as knitwear, sportswear, activewear, swimwear, outerwear, eco friendly fabrics, trims, and the latest innovation all under one roof. The show also uniquely displays the seasons color trends on a huge wall for all to see and be inspired. Color cards are available for sale during the show with several additions and although expensive, are definitely worth getting. Pictures are not allowed, but for designers on a budget, the color names can copy down for future reference. During the two days, seminars are also presented and discussed by fashion experts offering a clear and precise perception of what the season&lsquo;s direction, trends, and themes are.",
+        "file": [
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539244/Premier_Vision_Fal-1_clb269.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539243/Premier_Vision_Fal-2_zk78ce.jpg"
+
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+
+    {
+        "blogid": 12,
+        "uid": 12,
+        "title": "Fashion ShenZhen 2014",
+        "dis": "Fashion ShenZhen comprised of two very different designers showed collections that were polar opposites. Ellassay&lsquo;s collection centered around a black and white color theme featuring long double breasted blazers, detailed white knit blouses with matching head scarves. Simple but elegant cocktail dresses were accentuated with sheer overlays.Denghoa showed ornate traditional Asian Inspired garments. The pieces were beautiful and bold in color paired with decorative tights embellished with jewels. Although it was a spring collection, the gowns and knit wear were reminiscent of the fall.",
+        "file": [
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Fashion_ShenZhen_ebr0pa.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1727540051/fasahion_shenzhen_fucbz2.jpg"
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+
 
 
 

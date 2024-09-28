@@ -37,7 +37,7 @@ const SingleBlogsPage = ({ params }) => {
                     <aside className="col-span-12 md:col-span-4 w-full bg-white text-white rounded-md h-full p-5">
                         <div className="">
                             <h2 className="text-3xl font-semibold text-gray-800">Related Blogs Post:</h2>
-                            <div className="mt-[25px]">
+                            <div className="mt-[25px] overslog">
 
 
 
