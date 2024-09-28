@@ -5,14 +5,14 @@ const data = [
     {
         "eventid": 3,
         "uid": 3,
-        "fullname": "Movie Premiere",
+        "fullname": "NAWIC",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
-        "title": "NAWIC",
+        "title": "Awards Gala Dinner & PPE Fashion Show",
         "type": "Image",
         "eventtype": "Movie Premiere",
-        "Location": "Metropolitan Pavilion",
-        "Eventdate": "Tuesday,May 24th",
+        "Location": "Guastavino&lsquo;s",
+        "Eventdate": "September 19, 2024 ",
         "forPage": "Event",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [
@@ -219,7 +219,7 @@ const data = [
         "type": "Image",
         "eventtype": "Fashion Show",
         "Location": "Cipriani New York, NY",
-        "Eventdate": "Luncheon and Award",
+        "Eventdate": "july 20",
         "forPage": "Event",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [

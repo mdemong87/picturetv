@@ -1,4 +1,3 @@
-import { LocalDateConvart } from "@/lib/helper/LocalDateConvart";
 import Image from "next/image";
 import Link from "next/link";
 import { FaImages } from "react-icons/fa";
@@ -17,7 +16,7 @@ const ImageCard = ({ data, link }) => {
 
                 </div>
                 <div className="p-3 bg-white rounded-b-md">
-                    <p className="text-gray-400 text-md">{LocalDateConvart(data)}</p>
+                    <p className="text-gray-400 text-md">{data?.Eventdate}</p>
                     <h3 className="text-gray-600 font-semibold text-xl">{data?.title}</h3>
                     <p className="">
                         <b className="pcl font-semibold">By</b>
