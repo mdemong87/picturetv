@@ -18,7 +18,7 @@ const data = [
         "file": [
 
 
-
+            "https://res.cloudinary.com/picturetv/image/upload/v1727430372/NAWIC_100_c8mpqf.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727431113/NAWIC_91_oka5mn.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727431072/NAWIC_97_h8vsjy.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727431071/NAWIC_94_aocrhi.jpg",
@@ -133,7 +133,6 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1727430529/NAWIC_81_umlo51.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430528/NAWIC_80_nizwmk.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430527/NAWIC_79_q7bxro.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1727430526/NAWIC_78_feq1ez.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430525/NAWIC_77_j5v0xx.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430524/NAWIC_76_vxx54a.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430523/NAWIC_75_sofqwu.jpg",
@@ -198,12 +197,13 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1727430374/NAWIC_10_psoqlc.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430374/NAWIC_11_xmeqxq.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727430373/NAWIC_1_n6asvd.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1727430372/NAWIC_100_c8mpqf.jpg"
+            "https://res.cloudinary.com/picturetv/image/upload/v1727430526/NAWIC_78_feq1ez.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1727504896/NAWIC_80_nizwmk_kn0bfo.png"
 
 
 
 
-        ],
+        ].reverse(),
         "isApproved": true,
         "createdAt": "2024-09-10T14:30:00Z"
     },
