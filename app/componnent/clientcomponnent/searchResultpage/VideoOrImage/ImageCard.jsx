@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 import logo from "../../../../../public/assets/logo-2.png";
 
 
-const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, session }) => {
+const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, session, index, setcurrentIndex }) => {
 
 
     const router = useRouter();
@@ -16,6 +16,7 @@ const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, sess
             router.push('/auth/login');
         } else {
             setshowimageSlide(true);
+            setcurrentIndex(index);
             setcurrentItems(singleitems);
         }
     }

@@ -26,10 +26,11 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
     const [isloading, setisloading] = useState(false);
     const [isloginshow, setisloginshow] = useState(false);
     const [price, setprice] = useState("55");
+    const [currentIndex, setcurrentIndex] = useState(0);
 
 
 
-    const forPage = singledata[0].forPage;
+    const forPage = singledata[0]?.forPage;
 
 
     //router instance
@@ -129,7 +130,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
 
                                     singledata[0]?.file?.map((singleData, index) => {
                                         return (
-                                            index > 0 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} />
+                                            index > 0 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} index={index} setcurrentIndex={setcurrentIndex} />
                                         )
                                     })
 
@@ -148,7 +149,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
 
 
                     {
-                        showimageSlide && <SinglePageSingleItemsForMedia setshowimageSlide={setshowimageSlide} currentEventData={singledata[0]} currentItems={currentItems} handleDownload={handleDownload} setprice={setprice} price={price} />
+                        showimageSlide && <SinglePageSingleItemsForMedia setshowimageSlide={setshowimageSlide} currentEventData={singledata[0]} currentItems={currentItems} handleDownload={handleDownload} setprice={setprice} price={price} currentIndex={currentIndex} setcurrentIndex={setcurrentIndex} />
                     }
 
 

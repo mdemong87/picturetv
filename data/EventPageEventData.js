@@ -8,7 +8,7 @@ const data = [
         "fullname": "NAWIC",
         "email": "Laquansmith@gmail.com",
         "role": "Photographer",
-        "title": "Awards Gala Dinner & PPE Fashion Show",
+        "title": "Awards Gala Dinner and PPE Fashion Show",
         "type": "Image",
         "eventtype": "Movie Premiere",
         "Location": "Guastavino&lsquo;s",

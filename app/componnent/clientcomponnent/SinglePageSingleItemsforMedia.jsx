@@ -1,16 +1,19 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Image from "next/image";
 import { useState } from "react";
+import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
 
 
 
-const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, currentItems, handleDownload, setprice, price }) => {
+const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, currentItems, handleDownload, setprice, price, currentIndex, setcurrentIndex }) => {
 
 
 
     const [downloadtype, setdownloadtype] = useState('Digital Download');
+
+
 
 
 
@@ -25,6 +28,21 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
             <Container>
+                <div className="text-white mt-3 mb-1 flex justify-between items-center">
+
+                    <div onClick={() => { currentIndex > 1 && setcurrentIndex(currentIndex - 1) }} className="w-[40px] h-[40px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
+                        <FaAngleLeft className="text-xl text-white" />
+                    </div>
+
+                    <div>
+                        <b className="text-white text-center pbg2 text-white p-1 rounded-md w-fit">{
+                            `${currentIndex}/${(currentEventData?.file?.length - 1)}`
+                        }</b>
+                    </div>
+                    <div onClick={() => { currentIndex < (currentEventData?.file?.length - 1) && setcurrentIndex(currentIndex + 1) }} className="w-[40px] h-[40px] rounded-full pbg2 flex items-center justify-center cursor-pointer">
+                        <FaAngleRight className="text-xl text-white" />
+                    </div>
+                </div>
                 <div className="sinpleImageGrid h-screen w-full">
                     <div className="w-full flex flex-col gap-3 justify-center sinpleImageGridLeft">
                         <div>
@@ -57,7 +75,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         </div>
                     </div>
                     <div className="w-full sinpleImageGridCenter relative">
-                        <Image src={currentItems} className="w-full object-contain h-[750px]" width={1000} height={1000} alt="Slide-Image" />
+                        <Image src={currentEventData?.file[currentIndex]} className="w-full object-contain h-[750px]" width={1000} height={1000} alt="Slide-Image" />
                         <div className="absolute w-full h-full transbgforprotect flex justify-center items-end bottom-0 right-0 left-0 opacitylogo">
                             <Image className="w-[275px] translate-x-16 -translate-y-12" src={logo} width={1000} height={1000} alt="logo" />
                         </div>
