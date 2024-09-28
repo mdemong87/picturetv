@@ -1,6 +1,7 @@
 'use client'
 
 import SearchLogic from "@/lib/helper/SearchLogic";
+import replaceSpaceWithUnderscore from "@/lib/helper/spacetounderscore";
 import { useStore } from "@/lib/store";
 import Container from "./Container";
 import ImageCard from "./imageCard";
@@ -35,7 +36,7 @@ const HomePageCardWrper = ({ data, fromPage }) => {
                     {
                         filterData?.map((singleCard, index) => {
                             return (
-                                <ImageCard key={index} data={singleCard} link={`/${singleCard?.eventid}`} />
+                                <ImageCard key={index} data={singleCard} link={`/${replaceSpaceWithUnderscore(singleCard?.fullname)}`} />
 
                             )
                         })

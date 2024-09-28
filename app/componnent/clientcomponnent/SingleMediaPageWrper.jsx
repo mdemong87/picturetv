@@ -14,7 +14,7 @@ import ForwordBtn from "../ForwordBtn";
 import SinglePageSingleItemsForMedia from "./SinglePageSingleItemsforMedia";
 
 
-const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
+const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) => {
 
     const updateImage_Url = useStore((state) => state.updateImage_Url);
     const Image_Url = useStore((state) => state.Image_Url);
@@ -28,9 +28,6 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
     const [price, setprice] = useState("55");
     const [currentIndex, setcurrentIndex] = useState(0);
 
-
-
-    const forPage = singledata[0]?.forPage;
 
 
     //router instance
@@ -93,31 +90,12 @@ const SingleMediaPageWrper = ({ id, session, singledata, length }) => {
 
             <Container>
                 <div>
-
-
-
                     <div className="flex flex-col md:flex-row items-center justify-between w-full mb-6 gap-4">
                         <div className="flex justify-between md:justify-start items-center gap-4 w-full">
-                            {
-                                id == '1' ? (
-                                    <BackBtn link={`${forPage == "Media" ? "/" : "/events"}`} />
-                                ) : (
-                                    <BackBtn link={`${forPage == "Media" ? `/${Number(id) - 1}` : `/events/images/${Number(id) - 1}`}`} />
-                                )
-                            }
-
-
-                            <ForwordBtn
-                                link={`${forPage == "Media"
-                                    ? (id < length ? `/${Number(id) + 1}` : `/${Number(id)}`)
-                                    : (id < length ? `/events/images/${Number(id) + 1}` : `/events/images/${Number(id)}`)}`}
-                            />
-
-
+                            <BackBtn link={prevLink} />
+                            <ForwordBtn link={nextLink} />
                         </div>
-
                         <ImageOrVideoBtn isImage={isImage} setisImage={setisImage} />
-
                     </div>
 
 
