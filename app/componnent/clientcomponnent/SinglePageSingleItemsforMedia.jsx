@@ -45,10 +45,12 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                 </div>
                 <div className="sinpleImageGrid h-screen w-full">
                     <div className="w-full flex flex-col gap-3 justify-center sinpleImageGridLeft">
-                        <div>
-                            <h5 className="text-white text-base">Designer:</h5>
-                            <p className="text-gray-300">{currentEventData?.fullname}</p>
-                        </div>
+                        {
+                            currentEventData?.fullname != "NAWIC" && <div>
+                                <h5 className="text-white text-base">{`${currentEventData?.fullname == "The Fashion Group International" || currentEventData?.fullname == "Honoring To Short, Sway Lil John" ? "People:" : "Designer:"}`} </h5>
+                                <p className="text-gray-300">{currentEventData?.fullname}</p>
+                            </div>
+                        }
                         <div>
                             <h5 className="text-white text-base">Event Title:</h5>
                             <p className="text-gray-300">{currentEventData?.title}</p>
