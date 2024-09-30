@@ -1,3 +1,4 @@
+import { issingleormultipulUpload } from "@/lib/cloudinaryConfig";
 import getUserByEmail from "@/lib/helper/getUserByEmail";
 import { UIDGanaratorForEvent } from "@/lib/helper/uIdGanarator";
 import EventModel from "@/lib/model/eventModel";

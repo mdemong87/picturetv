@@ -30,11 +30,11 @@ const AdminLogin = () => {
 
 
 
-        if (email !== '' || password !== '' || role !== '' || role !== "Role") {
+        if (email !== '' || password !== '') {
 
             setisloading(true);
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/login`, {
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/nahid`, {
                 method: 'POST',
                 headers: {
                     "Content-Type": "Application/json"
