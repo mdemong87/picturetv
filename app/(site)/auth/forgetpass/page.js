@@ -2,6 +2,7 @@
 
 
 import Container from "@/app/componnent/clientcomponnent/Container";
+import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { SendOTPviaEmail } from "@/lib/helper/SendOTP";
 import { useStore } from "@/lib/store";
 import { useRouter } from "next/navigation";
@@ -94,6 +95,9 @@ const ForgetPass = () => {
 
     return (
         <main className="pt-28">
+            {
+                isloading && <Loading />
+            }
             <Container>
                 <div>
                     <h2 className="text-center text-4xl py-6 font-bold">Forget Password</h2>

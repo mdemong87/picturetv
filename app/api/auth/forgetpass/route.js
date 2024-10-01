@@ -12,8 +12,6 @@ export const POST = async (req) => {
 
 
 
-    console.log('hello............');
-
     try {
 
 
@@ -26,12 +24,6 @@ export const POST = async (req) => {
 
 
         if (found) {
-
-
-
-            console.log(found);
-
-
 
 
 

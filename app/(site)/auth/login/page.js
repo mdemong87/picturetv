@@ -176,7 +176,7 @@ const Login = () => {
                                 <div>
                                     <input
                                         onChange={(e) => { setotp(e.target.value) }}
-                                        type="number"
+                                        type="text"
                                         name="email"
                                         id="email"
                                         className='booking-input-field border border-gray-500 p-3 mt-3 w-full rounded-md'
