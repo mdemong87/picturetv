@@ -22,7 +22,7 @@ export const POST = async (req) => {
             })
 
             return Response.json({
-                message: "OTP Verification Failed",
+                message: "OTP Verification Successfull",
                 status: 200,
                 success: true
             })
