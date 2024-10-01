@@ -84,7 +84,7 @@ const VerifyOtp = () => {
 
                     <div className="p-7 w-full flex justify-center items-center">
                         <div className="rounded-md border border-gray-300 p-5">
-                            <input onChange={(e) => { setotp(e.target.value) }} type="text" className="w-full p-3 rounded-md" placeholder="Your OTP"
+                            <input onChange={(e) => { setotp(e.target.value) }} type="number" className="w-full p-3 rounded-md" placeholder="Your OTP"
                             />
 
                             <button onClick={() => { varification() }} className="pbg2 w-full p-3 mt-4 text-white font-bold text-xl rounded-md">Verify</button>
