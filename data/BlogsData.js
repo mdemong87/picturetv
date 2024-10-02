@@ -31,7 +31,7 @@ const data = [
         "uid": 3,
         "title": "Kelly Faetanini Spring 2017 Bridal Collection",
         "dis": "Falling in love and getting engaged is a magical journey, but for every bride, finding the perfect wedding dress is the moment she truly feels like a queen on her big day. With endless styles and designers to choose from, the dress must be as special as the love story it celebrates. One designer who continues to enchant the bridal world with her breathtaking creations is Kelly Faetanini. Her latest Spring 2017 collection takes inspiration from the 18th-century Victorian era, blending timeless elegance with a modern twist.Kelly's designs exude regal sophistication with luxurious gold accents symbolizing prestige and intricate lace details capturing the romantic essence of the era. Featuring only the finest fabrics—like silk organza, chantilly lace, silk mikado, and structured tulle—each gown offers a flawless fit. Brides can choose from a variety of silhouettes, including figure-flattering fit-and-flare, classic ball gowns, elegant A-lines, and sleek sheaths, ensuring a perfect match for every style.What sets Kelly apart is her attention to functionality, adding thoughtful touches like removable beaded straps, pockets, and detachable skirts. Standout pieces from her collection include a hand-painted 14K gold goose feather bodice paired with an ostrich feather ball gown skirt, a whimsical ombré ball gown with tulle bodice and pockets, and a showstopping strapless gold-embroidered bodycon dress with an illusion back and detachable skirt. All available in classic ivory as well.Since 2012, Kelly Faetanini has been mesmerizing the bridal industry with her exceptional designs, and her latest collection is no exception—crafted to make every bride feel truly extraordinary",
-        "date": "-",
+        "date": "June 2022",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-one-1_hq5pua.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1727077909/blog-one-2_qd9inp.jpg"
@@ -45,7 +45,7 @@ const data = [
         "uid": 4,
         "title": "Kelly Faetanini Featured on The Bachelor at 20-A Celebration of Love",
         "dis": "On Sunday, February 14th, The Bachelor invited the nation to witness one of the most highly anticipated weddings in the shows history.In a special two- hour event, The Bachelor at 20: A Celebration of Love, hosted by Chris Harrison on ABC, recent sweethearts Jade Roper and Tanner Tolbert—who fell in love on Bachelor in Paradise—tied the knot surrounded by the largest gathering of Bachelor alumni ever.In this unforgettable celebration, Jades bridesmaids stunned in gorgeous Kelly Faetanini Bridesmaids dresses, featuring styles EV 127, BS105, and BS109.These elegant designs, part of the exclusive #AltarEgo collection, are available at Brideside and select authorized Kelly Faetanini retailers.Kelly Faetaninis timeless designs once again take center stage, adding a touch of modern sophistication to a day filled with love, joy, and unforgettable moments.About Kelly Faetanini.Born and raised in the charming suburbs of Ohio, Kelly Faetanini discovered her passion for design at a young age, learning the art of tailoring from her grandmother. “I will always be grateful to her for nurturing my creativity and talent,” Kelly shares, reflecting on the foundation that ignited her career.With this inspiration, she pursued her dreams at the International Academy of Design & Technology in Chicago, graduating in 2006 with a BFA in Design.Kelly's talent quickly propelled her to success, as she took on the role of head designer for the prestigious Jewel by Priscilla of Boston Collection. However, in 2012, Kelly set out on her own journey, establishing the Kelly Faetanini Bridal collection, where she brought her vision of 'Modern Designs for the Timeless Bride' to life. Kellys signature promise is simple yet profound: to create stunning gowns that combine impeccable design details with a flawless feminine fit for brides of all shapes and sizes.In Spring 2016, Kelly expanded her offerings with the launch of Kelly Faetanini Bridesmaids, further elevating her commitment to timeless beauty and modern elegance for every bridal party.With a deep respect for craftsmanship and a passion for innovation, Kelly Faetanini continues to redefine the bridal experience, designing unforgettable dresses that make every bride's dream a reality.",
-        "date": "-",
+        "date": "June 2022",
         "file": [
 
             "https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-two-1_zkgnka.jpg",
@@ -61,7 +61,7 @@ const data = [
         "uid": 5,
         "title": "Anne Barge Spring 2016 Bridal Collection",
         "dis": "Anne Barge's spring 2016 bridal collection is a beautiful mix of white with tiny hints of  pastel tones.  The soft tones add interest to each piece and on a whole, made the collection enchanting.  The use of tulle overlay, French lace and pale embroidery also made the collection romantic in feel.  Inspire by French gardens, the collection has a beautiful balance of embellishment and a verity of classic shapes and silhouettes. 23 looks were presented for Ann's three distinct collections, Anne Barge Couture, Blue Willow Bride, and Black Label. Given French and floral names, the dresses were elegant, meticulously fitted, and gorgeous. Layered transparent tulle dresses are light and airy with just a swig of color that is not the usual white or ivory.",
-        "date": "-",
+        "date": "June 2022",
         "file": [
 
             "https://res.cloudinary.com/picturetv/image/upload/v1727078881/blog-six-1_pybott.jpg"
@@ -78,7 +78,7 @@ const data = [
         "uid": 6,
         "title": "Dennis Bassos Collection for Kleinfeld-A Tribute to the New York Bride",
         "dis": "As spring approaches, many couples are preparing to say I do in the new year, and for brides-to-be, finding the perfect wedding dress is key to turning that special day into a fairytale. Renowned for luxury and elegance, bridal design house Isabelle Armstrong offers the ultimate blend of beauty and sophistication. With the launch of their Spring 2016 collection, this design powerhouse is a must-visit for any bride searching for her dream gown.The collection dazzles with exquisitely draped silks, delicate laces, and hand-beaded fabrics that bring a true 'wow' factor to each piece. Isabelle Armstrong&lsquo;s bridal gowns, featuring geometric embroidery and soft, romantic fabrics, capture the brilliance of a diamond with their multifaceted designs. Every gown is handcrafted with meticulous attention to detail, combining classic silhouettes with intricate embellishments that make them timeless yet modern.For the bride who seeks both luxury and lasting beauty, Isabelle Armstrong's Spring 2016 collection is the epitome of bridal elegance.",
-        "date": "-",
+        "date": "June 2022",
         "file": [
 
             "https://res.cloudinary.com/picturetv/image/upload/v1727077908/blog-five-1_tcu8gz.jpg",
@@ -97,7 +97,7 @@ const data = [
         "uid": 7,
         "title": "Inbal Dror Fall-Winter Bridal Collection",
         "dis": " Inbal Dror's Fall/Winter 2016 bridal collection is a seductive blend of elegance and boldness, featuring 32 stunning pieces that range from breathtaking bridal gowns to sultry evening wear. Known for infusing glamour and excitement into each design, Inbal&lsquo;s latest collection is no exception. This season, she incorporates the finest European fabrics and embellishments, from delicate layers of silk tulle to Chantilly lace, matte sequins, laser-cut embroidery, crystal and pearl beading, and even touches of 3D printing.The color palette is a dream of soft ivory, vanilla, champagne, and charcoal blush, providing the perfect backdrop for intricate detailing. Each piece embodies an airy, ethereal quality, with sheer bodices, flowing skirts, plunging necklines, high slits, and lace and beading carefully placed over translucent fabrics. This collection offers a captivating, transpicuous vibe that exudes confidence and allure—making it perfect for the bride ready to make a bold statement. However, this is not a collection for the faint of heart; it's designed for those who dare to embrace their beauty with fearless sophistication.",
-        "date": "-",
+        "date": "June 2022",
         "file": [
 
 
@@ -154,7 +154,7 @@ const data = [
         "uid": 11,
         "title": "Laquan Smith S-S 2014",
         "dis": "Laquan Smith style introduced mens wear into his presentation this season. The polls are in, WE LOVE IT! Once again we saw signature Laquan style pieces that were edgy, futuristic and scuba inspired. Yet, Smith used more neutral tones with slight accents of neon, metallics and army green.Smiths mens wear pieces were simple yet very cool. Hidden statement pieces indeed. The highlight of the collection would definitely be the mens sweat pants; so simple yet chic and very relevant.  Laquan Smith also introduced a line of footwear he designed in collaboration with shoe company Mosaique, 'Mosaique for Laquan Smith' Haute!",
-        "date": "-",
+        "date": "Friday, October 4, 2013",
         "file": [
 
             "https://res.cloudinary.com/picturetv/image/upload/v1727539246/Laquan_Smith_cgfrup.jpg"
@@ -170,7 +170,7 @@ const data = [
         "uid": 12,
         "title": "Jenny Packham S-S 2014",
         "dis": "Jenny Packham hit hard with a tribute to 70's Hollywood Glam! Big curly hair and flowing pieces, this collection had much to rave about. There were long gowns with sheer overlays.  Shimmering chiffon and sparkle embellished sleeves were the highlight of the show.Later in the collection models clad in short dainty cocktail style dresses were reminiscent of life size doll babies. High waist maxi skirts and wide leg silk pants were topped with beautiful big bowed blouses. These elegant pieces certainly gave me a 'Packham' attack!",
-        "date": "-",
+        "date": "Wednesday, September 18, 2013",
         "file": [
 
 
@@ -180,14 +180,26 @@ const data = [
         "createdAt": "2024-09-10"
     },
 
-
-
     {
         "blogid": 13,
         "uid": 13,
+        "title": "Fashion ShenZhen 2014",
+        "dis": "Fashion ShenZhen comprised of two very different designers showed collections that were polar opposites. Ellassay's collection centered around a black and white color theme featuring long double breasted blazers, detailed white knit blouses with matching head scarves. Simple but elegant cocktail dresses were accentuated with sheer overlays.Denghoa showed ornate traditional Asian Inspired garments. The pieces were beautiful and bold in color paired with decorative tights embellished with jewels. Although it was a spring collection, the gowns and knit wear were reminiscent of the fall.",
+        "date": "Friday, October 4, 2013",
+        "file": [
+            "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Fashion_ShenZhen_ebr0pa.jpg",
+            "https://res.cloudinary.com/picturetv/image/upload/v1727540051/fasahion_shenzhen_fucbz2.jpg"
+        ],
+        "createdAt": "2024-09-10"
+    },
+
+
+    {
+        "blogid": 14,
+        "uid": 14,
         "title": "Premier Vision Fall 2013-14 Trade Show",
         "dis": "On July 11 & 12 2012 Première Vision previewed the fall / winter 2013-14 fabric collections from 111 major international suppliers from around the world, representing 16 countries. The company, Première Vision is one of the leading organizations in the fair business today. The French owned company has been organizing textiles and fashion trade fairs since 1973, with exhibitions in Paris, Shanghai, Beijing, Moscow, Japan, and New York. Held at the prestigious Metropolitan Pavilion & Altman building in New York, Premiere Vision is the best way for designers, buyers, and fashion's crème de la crème to view the latest in global fabric and trends in areas such as knitwear, sportswear, activewear, swimwear, outerwear, eco friendly fabrics, trims, and the latest innovation all under one roof. The show also uniquely displays the seasons color trends on a huge wall for all to see and be inspired. Color cards are available for sale during the show with several additions and although expensive, are definitely worth getting. Pictures are not allowed, but for designers on a budget, the color names can copy down for future reference. During the two days, seminars are also presented and discussed by fashion experts offering a clear and precise perception of what the season's direction, trends, and themes are.",
-        "date": "-",
+        "date": "Thursday, August 2, 2012",
         "file": [
 
             "https://res.cloudinary.com/picturetv/image/upload/v1727539244/Premier_Vision_Fal-1_clb269.jpg",
@@ -198,18 +210,6 @@ const data = [
     },
 
 
-    {
-        "blogid": 14,
-        "uid": 14,
-        "title": "Fashion ShenZhen 2014",
-        "dis": "Fashion ShenZhen comprised of two very different designers showed collections that were polar opposites. Ellassay's collection centered around a black and white color theme featuring long double breasted blazers, detailed white knit blouses with matching head scarves. Simple but elegant cocktail dresses were accentuated with sheer overlays.Denghoa showed ornate traditional Asian Inspired garments. The pieces were beautiful and bold in color paired with decorative tights embellished with jewels. Although it was a spring collection, the gowns and knit wear were reminiscent of the fall.",
-        "date": "-",
-        "file": [
-            "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Fashion_ShenZhen_ebr0pa.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1727540051/fasahion_shenzhen_fucbz2.jpg"
-        ],
-        "createdAt": "2024-09-10"
-    },
 
 
 
