@@ -5,8 +5,7 @@ import Container from "@/app/componnent/clientcomponnent/Container";
 import ImageOrVideoBtn from "@/app/componnent/clientcomponnent/ImageOrVideoBtn";
 import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { useStore } from "@/lib/store";
-import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ImageCard from "../../componnent/clientcomponnent/searchResultpage/VideoOrImage/ImageCard";
@@ -16,8 +15,8 @@ import SinglePageSingleItemsForMedia from "./SinglePageSingleItemsforMedia";
 
 const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) => {
 
-    const updateImage_Url = useStore((state) => state.updateImage_Url);
-    const Image_Url = useStore((state) => state.Image_Url);
+    const setmycart = useStore((state) => state.setmycart);
+    const mycart = useStore((state) => state.mycart);
 
     const [data, setdata] = useState({});
     const [showimageSlide, setshowimageSlide] = useState(false);
@@ -29,56 +28,28 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
     const [currentIndex, setcurrentIndex] = useState(0);
 
 
-
-    //router instance
-    const router = useRouter();
-
-
-
-    useEffect(() => {
-        updateImage_Url(currentItems);
-    }, [currentItems])
-
-
-
     //handle image download function
-    const handleDownload = async () => {
+    const handleDownload = () => {
 
         setisloading(true);
 
-        try {
+
+        //push current shoping items in the global shoping cart array state
+        mycart.push({
+            allinfo: singledata[0],
+            currentImage: singledata[0]?.file[currentIndex],
+            price: price
+        });
 
 
+        toast.success("Item Added to Cart Successfully");
 
-            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/payment-checkout`, {
-                method: 'POST',
-                headers: {
-                    "Content-Type": "Application/json"
-                },
-                body: JSON.stringify({
-                    price
-                })
-
-            })
-
-            const res = await response.json();
-
-
-            if (res.success) {
-                setisloading(false);
-                router.push(res?.paymentData?.url);
-
-            } else {
-                setisloading(false);
-                toast.error("There was a server side Problem");
-            }
-
-
-        } catch (error) {
+        setTimeout(() => {
+            setshowimageSlide(false);
             setisloading(false);
-            console.log(error);
-            toast.error("There was a server side Problem");
-        }
+        }, 1000);
+
+
 
     }
 

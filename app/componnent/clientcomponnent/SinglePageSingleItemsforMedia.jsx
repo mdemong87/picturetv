@@ -1,7 +1,7 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Image from "next/image";
 import { useState } from "react";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaCartPlus } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
 
@@ -113,7 +113,10 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
                             <h2 className="my-5 text-white text-3xl font-bold">{`$ ${price}.00`}</h2>
-                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl pbg2 text-white w-full">Download</button>
+                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl flex items-center gap-2 pbg2 text-white w-full justify-center">
+                                <FaCartPlus className="text-3xl" />
+                                <span className="text-xl">Add To Cart</span>
+                            </button>
                         </div>
 
                     </div>

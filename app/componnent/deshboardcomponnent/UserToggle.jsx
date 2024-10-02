@@ -3,6 +3,7 @@
 import { FaUser } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import styles from "../../../styles/clientconponnent/Header/UserToggle.module.css";
+import UserToggleNav from "../clientcomponnent/Header/UserToggleNav";
 import Logout from "./Logout";
 
 function UserToggle({ session, toggleController }) {
@@ -14,7 +15,7 @@ function UserToggle({ session, toggleController }) {
     return (
         <div className={`fixed overflow-hidden top-0 left-0 w-screen h-screen z-10 ${styles.userToogleWrper}`}>
             <div className="h-screen pbg3 flex flex-col justify-between">
-                <div className="flex justify-between ">
+                <div className="flex justify-between h-fit">
                     <div className="flex gap-3 items-center">
                         <div className="w-[3rem] h-[3rem] md:w-[3.30rem] pbg rounded-full flex items-center justify-center md:h-[3.30rem] rounded-full">
                             <FaUser className="text-white text-2xl" />
@@ -32,9 +33,11 @@ function UserToggle({ session, toggleController }) {
                     </div>
                 </div>
 
-                <div className="mt-8 md:mt-14">
+                <div className="h-full mt-8 md:mt-14">
+                    <UserToggleNav toggleController={toggleController} />
+                </div>
 
-
+                <div className="mt-8 md:mt-14 h-fit">
                     <div className="w-full h-full">
                         <Logout toggleController={toggleController} />
                     </div>
