@@ -31,7 +31,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
     //handle image download function
     const handleDownload = () => {
 
-        setisloading(true);
+        // setisloading(true);
 
 
         //push current shoping items in the global shoping cart array state
@@ -44,10 +44,10 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
 
         toast.success("Item Added to Cart Successfully");
 
-        setTimeout(() => {
-            setshowimageSlide(false);
-            setisloading(false);
-        }, 1000);
+        // setTimeout(() => {
+        //     // setshowimageSlide(false);
+        //     setisloading(false);
+        // }, 1000);
 
 
 
@@ -104,7 +104,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
 
                 </div>
             </Container>
-            <ToastContainer />
+            <ToastContainer position="top-center" autoClose={2000} />
         </div>
     )
 }

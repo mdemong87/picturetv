@@ -1,25 +1,23 @@
 'use client'
 
 const { default: Container } = require("@/app/componnent/clientcomponnent/Container")
-import downloadImage from "@/lib/helper/DownloadImage";
-import { useStore } from "@/lib/store";
 import Link from "next/link";
-import { useEffect } from "react";
 import { SiTicktick } from "react-icons/si";
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 
 const Success = () => {
 
 
-    const Url = useStore((state) => state.Image_Url);
+    //handle downdload items function nere
+    function downloadItems() {
+
+        const myData = localStorage.getItem('My-Cart');
+        console.log(myData);
+    }
 
 
-    useEffect(() => {
-        downloadImage(Url);
-        toast.success('Your Image Started to Downloaded');
-    }, [Url])
 
 
     return (
@@ -31,7 +29,7 @@ const Success = () => {
                             <SiTicktick className="text-white text-6xl" />
                         </div>
                         <h3 className="font-bold text-gray-700 text-xl">Payment Was Successfull</h3>
-                        <h3 className="font-bold text-gray-700 text-center text-xl">Your Image Started to Download Automatically</h3>
+                        <button onClick={() => { downloadItems() }} className="text-center p-2 rounded-md font-semibold text-white pbg2 my-4 cursor-pointer">Download Your Items</button>
                         <Link href={'/'} className="underline">Go to Media Page</Link>
 
                     </div>

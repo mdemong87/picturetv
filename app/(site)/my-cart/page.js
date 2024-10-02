@@ -40,8 +40,7 @@ const MyCart = () => {
 
 
         setTimeout(() => {
-            const myData = localStorage.getItem('My-Cart');
-            console.log(mycart[0].price);
+
             setisloading(false);
         }, 1000);
     }
@@ -50,16 +49,10 @@ const MyCart = () => {
 
     //handle remove ites from the shoping cart function here
     function removedItem(index) {
-
-        setisloading(true);
         toast.success("Item Removed Successfull");
-
-        setTimeout(() => {
-            mycart.splice(index, 1);// Remove the item at that index
-            setisloading(false);
-            router.refresh();
-            return;
-        }, 1000);
+        mycart.splice(index, 1);// Remove the item at that index
+        router.refresh();
+        return;
 
     }
 
@@ -167,7 +160,7 @@ const MyCart = () => {
                     </div>
                 </div>
             </Container>
-            <ToastContainer />
+            <ToastContainer position="top-center" autoClose={2000} />
         </main>
     )
 }
