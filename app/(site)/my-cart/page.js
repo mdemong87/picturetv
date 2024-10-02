@@ -33,14 +33,15 @@ const MyCart = () => {
         setisloading(true);
 
 
-        localStorage.setItem('My-Cart', mycart);
+        localStorage.setItem('My-Cart', JSON.stringify(mycart));
 
         toast.warn("chekcout is under development");
 
 
 
         setTimeout(() => {
-            console.log(mycart);
+            const myData = localStorage.getItem('My-Cart');
+            console.log(mycart[0].price);
             setisloading(false);
         }, 1000);
     }

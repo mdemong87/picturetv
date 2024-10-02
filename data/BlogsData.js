@@ -115,7 +115,7 @@ const data = [
         "uid": 8,
         "title": "Desigual S-S 2014",
         "dis": "Spanish fashion brand Desigual delivered a burst of color yet, managed to show a more subdued side than we've seen. The show opened with an ode to the 60's as models clad in black and white patterned dresses with matching sun hats strutted their stuff. This was followed by an almost entirely different collection of signature Desigual colored garments.The printed pant sets for women and the well fitting pant designs for men were a highpoint of the collection. Coats and Jackets from the brand for both sexes will also be a hit this season!",
-        "date": "-",
+        "date": "Friday, October 4, 2013",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1727539245/Desigual_zdma1m.jpg"
         ],
@@ -127,7 +127,7 @@ const data = [
         "uid": 9,
         "title": "Son Jung Wan S-S 2014",
         "dis": "Son Jung Wan delivered beautiful neutrals that were glamorous yet wearable.  The dresses were perfect for a night out on the town or a cocktail affair in the city. Although simple, the garments were well designed with beautiful detailing that gave great personality to the pieces. The models were super posh wearing teased ponytails pulled to the nape of the neck.The menswear from Wan didn't provide much excitement. It was clean, simple and elegant. I couldn't equate the same enthusiasm I had for the womens wear with the mens. None the less, the entire collection was sensible and wearable. Two qualities we rarely see on the runway.",
-        "date": "-",
+        "date": "Friday, October 4, 2013",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Son_Jung_Wan_bjmylo.jpg"
         ],
@@ -140,7 +140,7 @@ const data = [
         "uid": 10,
         "title": "Zang Toi S-S 2014",
         "dis": "Zang Toi was pure elegance opening with a male ballet dance. There were beautiful gowns with fur sleeves and blazers with long tails. Toi channeled turn of the century and complex simplicity was a statement to be made.Practicality is something we don't see often in collections. Besides the men's blazers that featured long tails, the collection was suitable for the everyday person. A beautiful black jumpsuit was the highlight of the collection. Well done Zang Toi!",
-        "date": "-",
+        "date": "Friday, October 4, 2013",
         "file": [
             "https://res.cloudinary.com/picturetv/image/upload/v1727539247/Zang_Toi_gqgiu3.jpg"
         ],
@@ -169,7 +169,7 @@ const data = [
         "blogid": 12,
         "uid": 12,
         "title": "Jenny Packham S-S 2014",
-        "dis": "Jenny Packham hit hard with a tribute to 70&lsquo;s Hollywood Glam! Big curly hair and flowing pieces, this collection had much to rave about. There were long gowns with sheer overlays.  Shimmering chiffon and sparkle embellished sleeves were the highlight of the show.Later in the collection models clad in short dainty cocktail style dresses were reminiscent of life size doll babies. High waist maxi skirts and wide leg silk pants were topped with beautiful big bowed blouses. These elegant pieces certainly gave me a 'Packham' attack!",
+        "dis": "Jenny Packham hit hard with a tribute to 70's Hollywood Glam! Big curly hair and flowing pieces, this collection had much to rave about. There were long gowns with sheer overlays.  Shimmering chiffon and sparkle embellished sleeves were the highlight of the show.Later in the collection models clad in short dainty cocktail style dresses were reminiscent of life size doll babies. High waist maxi skirts and wide leg silk pants were topped with beautiful big bowed blouses. These elegant pieces certainly gave me a 'Packham' attack!",
         "date": "-",
         "file": [
 
