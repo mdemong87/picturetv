@@ -14,7 +14,7 @@ const Blogs = () => {
                     {
                         BlogData?.map((item, index) => {
                             return (
-                                <BlogCard key={index} link={replaceSpaceWithUnderscore(item.title)} title={item.title} dis={item.dis} file={item.file} date={item} />
+                                <BlogCard key={index} link={replaceSpaceWithUnderscore(item.title)} title={item.title} dis={item.dis} file={item.file} date={item?.date} />
                             )
                         })
                     }

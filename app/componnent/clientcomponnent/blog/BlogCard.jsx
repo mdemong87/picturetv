@@ -1,4 +1,3 @@
-import { LocalDateConvart } from "@/lib/helper/LocalDateConvart";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,7 +20,7 @@ const BlogCard = ({ link, title, dis, file, date }) => {
                             dis
                         }
                     </p>
-                    <p className="text-gray-400 text-md pt-1">{LocalDateConvart(date)}</p>
+                    <p className="text-gray-400 text-md pt-1">{date}</p>
                 </div>
             </div>
         </Link>

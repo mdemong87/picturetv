@@ -1,6 +1,5 @@
 import SingleBlogCard from "@/app/componnent/clientcomponnent/blog/singleBlogCard";
 import Container from "@/app/componnent/clientcomponnent/Container";
-import { LocalDateConvart } from "@/lib/helper/LocalDateConvart";
 import replaceSpaceWithUnderscore from "@/lib/helper/spacetounderscore";
 import Link from "next/link";
 import BlogData from "../../../../data/BlogsData";
@@ -29,7 +28,7 @@ const SingleBlogsPage = ({ params }) => {
                 <div className="grid grid-cols-12 gap-5">
 
                     <div className="col-span-12 lg:col-span-8 w-full h-fit text-white rounded-md flex flex-col gap-5">
-                        <SingleBlogCard title={singledata[0]?.title} dis={singledata[0]?.dis} image={singledata[0]?.file} date={LocalDateConvart(singledata[0])} />
+                        <SingleBlogCard title={singledata[0]?.title} dis={singledata[0]?.dis} image={singledata[0]?.file} date={singledata[0].date} />
 
                     </div>
 
@@ -60,7 +59,7 @@ const SingleBlogsPage = ({ params }) => {
                                                                 item.dis
                                                             }
                                                         </p>
-                                                        <span className="line-clamp-1 text-gray-500 text-sm">{LocalDateConvart(item)}</span>
+                                                        <span className="line-clamp-1 text-gray-500 text-sm">{item?.date}</span>
                                                     </div>
                                                 </Link>
                                             </div>
