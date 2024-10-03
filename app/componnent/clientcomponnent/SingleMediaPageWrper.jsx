@@ -5,6 +5,7 @@ import Container from "@/app/componnent/clientcomponnent/Container";
 import ImageOrVideoBtn from "@/app/componnent/clientcomponnent/ImageOrVideoBtn";
 import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { useStore } from "@/lib/store";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +18,8 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
 
     const setmycart = useStore((state) => state.setmycart);
     const mycart = useStore((state) => state.mycart);
+
+    const router = useRouter();
 
     const [data, setdata] = useState({});
     const [showimageSlide, setshowimageSlide] = useState(false);
@@ -31,7 +34,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
     //handle image download function
     const handleDownload = () => {
 
-        // setisloading(true);
+        setisloading(true);
 
 
         //push current shoping items in the global shoping cart array state
@@ -41,13 +44,15 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
             price: price
         });
 
+        router.refresh();
+
 
         toast.success("Item Added to Cart Successfully");
 
-        // setTimeout(() => {
-        //     // setshowimageSlide(false);
-        //     setisloading(false);
-        // }, 1000);
+        setTimeout(() => {
+            // setshowimageSlide(false);
+            setisloading(false);
+        }, 1000);
 
 
 

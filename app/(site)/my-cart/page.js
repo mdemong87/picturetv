@@ -3,10 +3,10 @@
 import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { useStore } from "@/lib/store";
 import Image from "next/image";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
-import { MdDeleteForever } from "react-icons/md";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { RxCross2 } from "react-icons/rx";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const { default: Container } = require("@/app/componnent/clientcomponnent/Container");
@@ -76,10 +76,15 @@ const MyCart = () => {
             <Container>
                 <div className="w-full h-fit grid grid-cols-12 gap-4">
                     <div className="rounded-md bg-white col-span-12 lg:col-span-8 p-6 mycartoverlogs">
-                        <div className="flex justify-between items-center">
-                            <h3 className="pCl text-2xl font-semibold pb-3">SHOPING CART:</h3>
-                            <div className="bg-gray-200 text-gray-900 font-bold flex items-center justify-center text-xl rounded-lg py-1 px-2">
-                                {mycart?.length}
+                        <div className="flex justify-between items-center pb-2">
+                            <div className="flex gap-5 items-center">
+                                <div className="bg-gray-200 text-gray-500 font-bold flex justify-center items-center text-md rounded-xl p-2 cursor-pointer" onClick={() => { router.back() }}>
+                                    <IoMdArrowRoundBack className="text-xl" />
+                                </div>
+                                <h3 className="pCl text-2xl font-semibold">SHOPING CART:</h3>
+                            </div>
+                            <div className="bg-gray-200 text-gray-500 font-bold flex items-center justify-center text-md rounded-lg py-1 px-2">
+                                <span>Total Items: <b>{mycart?.length}</b></span>
                             </div>
                         </div>
 
@@ -103,11 +108,8 @@ const MyCart = () => {
                                                 {`$${item.price}.00`}
                                             </p>
                                         </div>
-                                        <div onClick={() => { removedItem(index) }} className="w-fit bg-red-400 rounded-md flex items-center gap-2 cursor-pointer text-white p-2">
-                                            <MdDeleteForever className="text-xl" />
-                                            <span>
-                                                Remove
-                                            </span>
+                                        <div onClick={() => { removedItem(index) }} className="w-fit bg-red-400 rounded-md cursor-pointer text-white p-1">
+                                            <RxCross2 className="text-2xl" />
                                         </div>
                                     </div>
                                 )
@@ -117,7 +119,7 @@ const MyCart = () => {
 
 
                         <div className="w-full text-center md:text-right">
-                            <Link className="underline" href='/'>Continue Shoping</Link>
+                            <p onClick={() => { router.back() }} className="underline font-semibold text-gray-600 cursor-pointer">KEEP SHOPING</p>
                         </div>
                     </div>
 

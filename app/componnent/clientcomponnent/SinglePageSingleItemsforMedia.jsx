@@ -1,5 +1,7 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
+import { useStore } from "@/lib/store";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { FaAngleLeft, FaAngleRight, FaCartPlus } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -11,6 +13,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
 
+    const mycart = useStore((state) => state.mycart);
     const [downloadtype, setdownloadtype] = useState('Digital Download');
 
 
@@ -113,10 +116,18 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
                             <h2 className="my-5 text-white text-3xl font-bold">{`$ ${price}.00`}</h2>
-                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl flex items-center gap-2 pbg2 text-white w-full justify-center">
+                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl flex items-center gap-2 pbg2 text-white w-full justify-center hover:scale-105 transition-all duration-500">
                                 <FaCartPlus className="text-3xl" />
                                 <span className="text-xl">Add To Cart</span>
                             </button>
+
+
+                            <Link href='/my-cart' className="rounded-md p-3 text-2xl flex items-center gap-3 text-white w-full justify-center border mt-5 border-GRAY-100 bg-gray-800 hover:scale-105 transition-all duration-500">
+                                <span className="text-lg">View Cart</span>
+                                <span className="">{mycart?.length}</span>
+                            </Link>
+
+
                         </div>
 
                     </div>
