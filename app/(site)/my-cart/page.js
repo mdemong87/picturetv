@@ -28,22 +28,50 @@ const MyCart = () => {
 
 
     //handle checkout function here
-    const handleCheckout = () => {
-
-        setisloading(true);
+    const handleCheckout = async () => {
 
 
-        localStorage.setItem('My-Cart', JSON.stringify(mycart));
+        try {
 
-        toast.warn("chekcout is under development");
+            setisloading(true);
+
+            localStorage.setItem('My-Cart', JSON.stringify(mycart));
 
 
+            const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/payment-checkout`, {
+                method: 'POST',
+                headers: {
+                    "Content-Type": "Application/json"
+                },
+                body: JSON.stringify({
+                    price: totalPrice
+                })
 
-        setTimeout(() => {
+            })
 
+            const res = await response.json();
+
+
+            if (res.success) {
+                setisloading(false);
+                router.push(res?.paymentData?.url);
+
+            } else {
+                setisloading(false);
+                toast.error("There was a server side Problem");
+            }
+
+
+        } catch (error) {
             setisloading(false);
-        }, 1000);
+            console.log(error);
+            toast.error("There was a server side Problem");
+        }
+
     }
+
+
+
 
 
 

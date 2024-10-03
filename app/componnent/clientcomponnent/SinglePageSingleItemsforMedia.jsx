@@ -3,7 +3,8 @@ import { useStore } from "@/lib/store";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaCartPlus, FaShopify } from "react-icons/fa";
+import { BsCart4 } from "react-icons/bs";
+import { FaAngleLeft, FaAngleRight, FaDollarSign, FaShopify } from "react-icons/fa";
 import { MdGridView } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
@@ -90,14 +91,14 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                         <div>
 
                             <div className="w-full mb-5 flex items-center justify-between gap-5">
-                                <button onClick={(e) => { setdownloadtype(e.target.value), setprice('55') }} value={"Digital Download"} className={`${downloadtype == "Digital Download" ? "pbg2" : "bg-gray-800"} text-white border p-3 rounded-md w-full`}>Digital Download</button>
-                                <button onClick={(e) => { setdownloadtype(e.target.value), setprice('10') }} value={'Physical Print'} className={`${downloadtype == "Physical Print" ? "pbg2" : "bg-gray-800"} text-white border p-3 rounded-md w-full`}>Physical Print</button>
+                                <button onClick={(e) => { setdownloadtype(e.target.value), setprice('55') }} value={"Digital Download"} className={`${downloadtype == "Digital Download" ? "pbg2" : "bg-gray-900"} text-white border border-gray-500 p-3 rounded-md w-full`}>Digital Download</button>
+                                <button onClick={(e) => { setdownloadtype(e.target.value), setprice('10') }} value={'Physical Print'} className={`${downloadtype == "Physical Print" ? "pbg2" : "bg-gray-900"} text-white border border-gray-500 p-3 rounded-md w-full`}>Physical Print</button>
                             </div>
 
                             {
                                 downloadtype == "Digital Download" ? (
 
-                                    <select onChange={(e) => { setprice(e.target.value) }} className='w-full bg-gray-800 text-white border p-3 rounded-md'>
+                                    <select onChange={(e) => { setprice(e.target.value) }} className='w-full bg-gray-900 text-white border border-gray-500 p-3 rounded-md'>
                                         <option value="55">Web Edition (Single Use) </option>
                                         <option value="400">PR Usage (Multi Use)</option>
                                         <option value="150">Print (Single use)</option>
@@ -116,10 +117,13 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
 
 
 
-                            <h2 className="my-5 text-white text-3xl font-bold">{`$ ${price}.00`}</h2>
-                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl flex items-center gap-2 pbg2 text-white w-full justify-center hover:scale-105 transition-all duration-500">
-                                <FaCartPlus className="text-3xl" />
-                                <span className="text-xl">Add To Cart</span>
+                            <h2 className="my-5 text-white text-3xl font-bold flex items-center gap-1">
+                                <FaDollarSign />
+                                {`${price}.00`}
+                            </h2>
+                            <button onClick={() => { handleDownload() }} className="rounded-md p-3 text-2xl flex items-center gap-3 pbg2 text-white w-full justify-center hover:scale-105 transition-all duration-500">
+                                <BsCart4 className="text-2xl" />
+                                <span className="text-lg">Add To Cart</span>
                             </button>
 
 
@@ -129,9 +133,9 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                                 <span className="">{mycart?.length}</span>
                             </Link>
 
-                            <button onClick={() => { setshowimageSlide(false) }} className="rounded-md p-3 text-2xl flex items-center gap-2 bg-gray-900 border border-gray-500 text-white w-full justify-center hover:scale-105 transition-all duration-500 mt-5">
-                                <FaShopify className="text-3xl" />
-                                <span className="text-xl">Keep Shoping</span>
+                            <button onClick={() => { setshowimageSlide(false) }} className="rounded-md p-3 text-2xl flex items-center gap-3 bg-gray-900 border border-gray-500 text-white w-full justify-center hover:scale-105 transition-all duration-500 mt-5">
+                                <FaShopify className="text-2xl" />
+                                <span className="text-lg">Keep Shoping</span>
                             </button>
 
 

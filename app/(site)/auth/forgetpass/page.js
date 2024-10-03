@@ -57,9 +57,10 @@ const ForgetPass = () => {
 
                         if (issend?.status == 200) {
                             setisloading(false);
+                            router.push('/auth/forgetpass/verifyotp');
                             toast.success(res.message);
                             setuserData(res?.data?.alluserData);
-                            router.push('/auth/forgetpass/verifyotp');
+
                         } else {
                             setisloading(false);
                             toast.error("Email Send Failed");
