@@ -6,6 +6,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { IoMdArrowRoundBack } from "react-icons/io";
+import { LuAlertTriangle } from "react-icons/lu";
 import { RxCross2 } from "react-icons/rx";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -161,8 +162,11 @@ const MyCart = () => {
                             <div className="mt-4">
                                 <div className="bg-red-100 p-2 rounded-md w-full border border-red-900">
                                     <p className="text-gray-600">
-                                        <b className="text-red-800">Important: </b>
-                                        After Payment Your Shoping Items Will be Start to Download Automatically!
+                                        <b className="text-red-800 flex items-center gap-1">
+                                            <LuAlertTriangle className="text-lg" />
+                                            <span>Important: </span>
+                                        </b>
+                                        After Payment Successfull Your will find a Download Button for Donwload your Purchases Items!
                                     </p>
                                 </div>
                             </div>
