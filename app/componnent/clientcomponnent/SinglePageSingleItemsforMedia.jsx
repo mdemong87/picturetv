@@ -3,7 +3,8 @@ import { useStore } from "@/lib/store";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { FaAngleLeft, FaAngleRight, FaCartPlus } from "react-icons/fa";
+import { FaAngleLeft, FaAngleRight, FaCartPlus, FaShopify } from "react-icons/fa";
+import { MdGridView } from "react-icons/md";
 import { RxCross2 } from "react-icons/rx";
 import logo from '../../../public/assets/logo-2.png';
 
@@ -122,10 +123,19 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                             </button>
 
 
-                            <Link href='/my-cart' className="rounded-md p-3 text-2xl flex items-center gap-3 text-white w-full justify-center border mt-5 border-GRAY-100 bg-gray-800 hover:scale-105 transition-all duration-500">
-                                <span className="text-lg">View Cart</span>
+                            <Link href='/my-cart' className="rounded-md p-3 text-2xl flex items-center gap-3 text-white w-full justify-center border mt-5 border-gray-500 bg-gray-900 hover:scale-105 transition-all duration-500">
+                                <MdGridView className="text-2xl" />
+                                <span className="text-lg">View Cart : </span>
                                 <span className="">{mycart?.length}</span>
                             </Link>
+
+                            <button onClick={() => { setshowimageSlide(false) }} className="rounded-md p-3 text-2xl flex items-center gap-2 bg-gray-900 border border-gray-500 text-white w-full justify-center hover:scale-105 transition-all duration-500 mt-5">
+                                <FaShopify className="text-3xl" />
+                                <span className="text-xl">Keep Shoping</span>
+                            </button>
+
+
+
 
 
                         </div>
