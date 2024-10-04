@@ -133,7 +133,7 @@ const SinglePageSingleItemsForMedia = ({ setshowimageSlide, currentEventData, cu
                                 <span className="">{mycart?.length}</span>
                             </Link>
 
-                            <button onClick={() => { setshowimageSlide(false) }} className="rounded-md p-3 text-2xl flex items-center gap-3 bg-gray-900 border border-gray-500 text-white w-full justify-center hover:scale-105 transition-all duration-500 mt-5">
+                            <button onClick={() => { setshowimageSlide(false) }} className="rounded-md p-3 text-2xl flex items-center gap-3 pbg2 text-white w-full justify-center hover:scale-105 transition-all duration-500 mt-5">
                                 <FaShopify className="text-2xl" />
                                 <span className="text-lg">Keep Shoping</span>
                             </button>

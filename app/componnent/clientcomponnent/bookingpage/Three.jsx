@@ -196,7 +196,7 @@ const Three = () => {
                     </div>
 
                     <div className="flex flex-col gap-2">
-                        <label htmlFor="bookingPostImage">Post images to <Link className="pcl font-bold" href="https://www.youtube.com/channel/UCcSN0lEmUsz_daQTkMUiMPg">Picturetv.com</Link> & service to media (*):</label>
+                        <label htmlFor="bookingPostImage">Post images to <Link className="pcl font-bold" href="https://www.youtube.com/channel/UCcSN0lEmUsz_daQTkMUiMPg">picturetv.net</Link> & service to media (*):</label>
                         <select name="bookingPostImage" className='booking-input-field p-3 rounded-md'>
                             <option value="YES">YES</option>
                             <option value="NO">NO</option>
