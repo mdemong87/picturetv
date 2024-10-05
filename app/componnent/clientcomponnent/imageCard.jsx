@@ -17,8 +17,8 @@ const ImageCard = ({ data, link }) => {
                 </div>
                 <div className="p-3 bg-white rounded-b-md">
                     <p className="text-gray-400 text-md">{data?.Eventdate}</p>
-                    <h3 className="text-gray-600 font-semibold text-xl">{data?.title}</h3>
-                    <p className="">
+                    <h3 className="text-gray-600 font-semibold text-xl line-clamp-1">{data?.title}</h3>
+                    <p className="line-clamp-1">
                         <b className="pcl font-semibold">By</b>
                         <span className="text-md text-gray-400 pl-1">{data?.fullname}</span>
                     </p>
