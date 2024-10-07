@@ -1,7 +1,6 @@
 'use client'
 
 import Container from "@/app/componnent/clientcomponnent/Container";
-import UnderDevelopment from "@/app/componnent/clientcomponnent/UnderDevelopment";
 import Five from "@/app/componnent/clientcomponnent/bookingpage/Five";
 import Four from "@/app/componnent/clientcomponnent/bookingpage/Four";
 import NextAndPrev from "@/app/componnent/clientcomponnent/bookingpage/NextAndPrev";
@@ -36,9 +35,8 @@ const Bookign = () => {
                     </Container>
                 </div>
 
-            </div>
 
-            <UnderDevelopment />
+            </div>
         </main>
     )
 }
