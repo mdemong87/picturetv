@@ -1,11 +1,18 @@
 'use client'
 
+import { useStore } from "@/lib/store";
 import Image from "next/image";
 import portfoliocardimage from "../../../../public/assets/bg-3.jpg";
 
 const BookingCard = ({ title, setrander }) => {
+
+
+    const setshootType = useStore((state) => state.setshootType);
+
+
+
     return (
-        <div onClick={() => { setrander(3) }} className="w-full h-[400px] my-8">
+        <div onClick={() => { setrander(3), setshootType(title) }} className="w-full h-[400px] my-8">
             <div className="w-full pbg2 py-2 text-2xl text-center font-bold rounded-t-md text-gray-200">
                 <h3>{title}</h3>
             </div>

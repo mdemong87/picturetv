@@ -16,8 +16,6 @@ const Bookign = () => {
 
 
     const [rander, setrander] = useState(1);
-    const [loding, setloding] = useState(false);
-    const [ispersonal, setispersonal] = useState(false);
 
 
     return (
@@ -26,12 +24,12 @@ const Bookign = () => {
                 <div className="w-full py-10">
                     <Container>
                         <Prograssber rander={rander} setrander={setrander} />
-                        {rander === 1 && <One ispersonal={ispersonal} setispersonal={setispersonal} />}
-                        {rander === 2 && <Two ispersonal={ispersonal} setrander={setrander} />}
-                        {rander === 3 && <Three />}
-                        {rander === 4 && <Four />}
+                        {rander === 1 && <One />}
+                        {rander === 2 && <Two setrander={setrander} />}
+                        {rander === 3 && <Four />}
+                        {rander === 4 && <Three />}
                         {rander === 5 && <Five />}
-                        <NextAndPrev rander={rander} setrander={setrander} loding={loding} setloding={setloding} />
+                        <NextAndPrev rander={rander} setrander={setrander} />
                     </Container>
                 </div>
 

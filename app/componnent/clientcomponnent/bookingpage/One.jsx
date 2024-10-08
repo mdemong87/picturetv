@@ -1,9 +1,14 @@
 'use client'
 
+import { useStore } from '@/lib/store';
 import { FaBriefcase, FaUser } from 'react-icons/fa';
 import Container from '../Container';
 
-const One = ({ ispersonal, setispersonal }) => {
+const One = () => {
+
+    const ispersonal = useStore((state) => state.ispersonal);
+    const setispersonal = useStore((state) => state.setispersonal);
+
 
 
     return (

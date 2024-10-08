@@ -1,8 +1,11 @@
+import { useStore } from "@/lib/store";
 import BookingCard from "../bookingpage/BookingCard";
 
 
-const Two = ({ ispersonal, setrander }) => {
+const Two = ({ setrander }) => {
 
+
+    const ispersonal = useStore((state) => state.ispersonal);
 
     return (
         <div className="border rounded-md border-gray-300 p-4">
