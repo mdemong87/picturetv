@@ -39,7 +39,7 @@ const Four = () => {
 
                                 foundedprice?.data?.map((item, index) => {
                                     return (
-                                        <PricingCard title={item?.title} price={item?.price} offer={item?.offer} />
+                                        <PricingCard key={index} title={item?.title} price={item?.price} offer={item?.offer} />
                                     )
                                 })
 
