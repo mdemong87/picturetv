@@ -14,7 +14,7 @@ const Three = () => {
         <div className='w-full border rounded-md border-gray-300 py-10 px-7'>
             <h3 className='text-2xl text-black text-center font-semibold mb-10'>Event Booking</h3>
             {
-                shootType == "Headshot" || shootType == "Fashion" || shootType == "Team & Office" ? (
+                shootType == "Headshot" || shootType == "Fashion" || shootType == "Team & Office" || shootType == "Portrait" ? (
                     <div>
                         <form className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                             <div className="flex flex-col gap-2">
