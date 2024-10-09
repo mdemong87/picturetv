@@ -290,6 +290,164 @@ const priceingData = [
         ]
 
     },
+
+    {
+        forPrice: "Portrait",
+        data: [
+            {
+                title: "1 Final Images w/touch ups",
+                price: "250.00",
+                offer: [
+                    "In and out session(up to 10min), will make this the most convenient of both worlds.Fast and spot on!",
+                    "One outfit",
+                    "unlimited photos",
+                    "w/basic editing",
+                    "On site ",
+                    "Fall Special",
+
+                ]
+            },
+
+            {
+                title: "2 Final Images w/touch ups",
+                price: "360.00",
+                offer: [
+                    "A fast session as well(up to 20min), with additional poses included. Great for a wider range of uses",
+                    "One outfit",
+                    "unlimited photos",
+                    "w/basic editing",
+                    "On site ",
+                    "Fall Special",
+
+                ]
+            },
+            {
+                title: "4 Final Images w/touch ups",
+                price: "550.00",
+                offer: [
+                    "Our Half hour package is ideal for those that want more peace of mind.More Looks, more poses, more finals.",
+                    "1-2 outfit",
+                    "unlimited photos",
+                    "w/basic editing",
+                    "On site ",
+                    "Fall Special",
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Event",
+        data: [
+            {
+                title: "Basic Web Video: Up to One Minute",
+                price: "1500.00",
+                offer: [
+                    "1.5 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "One Round of Editing",
+                    "One Location",
+                    "YouTube/Vimeo",
+                    "Music",
+
+                ]
+            },
+
+            {
+                title: "Promotional Web Video: Up to Two Minutes",
+                price: "2000.00",
+                offer: [
+                    "2 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "Editing",
+                    "One Location",
+                    "YouTube/Vimeo",
+                    "Music",
+
+                ]
+            },
+            {
+                title: "Corporate Web Video: Up to Two Minutes",
+                price: "3500.00",
+                offer: [
+                    "4 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "Editing",
+                    "Two Location",
+                    "YouTube/Vimeo",
+                    "Music",
+                    "Professional Filmmaker",
+                    "Mic with Voice-Over Speaker"
+
+                ]
+            },
+
+
+            {
+                title: "One Hour Event Photography",
+                price: "300.00",
+                offer: [
+                    "50 high resolution unedited images",
+                    "Online photo album 2 retouched"
+                ]
+            },
+
+            {
+                title: "Two Hours Event Photography",
+                price: "674.00",
+                offer: [
+                    "175 high resolution unedited images",
+                    "Online photo album",
+                    "4 free basic retouched images"
+                ]
+            },
+
+            {
+                title: "Three Hours Event Photography",
+                price: "769.00",
+                offer: [
+                    "250 high resolution unedited images",
+                    "Online photo album",
+                    "6 free basic retouched images"
+                ]
+            },
+
+            {
+                title: "Four Hours Event Photography",
+                price: "989.00",
+                offer: [
+                    "350 high resolution unedited images",
+                    "Online photo album",
+                    "8 free basic retouched images"
+                ]
+            },
+
+            {
+                title: "Five Hours Event Photography",
+                price: "1200.00",
+                offer: [
+                    "500+ high resolution unedited images",
+                    "Online photo album",
+                    "10 free basic retouched images"
+                ]
+            },
+
+            {
+                title: "Premium Event Photography",
+                price: "1799.00",
+                offer: [
+                    "Unlimited  high resolution images",
+                    "Online photo album",
+                    "15 free basic retouched images",
+                    "10 free Print of 5x7"
+                ]
+            },
+        ]
+
+    },
 ]
 
 export default priceingData;
