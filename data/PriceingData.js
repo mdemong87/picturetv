@@ -342,49 +342,6 @@ const priceingData = [
     {
         forPrice: "Event",
         data: [
-            {
-                title: "Basic Web Video: Up to One Minute",
-                price: "1500.00",
-                offer: [
-                    "1.5 Hours of Shooting",
-                    "Professional Filmmaker",
-                    "One Round of Editing",
-                    "One Location",
-                    "YouTube/Vimeo",
-                    "Music",
-
-                ]
-            },
-
-            {
-                title: "Promotional Web Video: Up to Two Minutes",
-                price: "2000.00",
-                offer: [
-                    "2 Hours of Shooting",
-                    "Professional Filmmaker",
-                    "Editing",
-                    "One Location",
-                    "YouTube/Vimeo",
-                    "Music",
-
-                ]
-            },
-            {
-                title: "Corporate Web Video: Up to Two Minutes",
-                price: "3500.00",
-                offer: [
-                    "4 Hours of Shooting",
-                    "Professional Filmmaker",
-                    "Editing",
-                    "Two Location",
-                    "YouTube/Vimeo",
-                    "Music",
-                    "Professional Filmmaker",
-                    "Mic with Voice-Over Speaker"
-
-                ]
-            },
-
 
             {
                 title: "One Hour Event Photography",
@@ -443,6 +400,49 @@ const priceingData = [
                     "Online photo album",
                     "15 free basic retouched images",
                     "10 free Print of 5x7"
+                ]
+            },
+
+            {
+                title: "Basic Web Video: Up to One Minute",
+                price: "1500.00",
+                offer: [
+                    "1.5 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "One Round of Editing",
+                    "One Location",
+                    "YouTube/Vimeo",
+                    "Music",
+
+                ]
+            },
+
+            {
+                title: "Promotional Web Video: Up to Two Minutes",
+                price: "2000.00",
+                offer: [
+                    "2 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "Editing",
+                    "One Location",
+                    "YouTube/Vimeo",
+                    "Music",
+
+                ]
+            },
+            {
+                title: "Corporate Web Video: Up to Two Minutes",
+                price: "3500.00",
+                offer: [
+                    "4 Hours of Shooting",
+                    "Professional Filmmaker",
+                    "Editing",
+                    "Two Location",
+                    "YouTube/Vimeo",
+                    "Music",
+                    "Professional Filmmaker",
+                    "Mic with Voice-Over Speaker"
+
                 ]
             },
         ]
