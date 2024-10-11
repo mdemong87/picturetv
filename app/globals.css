@@ -25,6 +25,14 @@ h6 {
   margin: 0;
 }
 
+select {
+  -webkit-appearance: none;
+  /* Remove default styling in Safari */
+  -moz-appearance: none;
+  /* Remove default styling in Firefox */
+  appearance: none;
+  /* Remove default styling */
+}
 
 
 /* scrollber */
