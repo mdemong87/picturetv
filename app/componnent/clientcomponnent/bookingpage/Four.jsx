@@ -33,7 +33,7 @@ const Four = () => {
                     <div className="w-full h-fit lg:h-fit grid grid-cols-12 gap-5 py-10">
 
                         {
-                            foundedprice === undefined || (shootType == "Event" && ispersonal == true) ? (
+                            foundedprice === undefined ? (
                                 <h1 className="text-3xl text-center w-full py-6 font-bold col-span-12">No Price Found!</h1>
                             ) : (
 

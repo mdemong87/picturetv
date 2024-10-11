@@ -42,13 +42,13 @@ const Two = ({ setrander }) => {
                             <BookingCard setrander={setrander} title="Wedding" />
                             <BookingCard setrander={setrander} title="Engagement" />
                             <BookingCard setrander={setrander} title="Maternity" />
-                            <BookingCard setrander={setrander} title="Real Estate" />
-                            <BookingCard setrander={setrander} title="Event" />
+                            {/* <BookingCard setrander={setrander} title="Real Estate" /> */}
+                            {/* <BookingCard setrander={setrander} title="Event" /> */}
                             <BookingCard setrander={setrander} title="Children" />
-                            <BookingCard setrander={setrander} title="Sport" />
+                            {/* <BookingCard setrander={setrander} title="Sport" /> */}
                             <BookingCard setrander={setrander} title="Pet" />
                             <BookingCard setrander={setrander} title="Anniversary" />
-                            <BookingCard setrander={setrander} title="Landscape" />
+                            {/* <BookingCard setrander={setrander} title="Landscape" /> */}
                             <BookingCard setrander={setrander} title="Others" />
 
                         </div>
