@@ -587,7 +587,7 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1728739959/NYFW_26_x52yu6.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739958/NYFW_16_tkzqtj.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739955/NYFW_25_rkbplu.jpg",
-            "https://res.cloudinary.com/picturetv/image/upload/v1728739954/NYFW_15_w3ovrc.jpg",
+
             "https://res.cloudinary.com/picturetv/image/upload/v1728739954/NYFW_11_z3dkzk.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739951/NYFW_109_idnihz.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739950/NYFW_23_dz3t8t.jpg",
@@ -602,8 +602,7 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1728739939/NYFW_96_u3uxai.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739937/NYFW_106_wkspbf.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739936/NYFW_98_g6gobw.jpg",
-
-
+            "https://res.cloudinary.com/picturetv/image/upload/v1728739935/NYFW_9_yqnegn.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739932/NYFW_103_sewuor.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739932/NYFW_105_gfmac5.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1728739932/NYFW_104_vkjnnh.jpg",
@@ -617,9 +616,9 @@ const data = [
             "https://res.cloudinary.com/picturetv/image/upload/v1728739921/NYFW_91_i8pjnf.jpg",
 
 
-            "https://res.cloudinary.com/picturetv/image/upload/v1728739935/NYFW_9_yqnegn.jpg",
 
 
+            "https://res.cloudinary.com/picturetv/image/upload/v1728739954/NYFW_15_w3ovrc.jpg",
 
 
         ].reverse(),
