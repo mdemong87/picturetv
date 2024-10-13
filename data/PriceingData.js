@@ -3,6 +3,7 @@ const priceingData = [
         forPrice: "Fashion",
         data: [
             {
+                id: 1,
                 title: "Fashion Package 1",
                 price: "699.00",
                 offer: [
@@ -22,6 +23,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 2,
                 title: "Fashion Package 2",
                 price: "899.00",
                 offer: [
@@ -41,6 +43,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 3,
                 title: "Fashion Package 3",
                 price: "1499.00",
                 offer: [
@@ -60,6 +63,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 4,
                 title: "Fashion Package 4",
                 price: "2999.00",
                 offer: [
@@ -85,6 +89,7 @@ const priceingData = [
         forPrice: "Team & Office",
         data: [
             {
+                id: 1,
                 title: "Team & Office Package 1",
                 price: "499.00",
                 offer: [
@@ -103,6 +108,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 2,
                 title: "Team & Office Package 2",
                 price: "699.00",
                 offer: [
@@ -121,6 +127,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 3,
                 title: "Team & Office Package 3",
                 price: "999.00",
                 offer: [
@@ -139,6 +146,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 4,
                 title: "Team & Office Package 4",
                 price: "1799.00",
                 offer: [
@@ -163,6 +171,7 @@ const priceingData = [
         forPrice: "Headshot",
         data: [
             {
+                id: 1,
                 title: "Headshot Package 1",
                 price: "599.00",
                 offer: [
@@ -181,6 +190,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 2,
                 title: "Headshot Package 2",
                 price: "799.00",
                 offer: [
@@ -199,6 +209,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 3,
                 title: "Headshot Package 3",
                 price: "999.00",
                 offer: [
@@ -216,6 +227,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 4,
                 title: "Headshot Package 4",
                 price: "1499.00",
                 offer: [
@@ -241,6 +253,7 @@ const priceingData = [
         forPrice: "Real Estate",
         data: [
             {
+                id: 1,
                 title: "Photography",
                 price: "1100.00",
                 offer: [
@@ -249,6 +262,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 2,
                 title: "Video",
                 price: "3500.00",
                 offer: [
@@ -257,6 +271,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 3,
                 title: "Aerials",
                 price: "1800.00",
                 offer: [
@@ -264,6 +279,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 4,
                 title: "3D Virtual Tours & Basic Floor Plans",
                 price: "2200.00",
                 offer: [
@@ -272,6 +288,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 5,
                 title: "Advanced Floor Plan",
                 price: "2500.00",
                 offer: [
@@ -280,6 +297,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 6,
                 title: "Twilight Photo",
                 price: "999.00",
                 offer: [
@@ -295,6 +313,7 @@ const priceingData = [
         forPrice: "Portrait",
         data: [
             {
+                id: 1,
                 title: "1 Final Images w/touch ups",
                 price: "250.00",
                 offer: [
@@ -309,6 +328,7 @@ const priceingData = [
             },
 
             {
+                id: 2,
                 title: "2 Final Images w/touch ups",
                 price: "360.00",
                 offer: [
@@ -322,6 +342,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 3,
                 title: "4 Final Images w/touch ups",
                 price: "550.00",
                 offer: [
@@ -344,6 +365,7 @@ const priceingData = [
         data: [
 
             {
+                id: 1,
                 title: "One Hour Event Photography",
                 price: "300.00",
                 offer: [
@@ -353,6 +375,7 @@ const priceingData = [
             },
 
             {
+                id: 2,
                 title: "Two Hours Event Photography",
                 price: "674.00",
                 offer: [
@@ -363,6 +386,7 @@ const priceingData = [
             },
 
             {
+                id: 3,
                 title: "Three Hours Event Photography",
                 price: "769.00",
                 offer: [
@@ -373,6 +397,7 @@ const priceingData = [
             },
 
             {
+                id: 4,
                 title: "Four Hours Event Photography",
                 price: "989.00",
                 offer: [
@@ -383,6 +408,7 @@ const priceingData = [
             },
 
             {
+                id: 5,
                 title: "Five Hours Event Photography",
                 price: "1200.00",
                 offer: [
@@ -393,6 +419,7 @@ const priceingData = [
             },
 
             {
+                id: 6,
                 title: "Premium Event Photography",
                 price: "1799.00",
                 offer: [
@@ -404,6 +431,7 @@ const priceingData = [
             },
 
             {
+                id: 7,
                 title: "Basic Web Video: Up to One Minute",
                 price: "1500.00",
                 offer: [
@@ -418,6 +446,7 @@ const priceingData = [
             },
 
             {
+                id: 8,
                 title: "Promotional Web Video: Up to Two Minutes",
                 price: "2000.00",
                 offer: [
@@ -431,6 +460,7 @@ const priceingData = [
                 ]
             },
             {
+                id: 9,
                 title: "Corporate Web Video: Up to Two Minutes",
                 price: "3500.00",
                 offer: [
@@ -443,6 +473,47 @@ const priceingData = [
                     "Professional Filmmaker",
                     "Mic with Voice-Over Speaker"
 
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Wedding",
+        data: [
+            {
+                id: 1,
+                title: "Basic Package",
+                price: "500.00",
+                offer: [
+                    "4 Hours After Wedding and Reception - 300 to 600 Pictures on CD",
+                    "USB Flash Drive"
+
+                ]
+            },
+
+            {
+                id: 2,
+                title: "Silver Package",
+                price: "1000.00",
+                offer: [
+                    "Half a Day Wedding and Reception",
+                    "Fifty Prints of 4x6, Ten 5x7, Five 8x10 or 9x12"
+
+                ]
+            },
+            {
+                id: 3,
+                title: "Gold Package",
+                price: "2500.00",
+                offer: [
+                    "All Day Photo and Video",
+                    "One Hundred Prints of 4x6, Twenty 5x7,Fifteen 8x10 or 9x12",
+                    "Photo Album",
+                    "Video Basic Edit with Special Effects",
+                    "USB Flash Drive With All Images",
                 ]
             },
         ]

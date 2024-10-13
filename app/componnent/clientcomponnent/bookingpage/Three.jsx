@@ -99,14 +99,12 @@ const Three = () => {
                                 <hr />
                                 {/* booking info */}
                                 <label htmlFor="bokkingAssignmentDate">Session Interested In:</label>
-                                <input
-                                    type="text"
-                                    name="bokkingAssignmentDate"
-                                    id="bokkingAssignmentDate"
-
-                                    className='booking-input-field p-3 rounded-md'
-                                    placeholder='Assignment Date'
-                                />
+                                <select className="booking-input-field p-3 rounded-md" name="" id="">
+                                    <option value=""> Please Select</option>
+                                    <option value="Individual Headshots">Individual Headshots</option>
+                                    <option value="Corporate/Team Headshots">Corporate/Team Headshots</option>
+                                    <option value="Lifestyle Branding">Lifestyle Branding</option>
+                                </select>
 
                             </div>
 
