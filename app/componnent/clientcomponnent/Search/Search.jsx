@@ -19,7 +19,7 @@ const SearchWper = () => {
 
 
     const searchText = useStore((state) => state.searchText);
-    const setsearchText = useStore((state) => state.setsearchText);
+    const setSearchText = useStore((state) => state.setSearchText);
 
 
 
@@ -46,6 +46,11 @@ const SearchWper = () => {
     }
 
 
+    //handle search change
+    function handleSearchChange(e) {
+        setSearchText(e.target.value);
+    }
+
 
     //handle search result function here
     function handleSearch(e) {
@@ -67,7 +72,7 @@ const SearchWper = () => {
 
                         <div className='col-span-12 lg:col-span-5'>
                             <div className='bg-white rounded-md'>
-                                <input onChange={(e) => { setsearchText(e.target.value) }}
+                                <input onChange={(e) => { handleSearchChange(e) }}
                                     value={searchText}
                                     type="search"
                                     name="imageSearch"
