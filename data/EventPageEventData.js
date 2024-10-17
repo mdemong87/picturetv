@@ -15,6 +15,9 @@ const data = [
         "forPage": "Event",
         "dis": "A large annual conference focusing on tech advancements.",
         "file": [
+
+
+            "https://res.cloudinary.com/picturetv/image/upload/v1729172694/Brooklyn_Museum_257_yov2xj_flibss.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1729089819/Brooklyn_Museum_256_fuhiol.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1729089664/Brooklyn_Museum_112_kbl45s.jpg",
             "https://res.cloudinary.com/picturetv/image/upload/v1729089664/Brooklyn_Museum_212_b14fbc.jpg",
