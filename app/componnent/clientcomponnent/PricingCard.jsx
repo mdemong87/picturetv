@@ -10,7 +10,7 @@ const PricingCard = ({ title, price, offer, currentPrice }) => {
 
 
     return (
-        <div onClick={() => setselectedprice(currentPrice)} className={`w-full col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 p-8 md:p-4 border-2 border-gray-200 rounded-lg shadow hover:bg-gray-100 transition duration-200 cursor-pointer  ${currentPrice == selectedprice ? "border-2 border-green-700 bg-white" : "bg-gray-50"}`}>
+        <div onClick={() => setselectedprice(currentPrice)} className={`w-full col-span-12 md:col-span-6 lg:col-span-4 xl:col-span-3 p-8 md:p-4 border-2 border-gray-200 rounded-lg shadow hover:bg-white transition duration-200 cursor-pointer  ${currentPrice == selectedprice ? "border-2 border-green-700 bg-white" : "bg-gray-50"}`}>
             <h5 className="mb-4 text-xl font-medium text-gray-500">{title}</h5>
             <div className="flex items-baseline text-gray-900">
                 <span className="text-3xl font-semibold">$</span>
