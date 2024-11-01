@@ -10,7 +10,7 @@ const SingleSlide = ({ image, index }) => {
             <div className='absolute h-full w-full top-0 flex items-center justify-center bannartransparentBg'>
                 <div className='text-center'>
                     <h1 className='text-2xl md:text-3xl text-white font-bold pb-5'>It&apos;s Picture Time</h1>
-                    <p className='text-base  text-gray-200'>Mala Speak Sunday - Black People Have Secret - Celebrity Are My Freiend</p>
+                    <p className='text-base  text-gray-200'>Mala Speak Sunday - Black People Have Secret - Celebrity Are My Friend</p>
                     <div className='mt-6 md:mt-12'>
                         <Link href={'/watch'} className='pbg2 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Watch</Link>
                     </div>
