@@ -14,7 +14,7 @@ import ForwordBtn from "../ForwordBtn";
 import SinglePageSingleItemsForMedia from "./SinglePageSingleItemsforMedia";
 
 
-const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) => {
+const SingleMediaPageWrper = ({ id, singledata, nextLink, prevLink }) => {
 
     const setmycart = useStore((state) => state.setmycart);
     const mycart = useStore((state) => state.mycart);
@@ -84,7 +84,7 @@ const SingleMediaPageWrper = ({ id, session, singledata, nextLink, prevLink }) =
 
                                     singledata[0]?.file?.map((singleData, index) => {
                                         return (
-                                            index > 0 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} session={session} index={index} setcurrentIndex={setcurrentIndex} />
+                                            index > 0 && <ImageCard key={index} setcurrentItems={setcurrentItems} data={singledata[0]} singleitems={singleData} showimageSlide={showimageSlide} setshowimageSlide={setshowimageSlide} index={index} setcurrentIndex={setcurrentIndex} />
                                         )
                                     })
 

@@ -1,6 +1,7 @@
 const priceingData = [
     {
         forPrice: "Fashion",
+        isbusiness: true,
         data: [
             {
                 id: 1,
@@ -87,6 +88,7 @@ const priceingData = [
     },
     {
         forPrice: "Team & Office",
+        isbusiness: true,
         data: [
             {
                 id: 1,
@@ -169,6 +171,7 @@ const priceingData = [
     },
     {
         forPrice: "Headshot",
+        isbusiness: true,
         data: [
             {
                 id: 1,
@@ -251,6 +254,7 @@ const priceingData = [
 
     {
         forPrice: "Real Estate",
+        isbusiness: true,
         data: [
             {
                 id: 1,
@@ -311,6 +315,7 @@ const priceingData = [
 
     {
         forPrice: "Portrait",
+        isbusiness: false,
         data: [
             {
                 id: 1,
@@ -362,6 +367,7 @@ const priceingData = [
 
     {
         forPrice: "Event",
+        isbusiness: true,
         data: [
 
             {
@@ -482,6 +488,7 @@ const priceingData = [
 
     {
         forPrice: "Wedding",
+        isbusiness: false,
         data: [
             {
                 id: 1,
@@ -523,15 +530,12 @@ const priceingData = [
 
     {
         forPrice: "Product",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My typical NYC event photography rate is hourly from",
-                price: "65 - $300",
-                offer: [
-                    "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $3,000. "
-
-                ]
+                title: "My typical NYC event photography rate is between $65-$300 an hour.",
+                dis: "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $3,000. "
             },
         ]
 
@@ -540,15 +544,12 @@ const priceingData = [
 
     {
         forPrice: "Food",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My typical NYC Food photography rate is hourly from",
-                price: "45 - $250",
-                offer: [
-                    "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $2,500."
-
-                ]
+                title: "My typical NYC Food photography rate is between $45 - $250 an hour",
+                dis: "My typical NYC Food photography rate is between $45 - $250 an hour"
             },
         ]
 
@@ -557,15 +558,12 @@ const priceingData = [
 
     {
         forPrice: "Automotive",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for automotive photography in NYC ranges in hourly from",
-                price: "250 - $500",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000. "
-
-                ]
+                title: "My standard rate for automotive photography in NYC ranges from $250 to $500 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000. "
             },
         ]
 
@@ -573,15 +571,12 @@ const priceingData = [
 
     {
         forPrice: "Aircraft",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Aircraft photography in NYC ranges in hourly from",
-                price: "5000 - $10000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000"
-
-                ]
+                title: "My standard rate for Aircraft photography in NYC ranges from $5000 to $10000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000."
             },
         ]
 
@@ -589,15 +584,12 @@ const priceingData = [
 
     {
         forPrice: "Media",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Media photography in NYC ranges in hourly from",
-                price: "350 - $1000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000."
-
-                ]
+                title: "My standard rate for Media photography in NYC ranges from $350 to $1000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000."
             },
         ]
 
@@ -606,15 +598,12 @@ const priceingData = [
 
     {
         forPrice: "Sport",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Sports photography in NYC ranges in hourly from",
-                price: "1000 - $5000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $25,000"
-
-                ]
+                title: "My standard rate for Sport photography in NYC ranges from $1000 to $5000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $25,000"
             },
         ]
 
@@ -623,15 +612,12 @@ const priceingData = [
 
     {
         forPrice: "Commerecial",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Commerecial photography in NYC ranges in hourly from",
-                price: "10000 - $100000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $500,000."
-
-                ]
+                title: "My standard rate for Commercial photography & Videography in NYC ranges from $10.000 to $100.000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $500,000."
             },
         ]
 
@@ -640,15 +626,12 @@ const priceingData = [
 
     {
         forPrice: "Industrial",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Industrial photography & Vediography in NYC ranges in hourly from",
-                price: "25000 - $150000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000.00 (Millions)"
-
-                ]
+                title: "My standard rate for Industrial photography & Videography in NYC ranges from $25,000 to $150.000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000.00 (Millions)"
             },
         ]
 
@@ -656,15 +639,12 @@ const priceingData = [
 
     {
         forPrice: "Landscape",
+        isbusiness: true,
         data: [
             {
                 id: 1,
-                title: "My standard rate for Landscape photography & Vediography in NYC ranges in hourly from",
-                price: "1000 - $10000",
-                offer: [
-                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $50,000."
-
-                ]
+                title: "My standard rate for Landscape photography & Videography in NYC ranges from $1,000 to $10.000 per hour.",
+                dis: "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $50,000."
             },
         ]
 
@@ -673,6 +653,7 @@ const priceingData = [
 
     {
         forPrice: "Others",
+        isbusiness: true,
         data: [
             {
                 id: 1,

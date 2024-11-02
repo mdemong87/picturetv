@@ -1,18 +1,24 @@
 'use client'
 
+import { useStore } from "@/lib/store";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import logo from "../../../../../public/assets/logo-2.png";
 
 
-const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, session, index, setcurrentIndex }) => {
+const ImageCard = ({ setcurrentItems, data, singleitems, setshowimageSlide, index, setcurrentIndex }) => {
 
 
     const router = useRouter();
 
+
+    //centeral state auth user
+    const authUser = useStore((state) => state.authUser);
+
+
     //handle show function is here
     function handleShow() {
-        if (!session?.role) {
+        if (!authUser?.role) {
             router.push('/auth/login');
         } else {
             setshowimageSlide(true);

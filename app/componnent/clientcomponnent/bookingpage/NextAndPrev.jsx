@@ -1,11 +1,18 @@
 'use client'
 
+import { useStore } from '@/lib/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from "../../../../styles/clientconponnent/booking/NextAndPrev.module.css";
 
 
-export default function NextAndPrev({ setrander, rander }) {
+export default function NextAndPrev() {
+
+
+    const rander = useStore((state) => state.rander);
+    const setrander = useStore((state) => state.setrander);
+
+
 
 
 
@@ -14,18 +21,14 @@ export default function NextAndPrev({ setrander, rander }) {
         e.preventDefault()
 
 
-        setrander((prev) => {
-            return prev + 1;
-        })
+        setrander(rander + 1);
 
     }
 
 
     function handliDClick(e) {
         e.preventDefault()
-        setrander((pre) => {
-            return pre - 1;
-        })
+        setrander(rander - 1);
     }
 
     async function handleSubmit(e) {

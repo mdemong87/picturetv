@@ -8,14 +8,14 @@ import One from "@/app/componnent/clientcomponnent/bookingpage/One";
 import Prograssber from "@/app/componnent/clientcomponnent/bookingpage/PrograssBar";
 import Three from "@/app/componnent/clientcomponnent/bookingpage/Three";
 import Two from "@/app/componnent/clientcomponnent/bookingpage/Two";
-import { useState } from "react";
+import { useStore } from "@/lib/store";
 
 
 
 const Bookign = () => {
 
 
-    const [rander, setrander] = useState(1);
+    const rander = useStore((state) => state.rander);
 
 
     return (
@@ -23,13 +23,13 @@ const Bookign = () => {
             <div className="h-full">
                 <div className="w-full py-10">
                     <Container>
-                        <Prograssber rander={rander} setrander={setrander} />
+                        <Prograssber />
                         {rander === 1 && <One />}
-                        {rander === 2 && <Two setrander={setrander} />}
+                        {rander === 2 && <Two />}
                         {rander === 3 && <Four />}
                         {rander === 4 && <Three />}
                         {rander === 5 && <Five />}
-                        <NextAndPrev rander={rander} setrander={setrander} />
+                        <NextAndPrev />
                     </Container>
                 </div>
 
