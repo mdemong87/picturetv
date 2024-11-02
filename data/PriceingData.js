@@ -519,6 +519,286 @@ const priceingData = [
         ]
 
     },
+
+
+    {
+        forPrice: "Product",
+        data: [
+            {
+                id: 1,
+                title: "My typical NYC event photography rate is hourly from",
+                price: "65 - $300",
+                offer: [
+                    "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $3,000. "
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Food",
+        data: [
+            {
+                id: 1,
+                title: "My typical NYC Food photography rate is hourly from",
+                price: "45 - $250",
+                offer: [
+                    "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $2,500."
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Automotive",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for automotive photography in NYC ranges in hourly from",
+                price: "250 - $500",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000. "
+
+                ]
+            },
+        ]
+
+    },
+
+    {
+        forPrice: "Aircraft",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Aircraft photography in NYC ranges in hourly from",
+                price: "5000 - $10000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000"
+
+                ]
+            },
+        ]
+
+    },
+
+    {
+        forPrice: "Media",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Media photography in NYC ranges in hourly from",
+                price: "350 - $1000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $5,000."
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Sport",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Sports photography in NYC ranges in hourly from",
+                price: "1000 - $5000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $25,000"
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Commerecial",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Commerecial photography in NYC ranges in hourly from",
+                price: "10000 - $100000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $500,000."
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Industrial",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Industrial photography & Vediography in NYC ranges in hourly from",
+                price: "25000 - $150000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $100,000.00 (Millions)"
+
+                ]
+            },
+        ]
+
+    },
+
+    {
+        forPrice: "Landscape",
+        data: [
+            {
+                id: 1,
+                title: "My standard rate for Landscape photography & Vediography in NYC ranges in hourly from",
+                price: "1000 - $10000",
+                offer: [
+                    "The hourly rate varies based on factors including client type (individual, non-profit, or corporate), the size and scope of the project, the duration, turnaround time, and usage rights for the photos. My day rate typically begins at $50,000."
+
+                ]
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Others",
+        data: [
+            {
+                id: 1,
+                title: "TV Commercial Production Package: 30 Sec Video",
+                price: "9760",
+                offer: [
+                    "Pre-Production: Original Concept, Professional Scrip, Casting, Style Frame",
+                    "Production: Filming, Producer, Small Film Crew, Director, One Professional Actor, Green Screen Studio or One Location.",
+                    "Post-Production: Producer, Editor, motion graphics, Stock photography, Color Correction, and 3-5 Weeks to Complete, HDV/ DVD, Quick Time File and Windows Media File, Music Production. ",
+
+
+                ]
+            },
+            {
+                id: 2,
+                title: "TV Commercial Production Package: 60 Sec Video",
+                price: "14575",
+                offer: [
+                    "Pre-Production: Original Concept, Professional Scrip, Casting, Style Frame",
+                    "Production: Filming, Producer, Small Film Crew, Director, One Professional Actor, Green Screen Studio or One Location.",
+                    "Post-Production: Producer, Editor, motion graphics, Stock photography, Color Correction, and 3-5 Weeks to Complete, HDV/ DVD, Quick Time File and Windows Media File, Music Production. ",
+
+
+                ]
+            },
+
+
+
+            {
+                id: 3,
+                title: "TV Commercial Production Package: 30 Sec Video",
+                price: "25400",
+                offer: [
+                    "Pre-Production: Original Concept, Professional Scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Two Professional Actors, Green Screen Studio or One Location.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 3-5 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment. ",
+
+
+                ]
+            },
+
+
+            {
+                id: 4,
+                title: "TV Commercial Production Package: 60 Sec Video",
+                price: "45500",
+                offer: [
+                    "Pre-Production: Original Concept, Professional Scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Two Professional Actors, Green Screen Studio or One Location.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 3-5 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment. ",
+
+
+                ]
+            },
+
+
+            {
+                id: 5,
+                title: "TV Commercial Production Package: 60 Sec Video",
+                price: "58300",
+                offer: [
+                    "Pre-Production: Original Concept, Professional scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Four Professional Actors, Green Screen Studio or Two Locations.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 4-6 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment, 3d animation and compositing.",
+
+
+                ]
+            },
+
+
+            {
+                id: 6,
+                title: "TV Commercial Production Package: 120 Sec Video",
+                price: "83500",
+                offer: [
+                    "Pre-Production: Original Concept, Professional scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Four Professional Actors, Green Screen Studio or Two Locations.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 4-6 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment, 3d animation and compositing.",
+
+
+                ]
+            },
+
+
+
+            {
+                id: 8,
+                title: "TV Infomercial Production Package: 15 min Video",
+                price: "90000",
+                offer: [
+                    "Pre-Production: Original Concept, Professional scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Five Professional Actors, Green Screen Studio or Two Locations.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 4-6 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment, 3d animation and compositing, Professional Voice Over.",
+
+
+                ]
+            },
+
+
+            {
+                id: 7,
+                title: "TV Infomercial Production Package: 30 min Video",
+                price: "126500",
+                offer: [
+                    "Pre-Production: Original Concept, Professional scrip, Casting, Storyboarding",
+                    "Production: HDTV Filming, Producer, Small Film Crew, Director, Five Professional Actors, Green Screen Studio or Two Locations.",
+                    "Post-Production: Producer, Editor, motion graphics, and stock photography, Color Correction, 4-6 Weeks to Complete, HDV / DVD, Quick Time File and Windows Media File, Music Production, Logo Treatment, 3d animation and compositing, Professional Voice Over.",
+
+
+                ]
+            },
+
+
+
+
+
+
+
+
+        ]
+
+    },
+
+
+
+
 ]
 
 export default priceingData;
