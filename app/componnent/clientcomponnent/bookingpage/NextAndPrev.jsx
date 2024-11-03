@@ -43,7 +43,7 @@ export default function NextAndPrev() {
         <div>
             <div className={styles.nextandPrevWrp}>
                 <button className={styles.button} disabled={rander === 1} onClick={(e) => handliDClick(e)}>Prev</button>
-                {rander !== 5 ? <button className={styles.button} disabled={rander === 5} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={true} onClick={(e) => handleSubmit(e)}>Submit</button>}
+                {rander !== 5 ? <button className={styles.button} disabled={rander === 5} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={true} onClick={(e) => handleSubmit(e)}>Proceed</button>}
             </div>
             <ToastContainer position="top-center" />
         </div>

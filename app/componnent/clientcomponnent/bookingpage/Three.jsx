@@ -386,6 +386,18 @@ const Three = () => {
                                 </textarea>
                             </div>
 
+                            <div className="flex flex-col gap-2">
+                                <hr />
+                                {/* booking info */}
+                                <label htmlFor="bokkingAssignmentDate">Book For:</label>
+                                <select className="booking-input-field p-3 rounded-md" name="" id="">
+                                    <option value=""> Please Select</option>
+                                    <option value="Hourly">Hourly</option>
+                                    <option value="Day">Day</option>
+                                </select>
+
+                            </div>
+
                         </form >
 
                         <div className="mt-6">
