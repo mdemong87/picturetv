@@ -23,7 +23,7 @@ const Three = () => {
     useEffect(() => {
         //handle show function is here
         if (!authUser?.role) {
-            setisloginpopup(true);
+            setisloginpopup(false);
         }
 
     }, [authUser])
