@@ -26,7 +26,7 @@ const UnAmmountPricingCard = ({ title, dis }) => {
 
 
             <div className="flex justify-center items-center">
-                <button onClick={(e) => { handleBook(e) }} className="pbg2 mt-12 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center">Booking</button>
+                <button onClick={(e) => { handleBook(e) }} className="pbg2 mt-12 py-1 px-3 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center">Book Now</button>
             </div>
         </div>
     )

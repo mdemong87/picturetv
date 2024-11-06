@@ -109,7 +109,7 @@ const Three = () => {
                             <div className="flex flex-col gap-2">
                                 <hr />
                                 {/* booking info */}
-                                <label htmlFor="bokkingAssignmentTitle">Linkedin Profile (Url):</label>
+                                <label htmlFor="bokkingAssignmentTitle">Social Media Profile (Url):</label>
                                 <input
                                     type="text"
                                     name="bokkingAssignmentTitle"
@@ -127,9 +127,15 @@ const Three = () => {
                                 <label htmlFor="bokkingAssignmentDate">Session Interested In:</label>
                                 <select className="booking-input-field p-3 rounded-md" name="" id="">
                                     <option value=""> Please Select</option>
-                                    <option value="Individual Headshots">Individual Headshots</option>
-                                    <option value="Corporate/Team Headshots">Corporate/Team Headshots</option>
-                                    <option value="Lifestyle Branding">Lifestyle Branding</option>
+                                    <option value="Individual Headshots">Product</option>
+                                    <option value="Corporate/Team Headshots">Food</option>
+                                    <option value="Lifestyle Branding">Automotive</option>
+                                    <option value="Lifestyle Branding">Aircraft</option>
+                                    <option value="Lifestyle Branding">Commercial</option>
+                                    <option value="Lifestyle Branding">Industrial</option>
+                                    <option value="Lifestyle Branding">Landscape</option>
+                                    <option value="Lifestyle Branding">Real Estate</option>
+                                    <option value="Lifestyle Branding">Others</option>
                                 </select>
 
                             </div>
@@ -137,7 +143,7 @@ const Three = () => {
 
 
                             <div className="flex flex-col gap-2">
-                                <label htmlFor="bookingOnSiteContactName">What is prompting you to look for a headshot now?:</label>
+                                <label htmlFor="bookingOnSiteContactName">Could you please describe what you're looking for?</label>
                                 <textarea className="booking-input-field p-3 rounded-md"></textarea>
                             </div>
 

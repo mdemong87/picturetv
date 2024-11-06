@@ -33,7 +33,7 @@ const PricingCard = ({ title, price, offer, currentPrice }) => {
                 }
 
             </ul>
-            {/* <button type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Choose plan</button> */}
+            <button type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Book Now</button>
         </div>
     )
 }

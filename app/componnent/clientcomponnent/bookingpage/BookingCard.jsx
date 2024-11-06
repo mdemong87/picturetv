@@ -2,9 +2,8 @@
 
 import { useStore } from "@/lib/store";
 import Image from "next/image";
-import portfoliocardimage from "../../../../public/assets/bg-3.jpg";
 
-const BookingCard = ({ title, setrander }) => {
+const BookingCard = ({ title, setrander, imgSrc }) => {
 
 
     const setshootType = useStore((state) => state.setshootType);
@@ -19,7 +18,7 @@ const BookingCard = ({ title, setrander }) => {
 
 
             <div className="rounded-b-md h-full cardimagecomponnentImageWrper">
-                <Image className="rounded-b-md h-full object-cover portfolioCardHover " src={portfoliocardimage} width={1000} height={1000} alt="portfolio-card-image" />
+                <Image className="rounded-b-md h-full object-cover portfolioCardHover " src={imgSrc} width={1000} height={1000} alt="portfolio-card-image" />
             </div>
         </div>
     )

@@ -549,7 +549,7 @@ const priceingData = [
             {
                 id: 1,
                 title: "My typical NYC Food photography rate is between $45 - $250 an hour",
-                dis: "My typical NYC Food photography rate is between $45 - $250 an hour"
+                dis: "The hourly rate varies based on factors such as client type (individual, non-profit, or corporate), Company size and scope, duration, turnaround time, and photo usage. My day rate usually starts at $2,500. "
             },
         ]
 
