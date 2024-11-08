@@ -1,6 +1,8 @@
 'use client'
 
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Container from "../Container";
 import PaymentAmmount from "../PaymentAmountinputer";
 
@@ -13,6 +15,18 @@ const Five = () => {
 
 
     const [isfull, setisfull] = useState(true);
+
+
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+
+        toast.success("Booking Information Recoarded");
+
+
+
+
+    }
 
 
     return (
@@ -40,6 +54,12 @@ const Five = () => {
 
                 </div>
             </Container >
+
+
+            <div className='w-full flex justify-center items-center'>
+                <button onClick={(e) => handleSubmit(e)} className='pbg2 py-1 px-3 mt-10 mb-4 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Proceed</button>
+            </div>
+            <ToastContainer />
         </div >
     )
 }

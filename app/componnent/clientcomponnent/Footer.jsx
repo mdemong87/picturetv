@@ -42,7 +42,7 @@ export default function Footer() {
                                 <Link href="https://maps.app.goo.gl/x5vwU51htrRVnf1z7" target="blank">
                                     <BsArrowRight className={`${styles.rightArrowIcons} text-2xl`} />
                                     <span>
-                                        228 Park Ave South Suite 949383 New York, NY 10003
+                                        228 Park Ave South Suite 949363 New York, NY 10003
                                     </span>
                                 </Link>
                             </li>

@@ -40,7 +40,7 @@ const Three = () => {
         <div className='w-full border rounded-md border-gray-300 py-10 px-7'>
             <h3 className='text-2xl text-black text-center font-semibold mb-10'>Event Booking</h3>
             {
-                shootType == "Headshot" || shootType == "Fashion" || shootType == "Team & Office" || shootType == "Portrait" ? (
+                shootType == "Headshot" || shootType == "Fashion" || shootType == "Team & Office" || shootType == "Portrait" || shootType == "Product" || shootType == "Product" || shootType == "Food" || shootType == "Automotive" || shootType == "Aircraft" || shootType == "Commerecial" || shootType == "Industrial" || shootType == "Landscape" || shootType == "Others" || shootType == "Real Estate" ? (
                     <div>
                         <form className='grid grid-cols-1 lg:grid-cols-2 gap-5'>
                             <div className="flex flex-col gap-2">
@@ -435,6 +435,26 @@ const Three = () => {
                     </div>
                 </div>
             }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div className='w-full flex justify-center items-center'>
+                <button onClick={() => { setrander(5) }} className='pbg2 py-1 px-3 mt-10 mb-4 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Next</button>
+            </div>
+
         </div >
 
     )

@@ -7,6 +7,7 @@ const PricingCard = ({ title, price, offer, currentPrice }) => {
 
     const selectedprice = useStore((state) => state.selectedprice);
     const setselectedprice = useStore((state) => state.setselectedprice);
+    const setrander = useStore((state) => state.setrander);
 
 
     return (
@@ -33,7 +34,7 @@ const PricingCard = ({ title, price, offer, currentPrice }) => {
                 }
 
             </ul>
-            <button type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Book Now</button>
+            <button onClick={() => { setrander(4) }} type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Book Now</button>
         </div>
     )
 }

@@ -3,7 +3,6 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
 import Five from "@/app/componnent/clientcomponnent/bookingpage/Five";
 import Four from "@/app/componnent/clientcomponnent/bookingpage/Four";
-import NextAndPrev from "@/app/componnent/clientcomponnent/bookingpage/NextAndPrev";
 import One from "@/app/componnent/clientcomponnent/bookingpage/One";
 import Prograssber from "@/app/componnent/clientcomponnent/bookingpage/PrograssBar";
 import Three from "@/app/componnent/clientcomponnent/bookingpage/Three";
@@ -29,7 +28,6 @@ const Bookign = () => {
                         {rander === 3 && <Four />}
                         {rander === 4 && <Three />}
                         {rander === 5 && <Five />}
-                        <NextAndPrev />
                     </Container>
                 </div>
 
