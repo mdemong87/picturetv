@@ -27,7 +27,7 @@ const Four = () => {
                 <div className="h-fit w-full">
 
                     {
-                        foundedprice?.forPrice == "Commerecial" || foundedprice?.forPrice == "Product" || foundedprice?.forPrice == "Food" || foundedprice?.forPrice == "Automotive" || foundedprice?.forPrice == "Aircraft" || foundedprice?.forPrice == "Media" || foundedprice?.forPrice == "Sport" || foundedprice?.forPrice == "Industrial" || foundedprice?.forPrice == "Landscape" && foundedprice?.isbusiness == true ? (
+                        foundedprice?.forPrice == "Commerecial" || foundedprice?.forPrice == "Product" || foundedprice?.forPrice == "Food" || foundedprice?.forPrice == "Automotive" || foundedprice?.forPrice == "Aircraft" || foundedprice?.forPrice == "Media" || foundedprice?.forPrice == "Sport" || foundedprice?.forPrice == "Industrial" || foundedprice?.forPrice == "Landscape" || foundedprice?.forPrice == "Family" || foundedprice?.forPrice == "Graduation" || foundedprice?.forPrice == "Party" || foundedprice?.forPrice == "Engagement" || foundedprice?.forPrice == "Maternity" || foundedprice?.forPrice == "Children" || foundedprice?.forPrice == "Pet" || foundedprice?.forPrice == "Anniversary" || (foundedprice?.forPrice == "Others" && foundedprice?.isbusiness == false) ? (
                             <UnAmmountPricingCard title={foundedprice?.data[0]?.title} dis={foundedprice?.data[0]?.dis} />
                         ) : (
 

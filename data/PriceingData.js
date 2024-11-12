@@ -780,6 +780,138 @@ const priceingData = [
 
 
 
+
+    {
+        forPrice: "Family",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Family Photography 2 Hours",
+                dis: "From $800"
+            },
+        ]
+
+    },
+
+
+
+    {
+        forPrice: "Graduation",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Graduation Photography 1 Hour",
+                dis: "From $300"
+            },
+        ]
+
+    },
+
+    {
+        forPrice: "Party",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Party Photography 2 Hours",
+                dis: "From $1000"
+            },
+        ]
+
+    },
+
+
+
+    {
+        forPrice: "Engagement",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Engagement Photography 2 Hours",
+                dis: "From $500"
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Maternity",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Maternity Photography 1 Hour 30 Mins",
+                dis: "From $500"
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Children",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Children Photography 1 Hour",
+                dis: "From $300"
+            },
+        ]
+
+    },
+
+
+    {
+        forPrice: "Pet",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Pet Photography 1 Hour",
+                dis: "From $300"
+            },
+        ]
+
+    },
+
+
+
+    {
+        forPrice: "Anniversary",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Anniversary Photography 2 Hours",
+                dis: "From $1500"
+            },
+        ]
+
+    },
+
+    {
+        forPrice: "Others",
+        isbusiness: false,
+        data: [
+            {
+                id: 1,
+                title: "Others Photography 8 Hours",
+                dis: "Inquire for a quote"
+            },
+        ]
+
+    },
+
+
+
+
+
+
 ]
 
 export default priceingData;
