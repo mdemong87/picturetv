@@ -54,6 +54,21 @@ input[type=number] {
 }
 
 
+.bookinglongShoing::-webkit-scrollbar {
+  display: block !important;
+}
+
+.bookinglongShoing::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+  width: 6px;
+  border-radius: 10px;
+}
+
+.bookinglongShoing::-webkit-scrollbar-track {
+  background: #fff;
+  width: 10px;
+  border-radius: 10px;
+}
 
 @layer utilities {
 

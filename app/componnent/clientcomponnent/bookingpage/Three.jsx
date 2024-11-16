@@ -18,6 +18,8 @@ const Three = () => {
     const rander = useStore((state) => state.rander);
     const setrander = useStore((state) => state.setrander);
 
+
+
     const [isloginpopup, setisloginpopup] = useState(false);
 
 
@@ -36,6 +38,10 @@ const Three = () => {
         e.preventDefault()
         setrander(rander - 1);
     }
+
+
+
+
 
 
     return (
@@ -78,14 +84,6 @@ const Three = () => {
 
 
 
-
-
-
-
-
-            <div className='w-full flex justify-center items-center'>
-                <button onClick={() => { setrander(5) }} className='pbg2 py-1 px-3 mt-10 mb-4 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Next</button>
-            </div>
 
         </div >
 
