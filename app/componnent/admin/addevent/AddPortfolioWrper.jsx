@@ -2,6 +2,7 @@
 
 
 import ConvartMediaToBase64 from "@/lib/helper/convartMediaToBase64";
+import { useStore } from "@/lib/store";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -9,7 +10,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Loading from "../../clientcomponnent/Loading";
 
-function AddPortfolioWrper({ session }) {
+function AddPortfolioWrper() {
 
 
     const router = useRouter();
@@ -22,6 +23,7 @@ function AddPortfolioWrper({ session }) {
     const [file, setfile] = useState([]);
     const [isloading, setisloading] = useState(false);
 
+    const authUser = useStore((state) => state.authUser);
 
     //handle handlepostaevent function here
     async function handlepostaevent() {
@@ -35,7 +37,7 @@ function AddPortfolioWrper({ session }) {
                 "Content-Type": "Application/json"
             },
             body: JSON.stringify({
-                user: session?.user,
+                user: authUser,
                 catagory,
                 title,
                 type,

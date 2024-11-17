@@ -1,11 +1,18 @@
 'use client'
 
-import { ToastContainer } from 'react-toastify';
+import { useStore } from '@/lib/store';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import styles from "../../../../styles/clientconponnent/booking/NextAndPrev.module.css";
 
 
-export default function NextAndPrev({ setrander, rander, loding, setloding }) {
+export default function NextAndPrev() {
+
+
+    const rander = useStore((state) => state.rander);
+    const setrander = useStore((state) => state.setrander);
+
+
 
 
 
@@ -14,25 +21,23 @@ export default function NextAndPrev({ setrander, rander, loding, setloding }) {
         e.preventDefault()
 
 
-        setrander((prev) => {
-            return prev + 1;
-        })
+        setrander(rander + 1);
 
     }
 
 
     function handliDClick(e) {
         e.preventDefault()
-        setrander((pre) => {
-            return pre - 1;
-        })
+        setrander(rander - 1);
     }
 
     async function handleSubmit(e) {
         e.preventDefault();
 
+        toast.success("Booking Information Recoarded");
 
-        console.log(e);
+
+
 
     }
 
@@ -40,7 +45,7 @@ export default function NextAndPrev({ setrander, rander, loding, setloding }) {
         <div>
             <div className={styles.nextandPrevWrp}>
                 <button className={styles.button} disabled={rander === 1} onClick={(e) => handliDClick(e)}>Prev</button>
-                {rander !== 5 ? <button className={styles.button} disabled={rander === 5} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={loding} onClick={(e) => handleSubmit(e)}>Submit</button>}
+                {rander !== 5 ? <button className={styles.button} disabled={rander === 5} onClick={(e) => handliIClick(e)}>Next</button> : <button className={styles.button} type="submit" disabled={false} onClick={(e) => handleSubmit(e)}>Proceed</button>}
             </div>
             <ToastContainer position="top-center" />
         </div>

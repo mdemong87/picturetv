@@ -1,10 +1,16 @@
 'use client'
 
+import { useStore } from "@/lib/store";
 import { TiTick } from "react-icons/ti";
 import styles from "../../../../styles/clientconponnent/booking/Prograssber.module.css";
 
 
-export default function Prograssber({ rander, setrander }) {
+export default function Prograssber() {
+
+
+    const rander = useStore((state) => state.rander);
+    const setrander = useStore((state) => state.setrander);
+
 
     function handleClik(stage) {
         setrander(stage);

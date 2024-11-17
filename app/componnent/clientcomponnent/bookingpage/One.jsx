@@ -1,9 +1,14 @@
 'use client'
 
+import { useStore } from '@/lib/store';
 import { FaBriefcase, FaUser } from 'react-icons/fa';
 import Container from '../Container';
 
-const One = ({ ispersonal, setispersonal }) => {
+const One = () => {
+
+    const ispersonal = useStore((state) => state.ispersonal);
+    const setispersonal = useStore((state) => state.setispersonal);
+    const setrander = useStore((state) => state.setrander);
 
 
     return (
@@ -49,6 +54,9 @@ const One = ({ ispersonal, setispersonal }) => {
 
 
 
+            </div>
+            <div className='w-full flex justify-center items-center'>
+                <button onClick={() => { setrander(2) }} className='pbg2 py-1 px-3 mt-10 mb-4 md:py-3 md:px-5 rounded-md cursor-pointer text-white text-lg font-semibold text-center'>Next</button>
             </div>
         </div>
     )

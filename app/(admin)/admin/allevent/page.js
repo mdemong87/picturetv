@@ -4,9 +4,11 @@ import Link from "next/link";
 
 
 
-const GetallEvent = async (session) => {
+const GetallEvent = async () => {
     //fetch data event data from the api/dashboard
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent`);
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent`, {
+        method: "GET",
+    });
     const response = await res.json();
     return response;
 }
