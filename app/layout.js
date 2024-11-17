@@ -1,10 +1,8 @@
 // app/layout.tsx (or app/layout.js)
 
-import { auth } from '@/lib/auth';
-import ConnectDB from '@/lib/connectionDB';
-import getUserByEmail from '@/lib/helper/getUserByEmail';
+// import getUserByEmail from '@/lib/helper/getUserByEmail';
 import { Inter } from 'next/font/google';
-import AuthUserUpdater from './componnent/AuthUserUpdater';
+// import AuthUserUpdater from './componnent/AuthUserUpdater';
 import './globals.css';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -15,43 +13,43 @@ export const metadata = {
 };
 
 // Server-side function to fetch user data
-async function getUserData() {
-  let passUserData = null;
+// async function getUserData() {
+//   let passUserData = null;
 
-  try {
-    // Initialize DB connection
-    ConnectDB();
+//   try {
+//     // Initialize DB connection
+//     ConnectDB();
 
-    const session = await auth();
-    const sessionEmail = session?.user?.email;
+//     const session = await auth();
+//     const sessionEmail = session?.user?.email;
 
-    // Find the user by email
-    const user = await getUserByEmail(sessionEmail);
+//     // Find the user by email
+//     const user = await getUserByEmail(sessionEmail);
 
-    passUserData = {
-      uid: user?.uid,
-      email: user?.email,
-      fullname: user?.fullname,
-      role: user?.role,
-      isvarified: user?.isvarified,
-      createdAt: user?.createdAt,
-    };
-  } catch (error) {
-    console.error("Error from layout page:", error);
-  }
+//     passUserData = {
+//       uid: user?.uid,
+//       email: user?.email,
+//       fullname: user?.fullname,
+//       role: user?.role,
+//       isvarified: user?.isvarified,
+//       createdAt: user?.createdAt,
+//     };
+//   } catch (error) {
+//     console.error("Error from layout page:", error);
+//   }
 
-  return passUserData;
-}
+//   return passUserData;
+// }
 
 export default async function RootLayout({ children }) {
   // Fetch user data server-side
-  const passUserData = await getUserData();
+  // const passUserData = await getUserData();
 
   return (
     <html lang="en">
       <body className={inter.className}>
         {/* Pass session data to the component */}
-        <AuthUserUpdater session={passUserData} />
+        {/* <AuthUserUpdater session={""} /> */}
         {children}
       </body>
     </html>
