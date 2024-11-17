@@ -1,6 +1,4 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
-import Image from "next/image";
-import Link from "next/link";
 
 
 
@@ -65,7 +63,7 @@ const AllEvent = async () => {
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
 
-                            {
+                            {/* {
                                 allevent?.data?.map((singleData, index) => {
                                     return (
                                         <tr key={index}>
@@ -98,7 +96,7 @@ const AllEvent = async () => {
 
                                     )
                                 })
-                            }
+                            } */}
 
 
 
