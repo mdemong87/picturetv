@@ -46,7 +46,7 @@ const Three = () => {
 
     return (
         <div className='w-full border rounded-md border-gray-300 py-10 px-7'>
-            <h3 className='text-2xl text-black text-center font-semibold mb-10'>Event Booking</h3>
+            <h3 className='text-2xl text-black text-center font-semibold mb-10'>{shootType} Booking Form</h3>
             {
                 shootType == "Headshot" || shootType == "Fashion" || shootType == "Team & Office" || shootType == "Portrait" || shootType == "Product" || shootType == "Product" || shootType == "Food" || shootType == "Automotive" || shootType == "Aircraft" || shootType == "Commerecial" || shootType == "Industrial" || shootType == "Landscape" || shootType == "Others" || shootType == "Real Estate" ? (
 

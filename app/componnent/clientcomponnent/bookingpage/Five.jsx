@@ -140,7 +140,7 @@ const Five = () => {
                         <div className="text-center">
                             <div className="flex items-center gap-4">
                                 <input onChange={() => { setpaymentType(false) }} checked={!paymentType} className="w-[40px] h-[40px] rounded-xl border border-green-500" type="checkbox" />
-                                <span className="text-xl font-semibold">Deposit Half</span>
+                                <span className="text-xl font-semibold">Half Payment</span>
                             </div>
                             <div className="flex items-center gap-4 mt-5">
                                 <input onChange={() => { setpaymentType(true) }} checked={paymentType} className="w-[40px] h-[40px] rounded-xl border border-green-500" type="checkbox" />

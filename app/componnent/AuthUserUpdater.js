@@ -13,8 +13,8 @@ function AuthUserUpdater({ session }) {
     useEffect(() => {
         setauthUser(session);
 
-    }, [session]);
 
+    }, []);
 
     return;
 
