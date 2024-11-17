@@ -55,7 +55,7 @@ const BookingCardForUnPrice = ({ title, setrander, imgSrc }) => {
                     )
                 }
 
-                <button onClick={() => { handleBook() }} type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">Book Now</button>
+                <button onClick={() => { handleBook() }} type="button" className="text-white pbg2 hover:scale-105 transition-all duration-300 focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 inline-flex justify-center w-full text-center">{title == "Others" ? "Request for Book" : "Book Now"}</button>
             </div>
 
         </div >
