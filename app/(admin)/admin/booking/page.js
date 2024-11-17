@@ -24,7 +24,7 @@ const AllBooking = async () => {
 
     const allBookingData = await GetallBooking();
 
-    console.log(allBookingData);
+    // console.log(allBookingData);
 
 
 
