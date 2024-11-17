@@ -2,19 +2,19 @@ import Container from "@/app/componnent/clientcomponnent/Container";
 
 
 
-const GetallBooking = async () => {
-    //fetch data event data from the api/dashboard
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/booking`, {
-        method: "GET",
-        headers: {
-            'Content-Type': 'application/json',
-            // 'Accept': 'application/json',
-            // Add more headers if required by your API
-        },
-    });
-    const response = await res.json();
-    return response;
-}
+// const GetallBooking = async () => {
+//     //fetch data event data from the api/dashboard
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/booking`, {
+//         method: "GET",
+//         headers: {
+//             'Content-Type': 'application/json',
+//             // 'Accept': 'application/json',
+//             // Add more headers if required by your API
+//         },
+//     });
+//     const response = await res.json();
+//     return response;
+// }
 
 
 
@@ -22,7 +22,7 @@ const AllBooking = async () => {
 
 
 
-    const allBookingData = await GetallBooking();
+    // const allBookingData = await GetallBooking();
 
     // console.log(allBookingData);
 
@@ -144,7 +144,7 @@ const AllBooking = async () => {
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
 
-                            {
+                            {/* {
                                 allBookingData?.data?.map((singleData, index) => {
                                     return (
                                         <tr key={index}>
@@ -193,7 +193,7 @@ const AllBooking = async () => {
 
                                     )
                                 })
-                            }
+                            } */}
 
 
 
