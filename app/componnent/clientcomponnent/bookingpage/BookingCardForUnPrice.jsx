@@ -44,7 +44,7 @@ const BookingCardForUnPrice = ({ title, setrander, imgSrc }) => {
                         <div>
                             <p className="text-lg font-normal text-gray-600 py-2 line-clamp-1">We Have {foundedprice?.data.length} Package for {title}</p>
 
-                            <p className="text-lg pb-4 font-normal text-gray-600 line-clamp-1">For see Go with Booking</p>
+                            <p className="text-lg pb-4 font-normal text-gray-600 line-clamp-1">Just go with booking</p>
                         </div>
                     ) : (
                         <div>
