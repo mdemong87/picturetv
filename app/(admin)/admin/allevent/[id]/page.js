@@ -4,19 +4,19 @@ import DeleteBtn from "@/app/componnent/deshboardcomponnent/DeleteBtn";
 import JustImage from "@/app/componnent/deshboardcomponnent/JustImage";
 import { FiEdit } from "react-icons/fi";
 
-const GetSingleEvent = async (id) => {
-    //fetch data event data from the api/dashboard
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent/${id}`);
-    const response = await res.json();
-    return response;
-}
+// const GetSingleEvent = async (id) => {
+//     //fetch data event data from the api/dashboard
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent/${id}`);
+//     const response = await res.json();
+//     return response;
+// }
 
 
 const SingleAllEventPage = async ({ params }) => {
 
 
     const id = params?.id;
-    const data = await GetSingleEvent(id);
+    // const data = await GetSingleEvent(id);
 
 
 
