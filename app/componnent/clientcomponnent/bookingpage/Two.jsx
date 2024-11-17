@@ -25,6 +25,7 @@ import sport from "../../../../public/assets/booking/sport.jpg";
 import teamandoffice from "../../../../public/assets/booking/team and office.jpg";
 import wedding from "../../../../public/assets/booking/wedding.jpg";
 import BookingCard from "../bookingpage/BookingCard";
+import BookingCardForUnPrice from "./BookingCardForUnPrice";
 
 
 
@@ -61,18 +62,18 @@ const Two = () => {
                         </div>
                     ) : (
 
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-12">
-                            <BookingCard imgSrc={portrait} setrander={setrander} title="Portrait" />
-                            <BookingCard imgSrc={family} setrander={setrander} title="Family" />
-                            <BookingCard imgSrc={graduation} setrander={setrander} title="Graduation" />
-                            <BookingCard imgSrc={party} setrander={setrander} title="Party" />
-                            <BookingCard imgSrc={wedding} setrander={setrander} title="Wedding" />
-                            <BookingCard imgSrc={engagement} setrander={setrander} title="Engagement" />
-                            <BookingCard imgSrc={maternity} setrander={setrander} title="Maternity" />
-                            <BookingCard imgSrc={children} setrander={setrander} title="Children" />
-                            <BookingCard imgSrc={pet} setrander={setrander} title="Pet" />
-                            <BookingCard imgSrc={anniversiry} setrander={setrander} title="Anniversary" />
-                            <BookingCard imgSrc={other} setrander={setrander} title="Others" />
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-12">
+                            <BookingCardForUnPrice imgSrc={portrait} setrander={setrander} title="Portrait" />
+                            <BookingCardForUnPrice imgSrc={family} setrander={setrander} title="Family" />
+                            <BookingCardForUnPrice imgSrc={graduation} setrander={setrander} title="Graduation" />
+                            <BookingCardForUnPrice imgSrc={party} setrander={setrander} title="Party" />
+                            <BookingCardForUnPrice imgSrc={wedding} setrander={setrander} title="Wedding" />
+                            <BookingCardForUnPrice imgSrc={engagement} setrander={setrander} title="Engagement" />
+                            <BookingCardForUnPrice imgSrc={maternity} setrander={setrander} title="Maternity" />
+                            <BookingCardForUnPrice imgSrc={children} setrander={setrander} title="Children" />
+                            <BookingCardForUnPrice imgSrc={pet} setrander={setrander} title="Pet" />
+                            <BookingCardForUnPrice imgSrc={anniversiry} setrander={setrander} title="Anniversary" />
+                            <BookingCardForUnPrice imgSrc={other} setrander={setrander} title="Others" />
 
                         </div>
                     )
