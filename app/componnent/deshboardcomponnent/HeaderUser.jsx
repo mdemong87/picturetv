@@ -4,11 +4,12 @@ import { useState } from "react";
 import { FaUser } from "react-icons/fa";
 import UserToggle from "./UserToggle";
 
-function HeaderUser({ session }) {
+function HeaderUser() {
 
 
     //local state here
     const [showToggle, setshowToggle] = useState(false);
+
 
 
 
@@ -18,7 +19,7 @@ function HeaderUser({ session }) {
                 <FaUser className="pcl text-3xl" />
             </div>
             {
-                showToggle && <UserToggle session={session} toggleController={setshowToggle} />
+                showToggle && <UserToggle toggleController={setshowToggle} />
             }
         </div>
     )

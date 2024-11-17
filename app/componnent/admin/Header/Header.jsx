@@ -10,8 +10,8 @@ import NavberWrper from "./Navberwrper";
 
 const Header = async () => {
 
-    // //get sission data
-    // const session = await gertusersession();
+
+    // authUser will be work later
 
     // if (!session || session?.role !== 'Admin') {
     //     redirect('/auth/login');
@@ -29,7 +29,7 @@ const Header = async () => {
                         </Link>
                     </div>
                     <div className={styles.right}>
-                        <NavberWrper session={""} />
+                        <NavberWrper />
                     </div>
                 </div>
             </Container>

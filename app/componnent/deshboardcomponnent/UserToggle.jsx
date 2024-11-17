@@ -1,5 +1,6 @@
 'use client'
 
+import { useStore } from "@/lib/store";
 import { FaUser } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import styles from "../../../styles/clientconponnent/Header/UserToggle.module.css";
@@ -8,8 +9,7 @@ import Logout from "./Logout";
 
 function UserToggle({ session, toggleController }) {
 
-
-
+    const authUser = useStore((state) => state.authUser);
 
 
     return (
@@ -22,10 +22,10 @@ function UserToggle({ session, toggleController }) {
                         </div>
                         <div>
                             <div className="flex gap-2 items-center">
-                                <h3 className="text-lg md:text-xl font-medium text-gray-600">{session?.fullname}</h3>
-                                <span className="bg-green-300 rounded-md p-1 text-base text-white">{session?.role}</span>
+                                <h3 className="text-lg md:text-xl font-medium text-gray-600">{authUser?.fullname}</h3>
+                                <span className="bg-green-300 rounded-md p-1 text-base text-white">{authUser?.role}</span>
                             </div>
-                            <p className="text-gray-400 font-normal text-sm md:text-md">{session?.email}</p>
+                            <p className="text-gray-400 font-normal text-sm md:text-md">{authUser?.email}</p>
                         </div>
                     </div>
                     <div onClick={() => toggleController(false)} className={'w-[39px] h-[39px] md:w-[43px] md:h-[43px] pbg rounded-lg flex justify-center cursor-pointer items-center hover:rotate-180 transition duration-500'}>

@@ -39,8 +39,6 @@ async function getUserData() {
   }
 
 
-  console.log(passUserData);
-
   return passUserData;
 }
 
