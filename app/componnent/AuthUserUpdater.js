@@ -1,23 +1,23 @@
-// 'use client'
+'use client'
 
-// import { useStore } from "@/lib/store";
-// import { useEffect } from "react";
-
-
-// function AuthUserUpdater({ session }) {
-//     const authUser = useStore((state) => state.authUser);
-//     const setauthUser = useStore((state) => state.setauthUser);
+import { useStore } from "@/lib/store";
+import { useEffect } from "react";
 
 
+function AuthUserUpdater({ session }) {
+    const authUser = useStore((state) => state.authUser);
+    const setauthUser = useStore((state) => state.setauthUser);
 
-//     useEffect(() => {
-//         setauthUser(session);
 
 
-//     }, [session, setauthUser]);
+    useEffect(() => {
+        setauthUser(session);
 
-//     return;
 
-// }
+    }, [session, setauthUser]);
 
-// export default AuthUserUpdater;
+    return;
+
+}
+
+export default AuthUserUpdater;
