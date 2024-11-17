@@ -1,25 +1,20 @@
 import BackBtn from "@/app/componnent/BackBtn";
 import Container from "@/app/componnent/clientcomponnent/Container";
 import DeleteBtn from "@/app/componnent/deshboardcomponnent/DeleteBtn";
-import JustImage from "@/app/componnent/deshboardcomponnent/JustImage";
-import gertusersession from "@/lib/helper/getusersesssion";
 import { ToastContainer } from "react-toastify";
 
 const SingleDashBoardEvent = async ({ params }) => {
 
 
-    //get sission data
-    const session = await gertusersession();
-
-    //fetch data event data from the api/dashboard
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dashboard/${params.id}`, {
-        method: "GET",
-        headers: {
-            "Content-Type": "application/json",
-            "Authorization": `Bearer ${session?.user?.email}`
-        }
-    });
-    const data = await res.json();
+    // //fetch data event data from the api/dashboard
+    // const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/dashboard/${params.id}`, {
+    //     method: "GET",
+    //     headers: {
+    //         "Content-Type": "application/json",
+    //         "Authorization": `Bearer ${session?.user?.email}`
+    //     }
+    // });
+    // const data = await res.json();
 
 
     return (
@@ -70,13 +65,13 @@ const SingleDashBoardEvent = async ({ params }) => {
                         <div className="mt-10 grid grid-cols-6 items-center gap-4">
 
 
-                            {
+                            {/* {
                                 data?.data?.file?.map((singleimage, index) => {
                                     return (
                                         <JustImage key={index} singleimage={singleimage} />
                                     )
                                 })
-                            }
+                            } */}
 
                         </div>
                     </div>
