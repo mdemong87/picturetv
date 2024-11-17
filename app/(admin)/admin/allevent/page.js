@@ -1,17 +1,15 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
-import Image from "next/image";
-import Link from "next/link";
 
 
 
-const GetallEvent = async () => {
-    //fetch data event data from the api/dashboard
-    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent`, {
-        method: "GET",
-    });
-    const response = await res.json();
-    return response;
-}
+// const GetallEvent = async () => {
+//     //fetch data event data from the api/dashboard
+//     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/allevent`, {
+//         method: "GET",
+//     });
+//     const response = await res.json();
+//     return response;
+// }
 
 
 
@@ -19,7 +17,7 @@ const AllEvent = async () => {
 
 
 
-    const allevent = await GetallEvent();
+    // const allevent = await GetallEvent();
 
 
 
@@ -65,7 +63,7 @@ const AllEvent = async () => {
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
 
-                            {
+                            {/* {
                                 allevent?.data?.map((singleData, index) => {
                                     return (
                                         <tr key={index}>
@@ -98,7 +96,7 @@ const AllEvent = async () => {
 
                                     )
                                 })
-                            }
+                            } */}
 
 
 

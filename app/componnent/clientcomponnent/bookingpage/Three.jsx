@@ -13,6 +13,7 @@ const Three = () => {
     const router = useRouter();
 
     const shootType = useStore((state) => state.shootType);
+    const ispersonal = useStore((state) => state.ispersonal);
     //centeral state auth user
     const authUser = useStore((state) => state.authUser);
     const rander = useStore((state) => state.rander);
@@ -27,7 +28,7 @@ const Three = () => {
     useEffect(() => {
         //handle show function is here
         if (!authUser?.role) {
-            setisloginpopup(false);
+            setisloginpopup(true);
         }
 
     }, [authUser])
@@ -35,8 +36,16 @@ const Three = () => {
 
 
     function backhandle(e) {
-        e.preventDefault()
-        setrander(rander - 1);
+        e.preventDefault();
+
+
+        if (shootType == "Family" || shootType == "Graduation" || shootType == "Party" || shootType == "Engagement" || shootType == "Maternity" || shootType == "Children" || shootType == "Pet" || shootType == "Anniversary" || (shootType == "Others" && ispersonal)) {
+            setrander(rander - 2);
+        } else {
+            setrander(rander - 1);
+        }
+
+
     }
 
 

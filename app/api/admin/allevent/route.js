@@ -1,4 +1,3 @@
-import EventModel from "@/lib/model/eventModel";
 
 export const GET = async () => {
 
@@ -6,8 +5,8 @@ export const GET = async () => {
     try {
 
 
-        //get the all event from the database
-        const allevent = await EventModel.find({});
+        // //get the all event from the database
+        // const allevent = await EventModel.find({});
 
 
 
@@ -19,7 +18,6 @@ export const GET = async () => {
             message: "Fetching All Event Successfull",
             status: 200,
             success: true,
-            data: allevent
         })
 
     } catch (error) {

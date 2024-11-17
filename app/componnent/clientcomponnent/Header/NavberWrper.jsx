@@ -5,7 +5,7 @@ import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import Navber from "./Navbar";
 
-const NavberWrper = ({ session }) => {
+const NavberWrper = () => {
 
 
     const [shownav, setshownav] = useState(false);
@@ -14,7 +14,7 @@ const NavberWrper = ({ session }) => {
     return (
         <div className="">
             <div className="hidden md:block">
-                <Navber setshownav={setshownav} session={session} />
+                <Navber setshownav={setshownav} />
             </div>
             <div className="flex w-full jutify-end items-center md:hidden">
                 <HiMiniBars3BottomRight onClick={() => setshownav(true)} className="text-3xl text-white cursor-pointer" />
@@ -28,7 +28,7 @@ const NavberWrper = ({ session }) => {
                                 <RxCross2 className="text-white text-2xl" />
                             </div>
                         </div>
-                        <Navber setshownav={setshownav} session={session} />
+                        <Navber setshownav={setshownav} />
                     </div>
                     <div className="w-full">
                     </div>

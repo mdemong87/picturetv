@@ -787,7 +787,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Family Photography 2 Hours",
+                title: "2 Hours",
                 dis: "From $800"
             },
         ]
@@ -802,7 +802,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Graduation Photography 1 Hour",
+                title: "1 Hour",
                 dis: "From $300"
             },
         ]
@@ -815,7 +815,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Party Photography 2 Hours",
+                title: "2 Hours",
                 dis: "From $1000"
             },
         ]
@@ -830,7 +830,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Engagement Photography 2 Hours",
+                title: "2 Hours",
                 dis: "From $500"
             },
         ]
@@ -844,7 +844,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Maternity Photography 1 Hour 30 Mins",
+                title: "1 Hour 30 Mins",
                 dis: "From $500"
             },
         ]
@@ -858,7 +858,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Children Photography 1 Hour",
+                title: "1 Hour",
                 dis: "From $300"
             },
         ]
@@ -872,7 +872,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Pet Photography 1 Hour",
+                title: "1 Hour",
                 dis: "From $300"
             },
         ]
@@ -887,7 +887,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Anniversary Photography 2 Hours",
+                title: "2 Hours",
                 dis: "From $1500"
             },
         ]
@@ -900,7 +900,7 @@ const priceingData = [
         data: [
             {
                 id: 1,
-                title: "Others Photography 8 Hours",
+                title: "8 Hours",
                 dis: "Inquire for a quote"
             },
         ]
