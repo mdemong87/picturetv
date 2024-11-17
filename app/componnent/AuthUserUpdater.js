@@ -14,7 +14,7 @@ function AuthUserUpdater({ session }) {
         setauthUser(session);
 
 
-    }, []);
+    }, [session, setauthUser]);
 
     return;
 

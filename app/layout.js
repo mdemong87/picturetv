@@ -1,7 +1,7 @@
 import ConnectDB from '@/lib/connectionDB';
-// import gertusersession from '@/lib/helper/getusersesssion';
+import gertusersession from '@/lib/helper/getusersesssion';
 import { Inter } from 'next/font/google';
-// import AuthUserUpdater from './componnent/AuthUserUpdater';
+import AuthUserUpdater from './componnent/AuthUserUpdater';
 import './globals.css';
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,14 +14,14 @@ export const metadata = {
 export default async function RootLayout({ children }) {
 
 
-  // const authUser = await gertusersession();
+  const authUser = await gertusersession();
 
   ConnectDB();
 
   return (
     <html lang="en">
       <body className={inter.className}>
-        {/* <AuthUserUpdater session={authUser} /> */}
+        <AuthUserUpdater session={authUser} />
         {children}
       </body>
     </html>
