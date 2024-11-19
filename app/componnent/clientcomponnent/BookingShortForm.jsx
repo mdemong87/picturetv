@@ -16,6 +16,10 @@ const BookingShortForm = () => {
     const sessionInteresed = useStore((state) => state.sessionInteresed);
     const dsccribeLooking = useStore((state) => state.dsccribeLooking);
     const hearAbout = useStore((state) => state.hearAbout);
+    const agreeToTerms = useStore((state) => state.agreeToTerms);
+    const subscribe = useStore((state) => state.subscribe);
+
+
 
 
 
@@ -28,6 +32,8 @@ const BookingShortForm = () => {
     const setsessionInteresed = useStore((state) => state.setsessionInteresed);
     const setdsccribeLooking = useStore((state) => state.setdsccribeLooking);
     const sethearAbout = useStore((state) => state.sethearAbout);
+    const setagreeToTerms = useStore((state) => state.setagreeToTerms);
+    const setsubscribe = useStore((state) => state.setsubscribe);
 
 
 
@@ -202,6 +208,21 @@ const BookingShortForm = () => {
 
 
                     </div>
+
+
+                    <div className="mt-6">
+                        <div className="flex gap-3 items-center">
+                            <input onChange={(e) => { setagreeToTerms(!agreeToTerms) }} checked={agreeToTerms} className="w-[20px] h-[20px]" type="checkbox" />
+                            <span className="text-xl pcl2">
+                                I Agree to the Terms and Conditions
+                            </span>
+                        </div>
+                        <div className="flex gap-3 items-center mt-2">
+                            <input onChange={(e) => { setsubscribe(!subscribe) }} checked={subscribe} className="w-[20px] h-[20px]" type="checkbox" />
+                            <span className="text-xl pcl2">Subscribe to our newsletter</span>
+                        </div>
+                    </div>
+
                 </form >
             </div>
 

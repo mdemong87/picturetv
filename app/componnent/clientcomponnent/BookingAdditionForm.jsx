@@ -16,6 +16,8 @@ const BookingAdditionForm = () => {
     const picTime = useStore((state) => state.picTime);
     const dsccribeLooking = useStore((state) => state.dsccribeLooking);
     const recieveSms = useStore((state) => state.recieveSms);
+    const agreeToTerms = useStore((state) => state.agreeToTerms);
+    const subscribe = useStore((state) => state.subscribe);
 
 
 
@@ -26,6 +28,8 @@ const BookingAdditionForm = () => {
     const setpicTime = useStore((state) => state.setpicTime);
     const setdsccribeLooking = useStore((state) => state.setdsccribeLooking);
     const setrecieveSms = useStore((state) => state.setrecieveSms);
+    const setagreeToTerms = useStore((state) => state.setagreeToTerms);
+    const setsubscribe = useStore((state) => state.setsubscribe);
 
 
 
@@ -173,8 +177,21 @@ const BookingAdditionForm = () => {
                         <div className="flex gap-3 items-center">
                             <input onChange={(e) => { setrecieveSms(!recieveSms) }} className="w-[20px] h-[20px]" type="checkbox" />
                             <span className="text-xl pcl2">
-                                I Want ti receive an sms reminder 24 hours before this session starts
+                                I Want to Receive an SMS Reminder
                             </span>
+                        </div>
+                    </div>
+
+                    <div className="mt-6">
+                        <div className="flex gap-3 items-center">
+                            <input onChange={(e) => { setagreeToTerms(!agreeToTerms) }} checked={agreeToTerms} className="w-[20px] h-[20px]" type="checkbox" />
+                            <span className="text-xl pcl2">
+                                I Agree to the Terms and Conditions
+                            </span>
+                        </div>
+                        <div className="flex gap-3 items-center mt-2">
+                            <input onChange={(e) => { setsubscribe(!subscribe) }} checked={subscribe} className="w-[20px] h-[20px]" type="checkbox" />
+                            <span className="text-xl pcl2">Subscribe to our newsletter</span>
                         </div>
                     </div>
 
