@@ -28,25 +28,14 @@ const Three = () => {
     useEffect(() => {
         //handle show function is here
         if (!authUser?.role) {
-            setisloginpopup(true);
+            setrander(1);
+            router.push("/auth/login");
         }
 
     }, [authUser])
 
 
 
-    function backhandle(e) {
-        e.preventDefault();
-
-
-        if (shootType == "Family" || shootType == "Graduation" || shootType == "Party" || shootType == "Engagement" || shootType == "Maternity" || shootType == "Children" || shootType == "Pet" || shootType == "Anniversary" || (shootType == "Others" && ispersonal)) {
-            setrander(rander - 2);
-        } else {
-            setrander(rander - 1);
-        }
-
-
-    }
 
 
 
@@ -71,27 +60,6 @@ const Three = () => {
 
                 )
             }
-
-            {
-                isloginpopup && <div className="fixed top-0 left-0 right-0 bottom-0 w-screen h-screen bannartransparentBg flex justify-center items-center">
-                    <div className="bg-white p-6 text-center shadox-xl rounded-md">
-                        <h2 className="text-2xl pb-5 font-semibold">You Should Login First</h2>
-                        <div className="flex gap-5 items-center justify-center">
-                            <button onClick={(e) => { backhandle(e) }} className="pbg py-1 px-2 cursor-pointer rounded-md font-semibold text-lg text-gray-50">Back</button>
-                            <button onClick={() => { router.push('/auth/login') }} className="pbg py-1 px-2 cursor-pointer rounded-md font-semibold text-lg text-gray-50">Login</button>
-
-                        </div>
-                    </div>
-                </div>
-            }
-
-
-
-
-
-
-
-
 
 
         </div >
