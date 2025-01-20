@@ -2,7 +2,7 @@
 
 import { useStore } from "@/lib/store";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import BookingAdditionForm from "../BookingAdditionForm";
 import BookingBigForm from "../BookingBigForm";
 import BookingShortForm from "../BookingShortForm";
@@ -18,27 +18,19 @@ const Three = () => {
     const authUser = useStore((state) => state.authUser);
     const rander = useStore((state) => state.rander);
     const setrander = useStore((state) => state.setrander);
-
-
-
-    const [isloginpopup, setisloginpopup] = useState(false);
-
+    const fromPage = useStore((state) => state.fromPage);
+    const setfromPage = useStore((state) => state.setfromPage);
 
 
     useEffect(() => {
+
         //handle show function is here
         if (!authUser?.role) {
             setrander(1);
             router.push("/auth/login");
         }
 
-    }, [authUser])
-
-
-
-
-
-
+    }, [])
 
 
 

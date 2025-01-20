@@ -1,6 +1,7 @@
 'use client'
 import Loading from "@/app/componnent/clientcomponnent/Loading";
 import { SendOTPviaEmail } from "@/lib/helper/SendOTP";
+import { useStore } from "@/lib/store";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -20,6 +21,9 @@ const Login = () => {
     const [isloading, setisloading] = useState(false);
     const [stape, setstape] = useState(1);
     const [otp, setotp] = useState('');
+    const fromPage = useStore((state) => state.fromPage);
+    const setrander = useStore((state) => state.setrander);
+
 
 
     //handle handlelogin function here
@@ -106,7 +110,13 @@ const Login = () => {
                 setisloading(false);
                 toast.success(res.message);
                 setTimeout(() => {
-                    location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
+                    if (fromPage !== 'booking') {
+                        location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
+                    } else {
+                        setrander(3);
+                        router.push('/booking');
+                    }
+
                 }, 500);
             } else {
                 setisloading(false);
