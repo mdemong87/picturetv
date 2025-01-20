@@ -17,7 +17,6 @@ export const POST = async (req) => {
         const user = await getUserByEmail(email);
 
 
-
         if (user) {
 
 

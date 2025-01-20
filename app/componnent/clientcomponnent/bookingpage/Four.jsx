@@ -2,6 +2,7 @@
 
 import priceingData from "@/data/PriceingData";
 import { useStore } from "@/lib/store";
+import { useEffect } from "react";
 import Container from "../Container";
 import PricingCard from "../PricingCard";
 import UnAmmountPricingCard from "../UnAmmountPricingCard";
@@ -12,7 +13,8 @@ const Four = () => {
     const shootType = useStore((state) => state.shootType);
     const ispersonal = useStore((state) => state.ispersonal);
     const setpaymentAmount = useStore((state) => state.setpaymentAmount);
-
+    const fromPage = useStore((state) => state.fromPage);
+    const setfromPage = useStore((state) => state.setfromPage);
 
 
 
@@ -20,6 +22,14 @@ const Four = () => {
         return item.forPrice == shootType && item.isbusiness != ispersonal;
     })
 
+
+
+
+    useEffect(() => {
+
+        setfromPage('booking');
+
+    }, [])
 
 
     return (
