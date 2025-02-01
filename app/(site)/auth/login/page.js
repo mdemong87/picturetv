@@ -114,7 +114,7 @@ const Login = () => {
                         location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
                     } else {
 
-                        router.push('/booking');
+                        router.prefetch('/booking');
                         setrander(3);
 
                     }
