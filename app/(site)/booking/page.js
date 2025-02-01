@@ -1,33 +1,64 @@
-'use client'
-
+import AuthUserUpdater from "@/app/componnent/AuthUserUpdater";
 import Container from "@/app/componnent/clientcomponnent/Container";
-import Five from "@/app/componnent/clientcomponnent/bookingpage/Five";
-import Four from "@/app/componnent/clientcomponnent/bookingpage/Four";
-import One from "@/app/componnent/clientcomponnent/bookingpage/One";
 import Prograssber from "@/app/componnent/clientcomponnent/bookingpage/PrograssBar";
-import Three from "@/app/componnent/clientcomponnent/bookingpage/Three";
-import Two from "@/app/componnent/clientcomponnent/bookingpage/Two";
-import { useStore } from "@/lib/store";
+import RanderWrper from "@/app/componnent/clientcomponnent/bookingpage/RanderWrper";
+import { auth } from "@/lib/auth";
+import ConnectDB from "@/lib/connectionDB";
+import getUserByEmail from "@/lib/helper/getUserByEmail";
 
 
 
-const Bookign = () => {
+// Server - side function to fetch user data
+async function getUserData() {
+    let passUserData = null;
+
+    try {
+        // Initialize DB connection
+        ConnectDB();
+
+        const session = await auth();
+        const sessionEmail = session?.user?.email;
+
+        // Find the user by email
+        const user = await getUserByEmail(sessionEmail);
+
+        passUserData = {
+            uid: user?.uid,
+            email: user?.email,
+            fullname: user?.fullname,
+            role: user?.role,
+            isvarified: user?.isvarified,
+            createdAt: user?.createdAt,
+        };
+    } catch (error) {
+        console.error("Error from layout page:", error);
+    }
 
 
-    const rander = useStore((state) => state.rander);
+    return passUserData;
+}
+
+
+
+
+const Bookign = async () => {
+
+
+    // Fetch user data server-side
+    const passUserData = await getUserData();
+
+
 
 
     return (
         <main className="h-fit pt-24">
+            {/* Pass session data to the component */}
+            <AuthUserUpdater session={passUserData} />
             <div className="h-full">
                 <div className="w-full py-10">
                     <Container>
                         <Prograssber />
-                        {rander === 1 && <One />}
-                        {rander === 2 && <Two />}
-                        {rander === 3 && <Four />}
-                        {rander === 4 && <Three />}
-                        {rander === 5 && <Five />}
+                        <RanderWrper />
                     </Container>
                 </div>
 
