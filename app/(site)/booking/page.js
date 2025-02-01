@@ -48,6 +48,9 @@ const Bookign = async () => {
     const passUserData = await getUserData();
 
 
+    console.log('booking page');
+
+
 
 
     return (
