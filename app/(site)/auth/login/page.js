@@ -113,9 +113,10 @@ const Login = () => {
                     if (fromPage !== 'booking') {
                         location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
                     } else {
-                        // setrander(3);
-                        // router.push('/booking');
-                        location.href = `${process.env.NEXT_PUBLIC_BASE_URL}/booking`;
+
+                        router.push('/booking');
+                        setrander(3);
+
                     }
 
                 }, 500);

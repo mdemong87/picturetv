@@ -10,14 +10,15 @@ function AuthUserUpdater({ session }) {
 
 
 
+
+
+
+
     useEffect(() => {
         setauthUser(session);
 
+    }, [session]);
 
-    }, [session, setauthUser]);
-
-
-    console.log(authUser);
 
 
     return;
