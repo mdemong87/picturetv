@@ -5,7 +5,6 @@ import RanderWrper from "@/app/componnent/clientcomponnent/bookingpage/RanderWrp
 import { auth } from "@/lib/auth";
 import ConnectDB from "@/lib/connectionDB";
 import getUserByEmail from "@/lib/helper/getUserByEmail";
-import { revalidatePath } from 'next/cache';
 
 
 
@@ -50,8 +49,6 @@ const Bookign = async () => {
 
 
 
-    revalidatePath('/booking', 'page');
-
     console.log('booking page........................!!!!!!!!!!!!!!!');
 
 
@@ -74,3 +71,4 @@ const Bookign = async () => {
 }
 
 export default Bookign;
+
