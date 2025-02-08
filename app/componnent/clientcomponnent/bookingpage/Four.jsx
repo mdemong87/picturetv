@@ -2,7 +2,6 @@
 
 import priceingData from "@/data/PriceingData";
 import { useStore } from "@/lib/store";
-import { useEffect } from "react";
 import Container from "../Container";
 import PricingCard from "../PricingCard";
 import UnAmmountPricingCard from "../UnAmmountPricingCard";
@@ -24,12 +23,6 @@ const Four = () => {
     })
 
 
-
-    useEffect(() => {
-
-        setfromPage('booking');
-
-    }, [])
 
 
     return (

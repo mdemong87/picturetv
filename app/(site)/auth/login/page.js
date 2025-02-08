@@ -23,6 +23,8 @@ const Login = () => {
     const [otp, setotp] = useState('');
     const fromPage = useStore((state) => state.fromPage);
     const setrander = useStore((state) => state.setrander);
+    const ispersonal = useStore((state) => state.ispersonal);
+    const shootType = useStore((state) => state.shootType);
 
 
 
@@ -114,8 +116,15 @@ const Login = () => {
                         location.href = `${process.env.NEXT_PUBLIC_BASE_URL}`;
                     } else {
 
-                        router.push('/booking');
-                        setrander(3);
+
+
+                        if (ispersonal && (shootType == 'Family' || shootType == 'Graduation' || shootType == 'Party' || shootType == 'Engagement' || shootType == 'Maternity' || shootType == 'Children' || shootType == 'Pet' || shootType == 'Anniversary' || shootType == 'Others')) {
+                            router.push('/booking');
+                            setrander(2);
+                        } else {
+                            router.push(`/booking`);
+                            setrander(3);
+                        }
 
                     }
 

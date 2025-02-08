@@ -82,6 +82,14 @@ input[type=number] {
   border-radius: 10px;
 }
 
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--primary-color-two) !important;
+}
+
+
+
 @layer utilities {
 
   .pbg {

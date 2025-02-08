@@ -27,8 +27,8 @@ const Three = () => {
 
         //handle show function is here
         if (!authUser?.role) {
-            setrander(1);
             router.push("/auth/login");
+            setrander(1);
         }
 
     }, [])

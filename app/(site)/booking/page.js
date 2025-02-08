@@ -4,12 +4,7 @@ import Prograssber from "@/app/componnent/clientcomponnent/bookingpage/PrograssB
 import RanderWrper from "@/app/componnent/clientcomponnent/bookingpage/RanderWrper";
 
 
-
-
 const Bookign = async () => {
-
-
-    console.log('booking page........................!!!!!!!!!!!!!!!');
 
 
     return (
