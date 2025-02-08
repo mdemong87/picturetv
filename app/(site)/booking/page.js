@@ -40,7 +40,6 @@ async function getUserData() {
 
 
 
-
 const Bookign = async () => {
 
 
@@ -48,9 +47,7 @@ const Bookign = async () => {
     const passUserData = await getUserData();
 
 
-    console.log('booking page');
-
-
+    console.log('booking page........................!!!!!!!!!!!!!!!');
 
 
     return (

@@ -22,6 +22,7 @@ const Three = () => {
     const setfromPage = useStore((state) => state.setfromPage);
 
 
+
     useEffect(() => {
 
         //handle show function is here
