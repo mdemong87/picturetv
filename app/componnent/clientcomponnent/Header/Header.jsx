@@ -28,4 +28,4 @@ const Header = async () => {
     )
 }
 
-export default Header
+export default Header;

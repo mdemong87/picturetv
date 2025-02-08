@@ -17,11 +17,11 @@ const Four = () => {
     const setfromPage = useStore((state) => state.setfromPage);
 
 
+    const authUser = useStore((state) => state.authUser);
 
     const foundedprice = priceingData?.find((item) => {
         return item.forPrice == shootType && item.isbusiness != ispersonal;
     })
-
 
 
 
