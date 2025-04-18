@@ -33,7 +33,7 @@ const Header = async () => {
                     </div>
                 </div>
             </Container>
-        </header>
+        </header >
 
     )
 }
