@@ -1,20 +1,21 @@
 import Container from "@/app/componnent/clientcomponnent/Container";
+import { LocalTimeConvart } from "@/lib/helper/LocalDateConvart";
 
 
 
-// const GetallBooking = async () => {
-//     //fetch data event data from the api/dashboard
-//     const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/booking`, {
-//         method: "GET",
-//         headers: {
-//             'Content-Type': 'application/json',
-//             // 'Accept': 'application/json',
-//             // Add more headers if required by your API
-//         },
-//     });
-//     const response = await res.json();
-//     return response;
-// }
+const GetallBooking = async () => {
+    //fetch data event data from the api/dashboard
+    const res = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/admin/booking`, {
+        method: "GET",
+        headers: {
+            'Content-Type': 'application/json',
+            // 'Accept': 'application/json',
+            // Add more headers if required by your API
+        },
+    });
+    const response = await res.json();
+    return response;
+}
 
 
 
@@ -22,9 +23,9 @@ const AllBooking = async () => {
 
 
 
-    // const allBookingData = await GetallBooking();
+    const allBookingData = await GetallBooking();
 
-    // console.log(allBookingData);
+    console.log(allBookingData);
 
 
 
@@ -144,10 +145,10 @@ const AllBooking = async () => {
                         </thead>
                         <tbody className="bg-white divide-y divide-gray-200">
 
-                            {/* {
+                            {
                                 allBookingData?.data?.map((singleData, index) => {
                                     return (
-                                        <tr key={index}>
+                                        <tr className="" key={index}>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{index + 1}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.id}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.fristName + " " + singleData?.lastName}</td>
@@ -159,33 +160,36 @@ const AllBooking = async () => {
 
 
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.assignmentTitle}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.assignmentDate}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.assignmentDate}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.callTime}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.endTime}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.vanueName}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.vanueName}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.vanueAddress}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.numberOfGuest}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.onsiteContactNumber}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.onsiteContactNumber}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.dressAttire}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.postImagetopictureTv ? "YES" : "NO"}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.specialRequest}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.postImagetopictureTv}</td>
+
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.specialRequest}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.bookFor}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.agreeToTerms ? "YES" : "NO"}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.subscribe ? "YES" : "NO"}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.agreeToTerms}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.subscribe}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.resion}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.socialMediaProfile}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.sessionInteresed}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.sessionInteresed}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.dsccribeLooking}</td>
-
-
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.hearAbout}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.hearAbout}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.picDate}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.picTime}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.recieveSms ? "YES" : "NO"}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.paymentType ? "Full" : "Half"}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.recieveSms}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.paymentType}</td>
                                             <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.paymentAmount}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-900">{singleData?.selectedprice}</td>
-                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.createdAt}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{singleData?.selectedprice}</td>
+                                            <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">{LocalTimeConvart(singleData)}</td>
+
+
+
+
 
 
                                         </tr>
@@ -193,7 +197,7 @@ const AllBooking = async () => {
 
                                     )
                                 })
-                            } */}
+                            }
 
 
 
